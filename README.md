@@ -1,5 +1,5 @@
 # Homeworks repo.
 
-See my homeworks in a folder apropriate as: one, two, three, etc.
+See my homeworks in appropriate folders.
 
 Cheers.
