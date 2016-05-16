@@ -1,3 +1,8 @@
+.border {
+  margin: 45px;
+  padding: 0px;
+  border-bottom: 1px solid black;
+}
 div {
   font-family: avenir next;
   margin-right: 70px;
@@ -11,7 +16,7 @@ div {
   font-weight:bold;
 }
 img {
-  height: 500px;
+  height: 350px;
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -24,27 +29,25 @@ img {
 .role {
   font-size: 22px;
   padding-bottom: 25px;
-  border-bottom: 1px solid black;
 }
 .objective {
   font-size: 22px;
-  margin-top: 25px;
+  margin-top: 20px;
   padding-bottom: 25px;
 }
 ul {
   font-size: 22px;
   padding-bottom: 25px;
-  border-bottom: 1px solid black;
 }
 .phone {
   font-size: 22px;
-  margin-top: 25px;
+  margin-top: 20px;
+  padding-bottom: 30px;
   width: 150px;
 }
 .vk {
   font-size: 22px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid black;
+  padding-bottom: 10px;
 }
 .feedback {
   font-size: 22px;
