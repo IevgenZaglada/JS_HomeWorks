@@ -1,6 +1,6 @@
 #wrapper{
-  margin-right: 550px;
-  margin-left: 550px;
+  width: 1000px;
+  margin: auto;
   margin-bottom: 100px;
   border: 1px solid black;
 }
