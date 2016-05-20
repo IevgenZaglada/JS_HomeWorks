@@ -53,6 +53,8 @@ a.menu:hover{
   float: left;
   color: white;
   background-color: #333333;
+  border-left: 1px solid #838383;
+  border-right: 1px solid #838383;
   text-decoration: none;
   background-image: url("../img/menu_hover.png");
 }
@@ -103,6 +105,7 @@ div.lorem{
 .footer{
   background-image: url("../img/footer.png");
   height: 40px;
+  width: 966px;
   margin-top: 400px;
   margin-left: 50px;
   margin-right: 50px;
@@ -113,11 +116,14 @@ div.lorem{
   display: inline-block;
   float: left;
   height: 24px;
-  width: 100px;
-  margin-left: 50px;
+  width: 72px;
+  margin-left: 72px;
   padding-top: 8px;
   padding-bottom: 8px;
   text-align: center;
+}
+.footer_ul>li:first-child{
+  margin-left: 24px;
 }
 .footer_ul>li>a{
   color: #656363;
@@ -126,7 +132,7 @@ div.lorem{
 }
 .footer_ul>li:last-child{
   float: right;
-  /*margin-right: 10px;*/
+  margin-right: 25px;
   width: 300px;
   color: #656363;
   text-align: center;
