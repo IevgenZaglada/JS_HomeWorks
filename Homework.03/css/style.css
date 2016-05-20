@@ -23,7 +23,7 @@ menu{
   background-image: url("../img/menu.png");
   background-size: cover;
 }
-ul.menu{
+.menu_ul{
   display: inline-block;
   float: left;
 }
@@ -39,15 +39,32 @@ li{
 }
 a.menu{
   display: inline-block;
-  height: 10px;
+  height: 40px;
   width: 100px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
+  line-height: 35px;
+  margin-left: 60px;
+  margin-right: 0px;
   text-decoration: none;
   color: white;
+}
+#main{
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  line-height: 35px;
+}
+#main:hover{
+  color: white;
+  background-color: #333333;
+  border-left: 1px solid #838383;
+  border-right: 1px solid #838383;
+  text-decoration: none;
+  background-image: url("../img/menu_hover.png");
 }
 a.menu:hover{
   float: left;
