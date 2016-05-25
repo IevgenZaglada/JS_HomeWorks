@@ -22,6 +22,55 @@ font-style: normal;
   background-color: #074a87;
 }
 
+.menu_right {
+  float: right;
+  margin-right: 20px;
+  color: #fefefe;
+  font-size: 14px;
+  line-height: 14px;
+  /*list-style: circle;*/
+  /*list-style-image: url('../img/flag.png');*/
+}
+
+.menu_right {
+    list-style-image: url('../img/flag.png');
+}
+
+.menu_left  {
+  float: right;
+  margin-right: 20px;
+  color: #60b5ed;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.menu_left>li {
+  display: inline-block;
+  height: 36px;
+}
+
+.menu_left>li>a {
+  display: block;
+  height: 18px;
+  padding: 9px 10px 9px 13px;
+  text-decoration: none;
+  text-align: center;
+  color: #60b5ed;
+  margin: auto;
+}
+
+.menu_left>li>a:hover {
+  color: #ffffff;
+}
+
+.menu_left>li:hover {
+  background-color: #4eabda;
+}
+
+.menu_right>li{
+  display: inline-block;
+}
+
 .credentials_wrapper {
   margin: 0 auto;
   display: block;
@@ -40,5 +89,37 @@ font-style: normal;
   padding-left: 353px;*/
   height: 613px;
   width: 559px;
-  background-color: rgba(0, 0, 0, 0.5);;
+}
+
+.name {
+  display: block;
+  height: 62px;
+  font-size: 24px;
+  line-height: 62px;
+  text-align: center;
+  background-color:  rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.login_form {
+  margin-top: 2px;
+  padding-top: 36px;
+  padding-right: 142px;
+  padding-left: 142px;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+.fb {
+  /*margin-top: 36px;*/
+
+}
+
+.field {
+  width: 276px;
+  height: 35px;
+  background-color: #100f0f;
+}
+
+.field:hover {
+  background-color: #1b5288;
 }
