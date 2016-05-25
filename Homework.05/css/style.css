@@ -1,29 +1,44 @@
-.box {
-    float: left;
-    margin: 50px;
-    width: 200px;
-    height: 200px;
-    color: #000;
-    text-align: center;
-    line-height: 200px;
-    font-size: 30px;
+@font-face {
+font-family: 'Helvetica Neue Regular';
+src: url('../fonts/helveticaneue-webfont.woff2') format('woff2'),
+     url('../fonts/helveticaneue-webfont.woff') format('woff');
+font-weight: bold;
+font-style: normal;
 }
 
-.innter_box {
-    height: 50px;
-    width: 50px;
-    background-color: #000;
-    margin-top: -20px;
-}
-.rgb {
-    background-color: rgba(255, 0, 255, 0.5);
-}
-
-.hex {
-    background-color: #ffa450;
-    opacity: 0.5;
+.wrapper {
+  margin: 0 auto;
+  width: 1215px;
+  /*height: 1200px;*/
+  background-image: url("../img/background.png");
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
-.hsl {
-    background-color: hsla(0, 33%, 50%, 0.5);
+.menu {
+  margin: 0 auto;
+  height: 36px;
+  width: 1215px;
+  background-color: #074a87;
+}
+
+.credentials_wrapper {
+  margin: 0 auto;
+  display: block;
+  height: 1028px;
+  width: 1215px;
+}
+
+.credentials {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  /*padding-top: 213px;
+  padding-right: 302px;
+  padding-bottom: 202px;
+  padding-left: 353px;*/
+  height: 613px;
+  width: 559px;
+  background-color: rgba(0, 0, 0, 0.5);;
 }
