@@ -1,9 +1,15 @@
 @font-face {
-font-family: 'Helvetica Neue Regular';
-src: url('../fonts/helveticaneue-webfont.woff2') format('woff2'),
-     url('../fonts/helveticaneue-webfont.woff') format('woff');
-font-weight: bold;
-font-style: normal;
+	font-family: 'Helvetica Neue';
+	src: url('../fonts/HelveticaNeueRegular.eot');
+	src: url('../fonts/HelveticaNeueRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueRegular.woff') format('woff'),
+		url('../fonts/HelveticaNeueRegular.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+body {
+  font-family: 'Helvetica Neue'
 }
 
 .wrapper {
@@ -101,6 +107,29 @@ font-style: normal;
   color: #ffffff;
 }
 
+.ou {
+  position: relative;
+  text-align: center;
+}
+
+.ou>span {
+  display: inline-block;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.ou:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background-color: #ccc;
+}
+
 .login_form {
   margin-top: 2px;
   padding-top: 36px;
@@ -109,10 +138,6 @@ font-style: normal;
   background-color:  rgba(0, 0, 0, 0.5);
 }
 
-.fb {
-  /*margin-top: 36px;*/
-
-}
 
 .field {
   width: 276px;
@@ -122,4 +147,13 @@ font-style: normal;
 
 .field:hover {
   background-color: #1b5288;
+}
+
+.cma {
+  margin: 0 auto;
+  background-image: url('../img/cma.png');
+}
+
+.terms {
+    background-color:  rgba(0, 0, 0, 0.5);
 }
