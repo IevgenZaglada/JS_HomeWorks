@@ -118,11 +118,11 @@ section.login>a {
     color: #ffffff;
 }
 
-section>a:first-child {
+section>a.reg:first-child {
     letter-spacing: 0.3px;
 }
 
-section>a:last-child {
+section>a.reg:last-child {
     float: right;
     margin-right: 13px;
     text-decoration: underline;
@@ -427,4 +427,153 @@ aside>span {
     float: left;
     padding: 5px 0 0 1px !important;
     font-size: 14px;
+}
+
+
+/*MAIN*/
+
+main {
+    float: left;
+    display: block;
+    width: 498px;
+    height: 611px;
+    margin-left: 3px;
+    padding: 15px 5px 0 22px;
+    background-color: background: rgba(229, 231, 232, 1);
+    background: -moz-linear-gradient(top, rgba(229, 231, 232, 1) 0%, rgba(147, 167, 176, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(229, 231, 232, 1)), color-stop(100%, rgba(147, 167, 176, 1)));
+    background: -webkit-linear-gradient(top, rgba(229, 231, 232, 1) 0%, rgba(147, 167, 176, 1) 100%);
+    background: -o-linear-gradient(top, rgba(229, 231, 232, 1) 0%, rgba(147, 167, 176, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(229, 231, 232, 1) 0%, rgba(147, 167, 176, 1) 100%);
+    background: linear-gradient(to bottom, rgba(229, 231, 232, 1) 0%, rgba(147, 167, 176, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e5e7e8', endColorstr='#93a7b0', GradientType=0);
+    border-top: 1 px solid #f3f4f4;
+    border-bottom: 1px solid #a1b3bb;
+    border-left: 1px solid #e6eaec;
+    border-right: 1px;
+    font-family: Lucida;
+}
+
+.cash-flow {
+    float: left;
+}
+
+.products {
+    display: block;
+    float: left;
+    padding-bottom: 26px;
+}
+
+.prod-name {
+    text-align: center;
+}
+
+.prod-name>p>a {
+    font-size: 15px;
+    color: #206988;
+    text-decoration: none;
+}
+
+.prod-name>p:last-child {
+    color: #1f2528;
+    font-size: 13px;
+}
+
+.price {
+    display: block;
+    text-align: center;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    color: #114165;
+    text-decoration: none;
+}
+
+.product-2,
+.product-5,
+.product-8 {
+    padding-left: 27px;
+    padding-right: 30px;
+}
+
+.filter {
+    display: block;
+    float: left;
+    padding: 1px 0 0 9px;
+    font-family: Lucida;
+    font-size: 14px;
+    color: #0c3256;
+}
+
+div.brands {
+    display: block;
+    float: left;
+    height: 25px;
+    width: 180px;
+    border: 1px solid #8b979c;
+    border-radius: 25px;
+}
+
+.brands>img {
+    display: block;
+    float: left;
+    padding: 1px 0 0 3px;
+}
+
+.brand-title {
+    display: block;
+    float: left;
+    padding: 6px 0 0  5px;
+}
+
+div.tires {
+    display: block;
+    /*float: left;*/
+    height: 25px;
+    width: 180px;
+    border: 1px solid #8b979c;
+    border-radius: 25px;
+}
+
+
+/*FOOTER*/
+
+.sponsors {
+    padding: 38px 1px 1px 119px;
+}
+
+footer {
+    height: 99px;
+    width: 908px;
+    margin: 20px 0 0 3px;
+    background-color: #213a4d;
+}
+
+.about {
+    display: block;
+    text-align: center;
+    padding-top: 12px;
+    font-family: arial;
+    font-size: 12px;
+    color: #bec6c9;
+    letter-spacing: 0.7px;
+}
+
+.about>a {
+    color: #bec6c9;
+    text-decoration: none;
+}
+
+.about>a:hover {
+    color: #52abcb;
+}
+
+.copyright {
+    display: block;
+    padding-top: 17px;
+    text-align: center;
+    font-size: 10px;
+    color: #7f4740;
+    letter-spacing: 0.4px;
 }
