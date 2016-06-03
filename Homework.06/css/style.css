@@ -317,6 +317,9 @@ aside {
     border-radius: 25px;
     letter-spacing: 1.1px;
     vertical-align: middle;
+    -webkit-box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.28);
+    -moz-box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.28);
+    box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.28);
 }
 
 aside>div {
@@ -513,6 +516,9 @@ div.brands {
     width: 180px;
     border: 1px solid #8b979c;
     border-radius: 25px;
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.28);
+    -moz-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.28);
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.28);
 }
 
 .brands>img {
@@ -524,12 +530,12 @@ div.brands {
 .brand-title {
     display: block;
     float: left;
-    padding: 6px 0 0  5px;
+    padding: 6px 0 0 5px;
 }
 
 div.tires {
     display: block;
-    /*float: left;*/
+    /*float: left; <---------не могу сделать так, чтобы этот элемент был флотом. почему-то он приклеился к верхнему, .brands*/
     height: 25px;
     width: 180px;
     border: 1px solid #8b979c;
