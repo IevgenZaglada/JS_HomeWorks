@@ -8,8 +8,6 @@
 #wrapper {
     width: 910px;
     margin: 0 auto;
-    padding-top: 19px;
-    padding-right: 45px;
     padding-left: 43px;
 }
 
@@ -27,6 +25,10 @@ body {
 
 
 /*HEAD*/
+
+header {
+    padding-top: 19px;
+}
 
 address {
     float: left;
@@ -153,10 +155,6 @@ nav>a>img {
     border: none;
 }
 
-figure>img {
-    padding: 0 0 0 2px;
-}
-
 
 /*MENU*/
 
@@ -165,7 +163,7 @@ menu {
     height: 25px;
     width: 791px;
     padding: 4px 0 8px 127px;
-    margin: 3px 0 0 0;
+    margin: 3px 0 9px 0;
 }
 
 menu>ul {
@@ -260,7 +258,7 @@ menu>ul>li>a:hover {
 /*SEARCH*/
 
 .search-main {
-    padding: 9px 0 0 6px;
+    padding: 0 0 0 6px;
     height: 150px;
     width: 900px;
 }
@@ -317,9 +315,9 @@ aside {
     border-radius: 25px;
     letter-spacing: 1.1px;
     vertical-align: middle;
-    -webkit-box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.28);
-    -moz-box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.28);
-    box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.56);
 }
 
 aside>div {
@@ -331,105 +329,136 @@ aside>div {
 aside>span {
     display: block;
     padding: 7px 0 0 29px;
+    color: #315a7a;
+    letter-spacing: 1.2px;
 }
 
-.catalogue {
-    display: block;
-    font-size: 13px;
-}
-
-#li-choice {
-    display: block;
-    height: 24px;
-    width: 144px;
-    margin: 12px 0 0 3px;
-    padding: 2px 0 0 4px;
+.tire,
+.disk,
+.bolt {
+    display: inline;
+    float: left;
+    height: 26px;
+    width: 148px;
+    margin: 13px 0 0 4px;
     border: 1px solid #79878d;
     border-radius: 25px;
-}
-
-#li-choice>img {
-    display: block;
-    float: left;
-}
-
-#li-choice>span {
-    display: inline-block;
-    float: left;
-    padding: 6px 0 0 1px;
     font-size: 14px;
+    color: #114165;
 }
 
-#i-list-1,
-#i-list-2,
-#i-list-3 {
+.tire>img,
+.disk>img,
+.bolt>img {
     display: block;
-    padding: 5px 0 0 39px;
-    font-size: 13px;
-    letter-spacing: 0;
+    float: left;
+    padding: 1px 0 0 3px;
 }
 
-#i-list {
+.tire>span,
+.disk>span,
+.bolt>span {
     display: block;
-    padding: 13px 0 0 39px;
-    font-size: 13px;
-    letter-spacing: 0;
+    float: left;
+    padding: 8px 0 0 2px;
 }
 
-#links {
+.name {
+    display: block;
+    float: left;
+    padding: 5px 0 0 38px;
+}
+
+.name>li {
+    display: block;
+    float: left;
+}
+
+.name>li>img {
+    display: block;
+    float: left;
+    padding: 4px 0 0 0;
+}
+
+.name>li>a {
+    display: block;
+    float: left;
+    margin: 3px 0 0 3px;
+    font-size: 13px;
     color: #465961;
     text-decoration: none;
 }
 
-#links:hover {
-    font-size: 14px;
+ul>li>a:hover {
+    display: block;
+    float: left;
+    font-family: arial;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
     color: #0c3256;
     text-decoration: underline;
-    font-style: italic;
 }
 
-#li-choice-2 {
-    display: block;
-    height: 24px;
-    width: 144px;
-    margin: 4px 0 0 3px;
-    padding: 2px 0 0 4px;
-    border: 1px solid #79878d;
-    border-radius: 25px;
+.name>li:nth-child(2) {
+    padding: 8px 0 0 0;
 }
 
-#li-choice-2>img {
-    display: block;
-    float: left;
+.name>li:nth-child(2)>img {
+    padding: 5px 0 0 0;
 }
 
-#span-disk {
-    display: inline-block;
-    float: left;
-    padding: 5px 0 0 1px;
-    font-size: 14px;
+.name>li:nth-child(3) {
+    padding: 11px 0 0 0;
 }
 
-#li-choice-3 {
-    display: block;
-    height: 24px;
-    width: 144px;
-    margin: 4px 0 0 3px;
-    padding: 2px 0 0 4px;
-    border: 1px solid #79878d;
-    border-radius: 25px;
+.name>li:nth-child(4) {
+    padding: 11px 0 0 0;
 }
 
-#li-choice-3>img {
-    display: block;
-    float: left;
+.disk {
+    margin: 3px 0 0 4px;
 }
 
-#li-choice-3>span {
-    display: inline-block;
-    float: left;
-    padding: 5px 0 0 1px !important;
-    font-size: 14px;
+.disk>span {
+    padding: 7px 0 0 2px;
+}
+
+.disk+ul.name {
+    padding: 3.5px 0 0 37.7px;
+}
+
+.disk+ul.name>li>img {
+    padding: 6px 0 0 0;
+}
+
+.disk+ul.name>li:nth-child(2)>a {
+    padding: 2.6px 0 0 0;
+}
+
+.disk+ul.name>li:nth-child(3) {
+    padding: 8px 0 0 1px;
+}
+
+.disk+ul.name>li:nth-child(3)>a {
+    padding: 3.1px 0 0 2px;
+    margin: 1px 0 0 0;
+}
+
+.disk+ul.name>li:nth-child(4) {
+    padding: 10px 0 0 0;
+}
+
+.bolt {
+    margin: 4px 0 0 4px;
+}
+
+.bolt+ul.name>li:nth-child(4) {
+    padding: 9px 0 0 0;
+}
+
+.bolt+ul.name>li:nth-child(4)>img {
+    padding: 7px 0 0 0;
 }
 
 
@@ -500,9 +529,12 @@ main {
     padding-right: 30px;
 }
 
+
+/*CHECKBOX FILTER*/
+
 .filter {
     display: block;
-    float: left;
+    float: right;
     padding: 1px 0 0 9px;
     font-family: Lucida;
     font-size: 14px;
@@ -510,15 +542,13 @@ main {
 }
 
 div.brands {
-    display: block;
-    float: left;
     height: 25px;
     width: 180px;
     border: 1px solid #8b979c;
     border-radius: 25px;
-    -webkit-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.28);
-    -moz-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.28);
-    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.56);
 }
 
 .brands>img {
@@ -531,15 +561,143 @@ div.brands {
     display: block;
     float: left;
     padding: 6px 0 0 5px;
+    color: #3d5b78;
 }
 
 div.tires {
-    display: block;
-    /*float: left; <---------не могу сделать так, чтобы этот элемент был флотом. почему-то он приклеился к верхнему, .brands*/
     height: 25px;
-    width: 180px;
+    width: 136px;
+    margin: 16px 0 0 14px;
     border: 1px solid #8b979c;
-    border-radius: 25px;
+    border-radius: 15px;
+}
+
+div.tires>img {
+    display: block;
+    float: left;
+    padding: 0 0 0 5px;
+}
+
+div.tires>span {
+    display: block;
+    float: left;
+    padding: 6px 0 0 3px;
+    color: #3d5b78;
+}
+
+div.checkbox {
+    display: block;
+    float: left;
+    width: 120px;
+    padding: 6px 0 0 22px;
+}
+
+input[type='checkbox'] {
+    display: inline-block;
+    float: left;
+    height: 15px;
+    width: 10px;
+}
+
+.span {
+    display: inline-block;
+    float: right;
+    font-family: Lucida;
+    font-size: 13px;
+    color: #465961;
+}
+
+.checkbox-1>.span {
+    padding: 3px 41px 0 0;
+}
+
+.checkbox-2 {
+    margin: 5px 0 0 0;
+}
+
+.checkbox-2>.span {
+    padding: 2px 42px 0 0;
+}
+
+.checkbox-3 {
+    margin: 3px 0 0 0;
+}
+
+.checkbox-3>.span {
+    padding: 3px 42px 0 0;
+}
+
+div.disks {
+    display: block;
+    float: left;
+    height: 26px;
+    width: 136px;
+    margin: 10px 0 0 24px;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+}
+
+div.disks>img {
+    display: block;
+    float: left;
+    padding: 0 0 0 3px;
+}
+
+div.disks>span {
+    display: block;
+    float: left;
+    padding: 6px 0 0 4px;
+    letter-spacing: -1px;
+    color: #3d5b78;
+}
+
+div.disks+div.checkbox {
+    margin: 0 0 0 11px;
+}
+
+div.disks+div.checkbox>div.checkbox-1>p.span {
+    padding: 5px 43px 0 0;
+}
+
+div.disks+div.checkbox>div.checkbox-2>p.span {
+    padding: 4px 43px 0 0;
+}
+
+div.disks+div.checkbox>div.checkbox-3 {
+    padding: 2px 0 0 0;
+}
+
+div.disks+div.checkbox>div.checkbox-3>p.span {
+    padding: 3px 43px 0 0;
+}
+
+input.filter-submit {
+    display: block;
+    float: left;
+    margin: 15px 0 0 33px;
+    height: 25px;
+    width: 83px;
+    background: rgba(31, 104, 135, 1);
+    background: -moz-linear-gradient(top, rgba(31, 104, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(31, 104, 135, 1)), color-stop(100%, rgba(12, 51, 87, 1)));
+    background: -webkit-linear-gradient(top, rgba(31, 104, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
+    background: -o-linear-gradient(top, rgba(31, 104, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(31, 104, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
+    background: linear-gradient(to bottom, rgba(31, 104, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1f6887', endColorstr='#0c3357', GradientType=0);
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(190, 192, 193, 1);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(190, 192, 193, 1);
+    box-shadow: 1px 1px 5px 1px rgba(190, 192, 193, 1);
+    font-family: arial;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.input[value="ВЫБРАТЬ"] {
+    display: block;
+    padding: 0 0 0 0;
+    letter-spacing: 0.8px;
 }
 
 
@@ -559,11 +717,11 @@ footer {
 .about {
     display: block;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 13px;
     font-family: arial;
     font-size: 12px;
     color: #bec6c9;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.6px;
 }
 
 .about>a {
