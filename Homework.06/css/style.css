@@ -46,9 +46,12 @@ address {
 address>span {
     position: relative;
     display: inline-block;
-    padding-top: 1px;
+    font-family: arial;
+    font-size: 18px;
+    line-height: 25.46px;
     margin: 0px 0 0 3px;
     letter-spacing: 0.55px;
+    margin: -1px 0 0 3px;
 }
 
 .login {
@@ -330,7 +333,7 @@ aside>span {
     display: block;
     padding: 7px 0 0 29px;
     color: #315a7a;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.4px;
 }
 
 .tire,
@@ -406,13 +409,12 @@ ul>li>a:hover {
 }
 
 .name>li:nth-child(2)>img {
-    padding: 10px 0 0 0;
+    padding: 9px 0 0 0;
 }
 
 .name>li:nth-child(2)>a {
     padding: 7.1px 0 0 0;
 }
-
 
 .name>li:nth-child(3) {
     padding: 12px 0 0 0;
@@ -430,7 +432,6 @@ ul>li>a:hover {
     padding: 2px 0 0 0;
 }
 
-
 .disk {
     margin: 3px 0 0 4px;
 }
@@ -444,7 +445,7 @@ ul>li>a:hover {
 }
 
 .disk+ul.name>li>img {
-    padding: 6px 0 0 0;
+    padding: 6px 0 0 1px;
 }
 
 .disk+ul.name>li:nth-child(2)>a {
@@ -464,20 +465,36 @@ ul>li>a:hover {
     padding: 10px 0 0 0;
 }
 
-.disk_a_1 {
-  padding: 2px 0 0 0;
+#disk_a_1 {
+    padding: 2px 0 0 0;
 }
 
-.disk_a_2 {
-  padding: 2px 0 0 0;
+#disk_a_2 {
+    padding: 4px 0 0 0;
 }
 
-.disk_a_3 {
-  padding: 2px 0 0 0;
+#disk_a_3 {
+    padding: 4px 0 0 3px;
 }
 
-.disk_a_4 {
-  padding: 2px 0 0 0;
+#disk_a_4 {
+    padding: 4px 0 0 0;
+}
+
+#disk_li_1 {
+    padding: 0 0 0 0;
+}
+
+#disk_li_2 {
+    padding: 9px 0 0 0;
+}
+
+#disk_li_3 {
+    padding: 9px 0 0 0;
+}
+
+#disk_li_4 {
+    padding: 8px 0 0 0;
 }
 
 .bolt {
@@ -490,6 +507,38 @@ ul>li>a:hover {
 
 .bolt+ul.name>li:nth-child(4)>img {
     padding: 7px 0 0 0;
+}
+
+#bolt_li_1 {
+    padding: 0 0 0 0;
+}
+
+#bolt_li_2 {
+    padding: 7px 0 0 0;
+}
+
+#bolt_li_3 {
+    padding: 12px 0 0 0;
+}
+
+#bolt_li_4 {
+    padding: 9px 0 0 0;
+}
+
+#bolt_a_1 {
+    padding: 1px 0 0 0;
+}
+
+#bolt_a_2 {
+    padding: 5px 0 0 0;
+}
+
+#bolt_a_3 {
+    padding: 1px 0 0 0;
+}
+
+#bolt_a_4 {
+    padding: 3px 0 0 0;
 }
 
 
@@ -524,7 +573,7 @@ main {
 .products {
     display: block;
     float: left;
-    padding-bottom: 26px;
+    padding-bottom: 24px;
 }
 
 .prod-name {
@@ -532,19 +581,21 @@ main {
 }
 
 .prod-name>p>a {
-    font-size: 15px;
+    font-family: Lucida;
+    font-size: 14.59px;
     color: #206988;
     text-decoration: none;
 }
 
 .prod-name>p:last-child {
+    font-family: lucida;
     color: #1f2528;
-    font-size: 13px;
+    font-size: 12.77px;
 }
 
 .price {
     display: block;
-    text-align: center;
+    /*text-align: center;*/
     font-family: arial;
     font-size: 16px;
     font-weight: bold;
@@ -553,11 +604,144 @@ main {
     text-decoration: none;
 }
 
+#grn {
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 0 0 6px;
+}
+
 .product-2,
 .product-5,
 .product-8 {
     padding-left: 27px;
     padding-right: 30px;
+}
+
+.product-1>.prod-name>p>a {
+    margin: 0 0 0 -3px;
+}
+
+.product-1>section>.price {
+    margin: 1px 0 0 39px;
+}
+
+.product-2>.prod-name>p>a {
+    margin: 0 0 0 4px;
+    letter-spacing: 0.4px;
+}
+
+.product-2>.prod-name>p:last-child {
+    margin: 0 0 0 6px;
+}
+
+.product-2>section>.price {
+    margin: 0 0 0 35px;
+    letter-spacing: 0.5px;
+}
+
+.product-3>.prod-name>p>a {
+    margin: 0 0 0 4px;
+    letter-spacing: 0.4px;
+}
+
+.product-3>section>.price {
+    margin: 0 0 0 34px;
+    letter-spacing: 0.4px;
+}
+
+.product-4>.prod-name>p>a {
+    display: block;
+    margin: 2px 0 0 -3px;
+    letter-spacing: 0.6px;
+}
+
+.product-4>section>.price {
+    margin: 1px 0 0 38px;
+    letter-spacing: 0.2px;
+}
+
+.product-5>.prod-name>p>a {
+    margin: 0 0 0 4px;
+    letter-spacing: 0.4px;
+}
+
+.product-5>.prod-name>p:last-child {
+    margin: 0 0 0 4px;
+}
+
+.product-5>section>.price {
+    margin: 1px 0 0 34px;
+    letter-spacing: 0.5px;
+}
+
+.product-6>.prod-name>p>a {
+    margin: 0 0 0 4px;
+    letter-spacing: 0.4px;
+}
+
+.product-6>.prod-name>p:last-child {
+    margin: 0 0 0 -1px;
+}
+
+.product-6>section>.price {
+    margin: 1px 0 0 34px;
+    letter-spacing: 0.5px;
+}
+
+.product-7>.prod-name>p>a {
+    display: block;
+    padding: 2px 0 0 2px;
+    margin: 0 0 0 -6px;
+    letter-spacing: 0.4px;
+}
+
+.product-7>a>img {
+    padding: 3px 0 0 0;
+}
+
+.product-7>section>.price {
+    margin: 1px 0 0 37px;
+    letter-spacing: 0.5px;
+}
+
+.product-8>.prod-name>p>a {
+    display: block;
+    padding: 2px 0 0 2px;
+    margin: 1px 0 0 3px;
+    letter-spacing: 0.4px;
+}
+
+.product-8>.prod-name>p:last-child {
+    margin: 0 0 0 5px;
+}
+
+.product-8>a>img {
+    padding: 2px 0 0 0;
+}
+
+.product-8>section>.price {
+    margin: 1px 0 0 34px;
+    letter-spacing: 0.5px;
+}
+
+.product-9>.prod-name>p>a {
+    display: block;
+    padding: 2px 0 0 1px;
+    margin: 1px 0 0 3px;
+    letter-spacing: 0.4px;
+}
+
+.product-9>.prod-name>p:last-child {
+    margin: 1 0 0 -2px;
+}
+
+.product-9>a>img {
+    padding: 1px 0 0 0;
+}
+
+.product-9>section>.price {
+    margin: 1px 0 0 34px;
+    letter-spacing: 0.5px;
 }
 
 
@@ -598,7 +782,7 @@ div.brands {
 div.tires {
     height: 25px;
     width: 136px;
-    margin: 16px 0 0 14px;
+    margin: 15px 0 0 14px;
     border: 1px solid #8b979c;
     border-radius: 15px;
 }
@@ -620,7 +804,7 @@ div.checkbox {
     display: block;
     float: left;
     width: 120px;
-    padding: 6px 0 0 22px;
+    padding: 6px 0 0 23px;
 }
 
 input[type='checkbox'] {
@@ -639,7 +823,7 @@ input[type='checkbox'] {
 }
 
 .checkbox-1>.span {
-    padding: 3px 41px 0 0;
+    padding: 2px 42px 0 0;
 }
 
 .checkbox-2 {
@@ -655,7 +839,7 @@ input[type='checkbox'] {
 }
 
 .checkbox-3>.span {
-    padding: 3px 42px 0 0;
+    padding: 2px 42px 0 0;
 }
 
 div.disks {
@@ -677,21 +861,22 @@ div.disks>img {
 div.disks>span {
     display: block;
     float: left;
+    font-family: Lucida;
+    font-size: 14px;
     padding: 6px 0 0 4px;
-    letter-spacing: -1px;
     color: #3d5b78;
 }
 
 div.disks+div.checkbox {
-    margin: 0 0 0 11px;
+    margin: 0 0 0 10px;
 }
 
 div.disks+div.checkbox>div.checkbox-1>p.span {
-    padding: 5px 43px 0 0;
+    padding: 4px 43px 0 0;
 }
 
 div.disks+div.checkbox>div.checkbox-2>p.span {
-    padding: 4px 43px 0 0;
+    padding: 3px 43px 0 0;
 }
 
 div.disks+div.checkbox>div.checkbox-3 {
@@ -699,13 +884,14 @@ div.disks+div.checkbox>div.checkbox-3 {
 }
 
 div.disks+div.checkbox>div.checkbox-3>p.span {
-    padding: 3px 43px 0 0;
+    padding: 1 px 43px 0 0;
 }
 
 input.filter-submit {
     display: block;
     float: left;
     margin: 15px 0 0 33px;
+    padding: 0 0 3px 0;
     height: 25px;
     width: 83px;
     background: rgba(31, 104, 135, 1);
@@ -747,12 +933,27 @@ footer {
 
 .about {
     display: block;
-    text-align: center;
-    padding-top: 13px;
+    padding-top: 11px;
+    line-height: 16.37px;
     font-family: arial;
     font-size: 12px;
     color: #bec6c9;
-    letter-spacing: 0.6px;
+}
+
+#first {
+    display: inline-block;
+    padding: 0px 0 0 309px;
+    letter-spacing: 0.2px;
+}
+
+#second {
+    display: inline-block;
+    padding: 0 0 0 3px;
+}
+
+#fourth {
+    display: inline-block;
+    padding: 0 0 0 2px;
 }
 
 .about>a {
@@ -766,9 +967,10 @@ footer {
 
 .copyright {
     display: block;
-    padding-top: 17px;
+    padding-top: 14px;
+    font-family: arial;
     text-align: center;
     font-size: 10px;
     color: #7f4740;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.43px;
 }

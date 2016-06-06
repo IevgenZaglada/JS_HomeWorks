@@ -102,10 +102,10 @@
                 </span>
                 </p>
                 <ul class="name">
-                    <li><img src="img/li-dot.png" alt=""><a class="disk_a_1" href="#">Наименование 1</a></li>
-                    <li><img src="img/li-dot.png" alt=""><a class="disk_a_2" href="#">Наименование 2</a></li>
-                    <li><img src="img/li-dot.png" alt=""><a class="disk_a_3" href="#">Наименование 3</a></li>
-                    <li><img src="img/li-dot.png" alt=""><a class="disk_a_4" href="#">Наименование 4</a></li>
+                    <li id="disk_li_1"><img src="img/li-dot.png" alt=""><a id="disk_a_1" href="#">Наименование 1</a></li>
+                    <li id="disk_li_2"><img src="img/li-dot.png" alt=""><a id="disk_a_2" href="#">Наименование 2</a></li>
+                    <li id="disk_li_3"><img src="img/li-dot.png" alt=""><a id="disk_a_3" href="#">Наименование 3</a></li>
+                    <li id="disk_li_4"><img src="img/li-dot.png" alt=""><a id="disk_a_4" href="#">Наименование 4</a></li>
                 </ul>
                 <p class="bolt">
                     <img src="img/pla.png" alt="" />
@@ -115,10 +115,10 @@
                 </span>
                 </p>
                 <ul class="name">
-                    <li><img src="img/li-dot.png" alt=""><a href="#">Наименование 1</a></li>
-                    <li><img src="img/li-dot.png" alt=""><a href="#">Наименование 2</a></li>
-                    <li><img src="img/li-dot.png" alt=""><a href="#">Наименование 3</a></li>
-                    <li><img src="img/li-dot.png" alt=""><a href="#">Наименование 4</a></li>
+                    <li id="bolt_li_1"><img src="img/li-dot.png" alt=""><a id="bolt_a_1"href="#">Наименование 1</a></li>
+                    <li id="bolt_li_2"><img src="img/li-dot.png" alt=""><a id="bolt_a_2"href="#">Наименование 2</a></li>
+                    <li id="bolt_li_3"><img src="img/li-dot.png" alt=""><a id="bolt_a_3"href="#">Наименование 3</a></li>
+                    <li id="bolt_li_4"><img src="img/li-dot.png" alt=""><a id="bolt_a_4"href="#">Наименование 4</a></li>
                 </ul>
             </section>
             <main>
@@ -130,7 +130,7 @@
                         </section>
                         <a href="#"><img src="img/prod.png" alt=""></a>
                         <section>
-                            <a class="price" href="#">90.00 грн</a>
+                            <a class="price" href="#">90.00<span id="grn">грн</span></a>
                         </section>
                     </section>
                     <section class="products product-2">
@@ -140,7 +140,7 @@
                         </section>
                         <a href="#"><img src="img/nokian.png" alt=""></a>
                         <section>
-                            <a class="price" href="#">115.00 грн</a>
+                            <a class="price" href="#">115.00<span id="grn">грн</span></a>
                         </section>
                     </section>
                     <section class="products product-3">
@@ -150,7 +150,7 @@
                         </section>
                         <a href="#"><img src="img/hankook.png" alt=""></a>
                         <section>
-                            <a class="price" href="#">393.00 грн</a>
+                            <a class="price" href="#">393.00<span id="grn">грн</span></a>
                         </section>
                     </section>
                     <section class="products product-4">
@@ -160,7 +160,7 @@
                         </section>
                         <a href="#"><img src="img/prod.png" alt=""></a>
                         <section>
-                            <a class="price" href="#">90.00 грн</a>
+                            <a class="price" href="#">90.00<span id="grn">грн</span></a>
                         </section>
                     </section>
                     <section class="products product-5">
@@ -170,7 +170,7 @@
                         </section>
                         <a href="#"><img src="img/nokian.png" alt=""></a>
                         <section>
-                            <a class="price" href="#">115.00 грн</a>
+                            <a class="price" href="#">115.00<span id="grn">грн</span></a>
                         </section>
                     </section>
                     <section class="products product-6">
@@ -180,7 +180,7 @@
                         </section>
                         <a href="#"><img src="img/hankook.png" alt=""></a>
                         <section>
-                            <a class="price" href="#">393.00 грн</a>
+                            <a class="price" href="#">393.00<span id="grn">грн</span></a>
                         </section>
                     </section>
                     <section class="products product-7">
@@ -190,7 +190,7 @@
                         </section>
                         <a href="#"><img src="img/prod.png" alt=""></a>
                         <section>
-                            <a class="price" href="#">90.00 грн</a>
+                            <a class="price" href="#">90.00<span id="grn">грн</span></a>
                         </section>
                     </section>
                     <section class="products product-8">
@@ -200,7 +200,7 @@
                         </section>
                         <a href="#"><img src="img/nokian.png" alt=""></a>
                         <section>
-                            <a class="price" href="#">115.00 грн</a>
+                            <a class="price" href="#">115.00<span id="grn">грн</span></a>
                         </section>
                     </section>
                     <section class="products product-9">
@@ -210,7 +210,7 @@
                         </section>
                         <a href="#"><img src="img/hankook.png" alt=""></a>
                         <section>
-                            <a class="price" href="#">393.00 грн</a>
+                            <a class="price" href="#">393.00<span id="grn">грн</span></a>
                         </section>
                     </section>
 
@@ -264,7 +264,7 @@
         </div>
         <footer>
             <div class="about">
-                <a href="#">О компании</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Доставка</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Статьи</a>&nbsp;&nbsp;|&nbsp;<a href="#">Контакты</a>
+                <a id="first" href="#">О компании</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a id="second" href="#">Доставка</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a class="third" href="#">Статьи</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a id="fourth" href="#">Контакты</a>
             </div>
             <div class="copyright">
                 Создание сайта © Global Vision
