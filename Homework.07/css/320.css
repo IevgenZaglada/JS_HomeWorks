@@ -1,37 +1,10 @@
-@font-face {
-    font-family: 'League Gothic Regular';
-    src: url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'), url('../fonts/leaguegothic-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans Light';
-    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'), url('../fonts/opensans-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans Extrabold';
-    src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'), url('../fonts/opensans-extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 980px) {
 
 body {
-    background: url(../img/background.png) 0 0 no-repeat;
-    background-position: top center;
+  width: 500px;
 }
-
 
 /*HEADER*/
-
-header {
-    font-family: League Gothic Regular;
-}
 
 .header__logo {
     position: relative;
