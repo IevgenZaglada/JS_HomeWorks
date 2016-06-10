@@ -20,20 +20,279 @@
 }
 
 body {
-    background: url(../img/background.png) 0 0 no-repeat;
-    background-position: top center;
+    background: url(../img/background.png) -15px 0 no-repeat;
+    background-position: top -26px center;
 		font-family: League Gothic Regular;
 }
 
-
 /*MAIN*/
+
+/*HEADER*/
+
+.header__logo {
+    position: relative;
+    display: block;
+    padding: 40px 0 0 0;
+    font-size: 48px;
+    color: #ffffff;
+    text-shadow: 0 2px #a7959c;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.header__logo span {
+    position: absolute;
+    color: #745083;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+}
+
+.header__logo:after {
+    content: 'ER';
+    color: #33263a;
+}
+
+
+/*MENU*/
+
+.menu__ul {
+    display: block;
+    height: 125px;
+    width: 246px;
+    margin: 0 auto;
+    padding: 17px 0 0 0;
+    list-style: none;
+}
+
+menu .menu__list {
+    position: relative;
+    float: left;
+    height: 47px;
+    width: 246px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+menu .menu__dropdownd-list {
+    float: right;
+    height: 41px;
+    width: 243px;
+    border-top: 1px solid #5f486a;
+    border-bottom: 1px solid #36283e;
+    box-sizing: border-box;
+}
+
+
+/*MENU ALIGNMENT*/
+
+.menu__dropdownd-list:nth-child(2),
+.menu__dropdown-link:nth-child(2) {
+    height: 42px;
+}
+
+.menu__dropdownd-list:nth-child(3),
+.menu__dropdown-link:nth-child(3) {
+    height: 42px;
+}
+
+.menu__dropdownd-list:nth-child(4) {
+    height: 44px
+}
+
+.menu__dropdown>.menu__dropdownd-list:nth-child(4)>.menu__dropdown-link:hover {
+    height: 42px;
+}
+
+.menu__dropdown>.menu__dropdownd-list:nth-child(5)>.menu__dropdown-link:hover {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+menu .menu__dropdownd-list:last-child {
+    border-bottom: none;
+}
+
+.menu__align-1 {
+    display: block;
+    margin: 5px 0 0 -1px;
+}
+
+.menu__align-2 {
+    display: block;
+    margin: -2px 0 0 -1px;
+}
+
+.menu__align-3,
+.menu__align-4,
+.menu__align-5 {
+    display: block;
+    margin: -1px 0 0 -1px;
+}
+
+.menu__align-6 {
+    display: block;
+    margin: -4px 0 0 -1px;
+}
+
+
+/*MENU ALIGNMENT - END*/
+
+.line {
+    display: block;
+    position: absolute;
+    width: 47px;
+    margin: 41px 0 0 98px;
+    border-bottom: 2px solid #edbfff;
+}
+
+menu .menu__link,
+.menu__dropdown-link {
+    float: left;
+    height: 41px;
+    width: 246px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+menu .menu__link {
+    color: #fff;
+}
+
+menu .menu__dropdown {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 47px;
+    margin: 0;
+    padding: 0;
+    width: 246px;
+    background-color: rgba(54, 41, 62, 0.9);
+    border: 1px solid #051116;
+    border-top: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+}
+
+menu .menu__dropdown-link {
+    float: left;
+    height: 45px;
+    width: 243px;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.menu__list:hover .menu__dropdown {
+    display: block;
+}
+
+.menu__dropdown-link:hover {
+    float: right;
+    height: 40px;
+    width: 243px;
+    background-color: #241c2a;
+    border-bottom: 2px solid #edbfff;
+    text-shadow: 0 0 2px #fff;
+    box-sizing: border-box;
+}
+
+menu .menu__list:hover {
+    float: right;
+    height: 47px;
+    width: 246px;
+    margin: -1px 0 0 0;
+    background-color: rgba(54, 41, 62, 0.9);
+    border: 1px solid #051116;
+    border-bottom: 1px solid #36283e;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+}
+
+/*NAV (part with iPhone)*/
+
+nav {
+height: 220px;
+}
+
+nav .nav__description {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 78px;
+    text-align: center;
+    text-shadow: 0 2px 3px #625b6a;
+}
+
+nav .nav__h1 {
+    font-size: 36px;
+    color: #fefefe;
+
+}
+
+nav .nav__h2 {
+    font-size: 18px;
+    color: #edbfff;
+}
+
+nav .nav__p {
+    display: none;
+}
+
+nav .nav__iphone {
+    display: none;
+}
+
+nav .nav_buttons {
+    text-align: center;
+}
+
+nav input[type="radio"] {
+    display: none;
+}
+
+nav input[type="radio"]+ label {
+    background: url(../img/nav_button_sprite.png) 0 0 no-repeat;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+}
+
+nav input[type="radio"]:checked+ label {
+    background: url(../img/nav_button_sprite.png) -19px 0 no-repeat;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+}
+
 
 /*MAIN__ABOUT*/
 
 main .main__about {
 	position: relative;
-	display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  justify-content: space-around;
 	height: 599px;
+  padding: 73px 6% 0 6%;
 	border-top: 1px solid #35273c;
 	border-bottom: 1px solid #21333b;
 	box-sizing: border-box;
@@ -49,17 +308,64 @@ color: #fff;
 text-shadow: 1px 1px #000;
 }
 
+main .main__content-justify {
+overflow: hidden;
+height: 80%;
+}
+
+main .main__about-1 {
+  display: block;
+  height: 120px;
+  width: 100%;
+  padding: 0 0 0 11%;
+  overflow: hidden;
+  line-height: 24px;
+}
+
+main .main__about-2 {
+  display: block;
+  height: 120px;
+  width: 100%;
+  padding: 0 0 0 11%;
+  overflow: hidden;
+  line-height: 24px;
+}
+main .main__about-3 {
+  display: block;
+  height: 120px;
+  width: 100%;
+  padding: 0 0 0 11%;
+  overflow: hidden;
+  line-height: 24px;
+}
+
+main .main__img {
+  float: left;
+  width: 22%;
+}
+
+main i.wrench {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background: url('../img/wrench_sprite.png') no-repeat;
+}
+
 main .main__about h3 {
+  float: left;
 	font-size: 30px;
 }
 
 	main .main__about p {
+    float: left;
 		font-family: Open Sans Light;
 		font-size: 16px;
 	}
 
 	main .main__about span {
 font-style: 18px;
+float: right;
+bottom: auto;
 }
 
 main .main__about span:hover {
@@ -69,12 +375,13 @@ text-shadow: 0 0 20px #fff;
 
 
 
+
 /*MAIN__CONTENT*/
 
 main .main__content {
 	display: block;
 	height: 1210px;
-	background: grey;
+	background: #f9f9f9;
 	border-top: 1px solid #12191f;
 	box-sizing: border-box;
 }
