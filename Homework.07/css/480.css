@@ -1,10 +1,95 @@
 @media (min-width: 321px) and (max-width: 480px) {
+    menu {
+        height: 89px;
+    }
+    nav {
+        height: 250px;
+        margin: 0 0 95px 0;
+        z-index: -20000000;
+    }
+    nav .menu__ul {
+        z-index: 10000;
+    }
 
+    nav .nav__description-bg {
+        position: relative;
+        height: 246px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-position: 500px -500px;
+    }
+    nav .nav__description {
+        float: left;
+        padding: 99px 19px 78px 12px;
+        z-index: -1;
 
+    }
+    nav .nav__h1 {
+        padding: 0 0 0 3px;
+        z-index: -1;
 
-.header__logo {
-  display: none;
+    }
+    nav .nav__h2 {
+        padding: 6px 0 0 20px;
+        z-index: -1;
+        
+    }
+    nav .nav__iphone {
+        position: absolute;
+        left: 53.8%;
+        top: -1.5px;
+        right: 25px;
+        margin: -8px 5% 0 0;
+        display: block;
+        float: right;
+        height: 304px;
+        z-index: -1;
+    }
+    nav .nav_buttons {
+        clear: both;
+    }
+    nav .nav_buttons {
+        margin: 22px 0 0 196px;
+    }
+    main .main__about {
+            padding: 70px 4% 72px 6%;
+    }
+    main .main__img {
+        width: 11.2%;
+    }
+
+    main i.wrench {
+    float: left;
+    margin: 11px 0 0 0;
+    }
+
+    main .main__about h3 {
+            margin: 7px 0 0 2px;
+    }
+    main .main__about p {
+            letter-spacing: -0.1px;
+    }
+    main .main__about span {
+            margin: 9px 0px 0 0;
 }
 
+main .main__about-1 {
+    height: 136px;
+}
 
+main .main__about-2 {
+    margin: -4px 0 0 0;
+        height: 139px;
+}
+
+main .main__about-2 span {
+    margin: 10px 0 0 0;
+}
+main .main__about-2 {
+    height: 136px;
+}
+main .main__about-3 {
+    height: 136px;
+
+}
 }
