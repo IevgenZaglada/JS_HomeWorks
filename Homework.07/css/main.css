@@ -126,7 +126,7 @@ menu .menu__dropdownd-list:last-child {
 
 .menu__align-1 {
     display: block;
-    margin: 5px -2px 0 0px;
+    margin: 5px -2px 0 0;
 }
 
 .menu__align-2 {
@@ -138,12 +138,12 @@ menu .menu__dropdownd-list:last-child {
 .menu__align-4,
 .menu__align-5 {
     display: block;
-    margin: -1px 0 0 -1px;
+    margin: 0 -1px 0 -1px;
 }
 
 .menu__align-6 {
     display: block;
-    margin: -4px 0 0 -1px;
+    margin: -2px 1px 0 0;
 }
 
 
@@ -232,6 +232,11 @@ menu .menu__list:hover {
     -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
     box-sizing: border-box;
+}
+
+menu .menu__list:hover .menu__align-1{
+    display: block;
+    margin: 5px 1px 0 0;
 }
 
 
@@ -521,7 +526,7 @@ main input[type="radio"]:checked+ label {
 }
 
 main .main__updates {
-    padding: 48px 3.25% -0px 3.95%;
+    padding: 48px 3.25% 0 3.95%;
     color: #454545;
 }
 
@@ -545,6 +550,10 @@ main .main__updates__container-img {
     width: 47px;
     margin: 0 17px 0 0;
     background: url(../img/updates_sprite.png) 0 0 no-repeat;
+}
+
+main .main__updates__container-p span {
+    display: none;
 }
 
 main .main__updates .main__updates__container:nth-child(3) .main__updates__container-img {
