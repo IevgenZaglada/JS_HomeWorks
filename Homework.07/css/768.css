@@ -1,0 +1,66 @@
+@media (min-width:768px) {
+
+	body
+
+header menu {
+justify-content: space-around;
+}
+
+header .header__logo {
+	text-align: left;
+	padding: 0 0 0 10px;
+}
+
+header .menu__ul {
+	display: none;
+}
+
+header .header__menu768 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+  padding: 24px 2px 0 10px;
+}
+
+header .header__menu768 a{
+	font-size: 24px;
+	line-height: 33px;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 0 2px #5c5a5f;
+}
+
+header nav {
+	margin: 41px 0 304px 0;
+}
+
+header .nav__description-bg {
+height: 400px;
+}
+
+/*MAIN*/
+
+main .main__about {
+	height: 342px;
+}
+
+main .main__content {
+	flex-flow: row nowrap;
+}
+
+main .main__testimonials {
+	    width: 190px;
+}
+
+/*FOOTER*/
+
+footer .footer__categories {
+	flex-flow: row nowrap;
+}
+
+}

@@ -1,4 +1,19 @@
-            @media (min-width: 321px) and (max-width: 480px) {}
+            @media (min-width:475px) {
+              nav .nav__iphone {
+                  display: block;
+                  float: right;
+                  height: 303px;
+                  width: 192px;
+                  left: 53.8%;
+                  top: -1.5px;
+                  right: 25px;
+                  margin: -8px 4.9% 0 0;
+                  background: url(../img/iphone.png) 0 0 no-repeat;
+                  background-size: 191px;
+              }
+            }
+
+            @media (min-width: 321px) {
             /*HEADER */
 
             menu {
@@ -21,7 +36,6 @@
             }
 
             nav .nav__description-bg {
-                /*position: relative;*/
                 height: 246px;
                 display: block;
                 background-color: rgba(0, 0, 0, 0.2);
@@ -39,19 +53,6 @@
 
             nav .nav__h2 {
                 padding: 6px 0 0 20px;
-            }
-
-            nav .nav__iphone {
-                display: block;
-                float: right;
-                height: 303px;
-                width: 192px;
-                left: 53.8%;
-                top: -1.5px;
-                right: 25px;
-                margin: -8px 4.9% 0 0;
-                background: url(../img/iphone.png) 0 0 no-repeat;
-                background-size: 191px;
             }
 
             nav .nav_buttons {
@@ -219,11 +220,18 @@
 
             /*FOOTER*/
 
+            footer {
+              background: #fff url(../img/background_footer.png) 0 0 no-repeat;
+              background-position: top 669px center;
+              height: 900px;
+            }
+
             footer .footer__categories {
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: space-between;
-                padding: 79px 0 100px 11px;
+                height: 489px;
+                padding: 79px 0 100px 10px;
                 background: #ececec;
                 border-top: 1px solid #d8d8d8;
             }
@@ -252,8 +260,35 @@
                 color: #787878;
             }
 
-            footer .footer__categories:nth-child(2) {
-                margin: 0 0 0 0;
+            footer .footer__categories section:nth-child(4) {
+                margin: 0 0 -14px 0;
             }
+
+            footer .footer__menu {
+              display: flex;
+              justify-content: space-around;
+              margin: 40px 0 0 3px;
+            }
+
+            footer .footer__menu li {
+              /*display: inline-block;*/
+            }
+
+            footer .footer__menu-a {
+              display: block;
+              font-size: 20px;
+              line-height: 33px;
+              color: #ffffff;
+              text-decoration: none;
+              text-shadow: 0 2px #5c5a5f;
+            }
+
+            footer .footer__signature {
+                  padding: 19px 0 0 0;
+            }
+
+
+
+
 
         }
