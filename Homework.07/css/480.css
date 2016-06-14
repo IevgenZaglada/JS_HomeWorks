@@ -167,6 +167,10 @@
         display: inline;
     }
 
+    main span.main__updates__container-span-960 {
+      display: none;
+    }
+
     main .main__updates__container-img {
         background: url(../img/updates_sprite.png) 0 -48px no-repeat;
     }
@@ -217,7 +221,7 @@
     footer {
         background: #fff url(../img/background_footer.png) 0 0 no-repeat;
         background-position: top 669px center;
-        height: 900px;
+        height: 872px;
     }
 
     footer .footer__categories {

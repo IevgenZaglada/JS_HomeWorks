@@ -643,6 +643,10 @@ footer .footer__categories {
     display: none;
 }
 
+footer .footer__categories__news-container-span {
+  display: none;
+}
+
 footer .footer__menu {
     display: none;
 }
