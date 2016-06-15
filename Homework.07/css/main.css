@@ -272,6 +272,10 @@ nav .nav__h2 {
     letter-spacing: 0px;
 }
 
+header .nav__h2 span {
+    display: none;
+}
+
 nav .nav__p {
     display: none;
 }
@@ -590,6 +594,10 @@ main .main__updates-more {
     padding: 15px 8px 0 0;
     font-size: 18px;
     line-height: 24px;
+}
+
+main .main__updates-more-960 {
+    display: none;
 }
 
 main .main__trust {
