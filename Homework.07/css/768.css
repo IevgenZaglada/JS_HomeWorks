@@ -1,4 +1,4 @@
-@media (min-width:768px) {
+@media (min-width: 768px) {
 
 
 header menu {
@@ -26,12 +26,53 @@ header .header__menu768 {
     padding: 24px 14.6% 0 1.5%;
 }
 
-header .header__menu768 a{
+header .header__menu768 li {
+    position: relative;
+    height: 30px;
+}
+
+
+header .header__menu768 a {
 	font-size: 24px;
 	line-height: 33px;
 	color: #ffffff;
 	text-decoration: none;
 	text-shadow: 0 2px #5c5a5f;
+}
+
+header .header__menu768 li span {
+    position: absolute;
+    display: block;
+    width: inherit;
+    margin: 0px 0px 0 -4px;
+}
+
+header .header__menu768 li:first-child span {
+    width: 47px;
+}
+
+header .header__menu768 li:nth-child(2) span {
+width: 50px;
+}
+
+header .header__menu768 li:nth-child(3) span {
+width: 44px;
+}
+
+header .header__menu768 li:nth-child(4) span {
+width: 80px;
+}
+
+header .header__menu768 li:nth-child(5) span {
+width: 100px;
+}
+
+header .header__menu768 li:nth-child(6) span {
+width: 115px;
+}
+
+header .header__menu768 li:hover span {
+    border-bottom: 2px solid #edbfff;
 }
 
 header nav {

@@ -1,15 +1,18 @@
-@media (min-width:960px) {
+@media (min-width: 960px) {
 
 /*HEADER*/
 
 header .header__logo {
     float: left;
+    padding: 0 0 0 11.9%;
 }
 
 header menu {
   display: block;
   float: right;
-  padding: 0 0 120px 0;
+  margin: 3px 12.3% 0 0;
+  padding: 0 0 122px 0;
+  width: 50%;
 }
 
 header .header__menu768 {
@@ -18,7 +21,7 @@ header .header__menu768 {
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 0;
-  width: 650px;
+  /*width: inherit;*/
 }
 
 header .header__menu768 li {
