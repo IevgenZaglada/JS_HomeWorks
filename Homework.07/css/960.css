@@ -78,7 +78,7 @@ header .nav__description-bg {
 }
 
 header .nav__iphone {
-    margin: -17px 5.9% 0 0;
+    margin: -17px 5.7% 0 0;
 }
 
 header .nav_buttons {
@@ -168,14 +168,17 @@ main .main__testimonials-h1, main .main__testimonials-h2 {
 
 main .main__updates__container-img {
       background: url(../img/updates_sprite.png) 0 -143px no-repeat;
+      margin: 0px 17px 0px 2px;
 }
 
 main .main__updates .main__updates__container:nth-child(3) .main__updates__container-img {
       background: url(../img/updates_sprite.png) -48px -143px no-repeat;
+      margin: 0 18px 0 1px;
 }
 
 main .main__updates .main__updates__container:nth-child(4) .main__updates__container-img {
   background: url(../img/updates_sprite.png) -96px -143px no-repeat;
+  margin: 0px 18px 0 3px;
 }
 
 main span.main__updates__container-span-960 {
@@ -195,7 +198,7 @@ main .main__testimonials {
 
 main .main__testimonials-container {
     width: 429px;
-    padding: 33px 0 0 39px;
+    padding: 32px 0 0 39px;
 }
 
 main .main__testimonials-portrait {
@@ -204,8 +207,7 @@ main .main__testimonials-portrait {
 
 main .main__testimonials-p {
     height: 166px;
-    padding: 10px 0 0 0;
-    letter-spacing: 0.47px;
+    padding: 11px 34px 0 0;
 }
 
 main .main__testimonials-p span {
@@ -214,9 +216,13 @@ main .main__testimonials-p span {
 
 /*UPDATES*/
 
+main .main__updates {
+  padding: 32px 0 0 0;
+}
+
 main .main__updates-h1 {
     display: block;
-    margin: 0 0 0 7px;
+    margin: 0 0 0 8px;
 }
 
 main .main__updates__container {
@@ -225,7 +231,7 @@ main .main__updates__container {
 
 main .main__updates__container-p:nth-child(2) {
     display: block;
-    margin: 0 0 0 0;
+    margin: 19px 0 0 0;
 }
 
 main .main__updates__container-p:nth-child(3) {
@@ -238,7 +244,11 @@ main .main__updates .main__updates__container:nth-child(3) {
 }
 
 main .main__updates .main__updates__container:nth-child(4) {
-    margin: 16px 0 0 8px;
+    margin: -3px 0 0 7px;
+}
+
+main .main__updates .main__updates__container:nth-child(4) .main__updates__container-p:nth-child(3) {
+  width: 445px;
 }
 
 main .main__updates-more span{
@@ -247,9 +257,17 @@ main .main__updates-more span{
 
 main span.main__updates-more-960 {
     display: block;
-    margin: 3px -15px 0 2px;
+    margin: 2px -17px 0 2px;
 }
 
+main .main__testimonials-input {
+    padding: 23px 0 0 197px;
+}
+
+main .main__trust {
+    height: 95px;
+    padding: 9px 8% 14px 10%;
+}
 
 /*FOOTER*/
 
@@ -258,31 +276,45 @@ footer .footer__copy {
   width: 213px;
 }
 
+footer .footer__copy-n {
+  display: none;
+}
+
 footer .footer__copy-logo {
+  margin: -1px 0 0 -1px;
   font-size: 48px;
   line-height: 33.72px;
   color: #454545;
-}
+  }
 
 footer .footer__copy-logo span {
   color: #b9b9b9;
 }
 
 footer .footer__copy__copy {
-  font-family: Georgia;
+  display: block;
+    margin: 17px 0 0 0px;
+    font-family: Georgia;
   font-style: italic;
   font-size: 16px;
   line-height: 24px;
   color: #c5c5c5;
+  letter-spacing: -0.1px;
 }
 
 footer .footer__copy__p {
-  height: 200px;
+  height: 126px;
+  width: 282px;
+  padding: 7px 0 0 0;
   font-family: Open Sans Light;
   font-size: 16px;
   line-height: 24px;
   color: #787878;
   overflow: hidden;
+}
+
+footer .footer__categories {
+    padding: 102px 0 100px 0;
 }
 
 footer .footer__categories__news-container-span {
@@ -301,6 +333,16 @@ footer .footer__categories__news-contaier:last-child {
   display: none;
 }
 
+footer .footer__menu {
+  float: left;
+  width: 56%;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
 
+footer .footer__signature {
+  float: right;
+  padding: 25px 0 0 0;
+}
 
 }
