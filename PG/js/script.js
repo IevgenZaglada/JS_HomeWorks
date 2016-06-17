@@ -1,35 +1,110 @@
-// Number
+var a = 4;
+var b = 9;
 
-var myNumber = 5;
-var mySecondNumber = 5.666;
+var result;
 
-// String
+result = +a + b;
+result++; //increment
+result++;
+result++;
+result--; //decrement
 
-var str = 'some text';
 
-// Boolean
+alert (result);
+alert (result++);
+alert (result);
+alert (--result);
 
-var flag = true;
-var flag2 = false;
+result += 5;
+alert (result);
+result *= 5;
+alert (result);
 
-// null
+alert(a => b);
+alert(a == b);
+alert(a === b);
 
-var nullVar = null;
+// // MASSIVES
+//
+// var arr = [1, true, '3', 4];
+//
+// console.log('arr', arr);
+// console.log('arr[1]', arr[1]);
+//
+//
+// console.log("arr.push('5');");
+// arr.push('5');
+//
+// console.log('arr', arr);
+// console.log('arr.length', arr.length);
+//
+// var removedItem = arr.pop();
+// console.log("arr.pop();");
+//
+// console.log('removedItem', removedItem);
+//
+// arr.unshift('5');
+//
+// arr.shift('1');
+//
+// arr[10] = '10 element';
+// console.log(arr);
 
-// undefined
 
-var notDefinedVar = undefined;
-var someVariable;
 
-var type;
 
-type = typeof (myNumber);
+// CONDITIONAL OPERANDS
 
-alert (type)
+// var user;
+//
+// user = prompt('Enter your name');
+//
+// if (user == 'admin'){
+// 	alert('hello, admin');
+// } else if (user = 'dima'){
+//
+// } else {
+//
+// }
 
-var myNewVariable = 'new variable';
-var my_new_variable = 'new variable';
+// (user == 'admin') ?  alert('hello, admin') : alert('good bye');
 
-var $variable = 5;
 
-var MY_CONST = 100;
+
+// TYPES OF DATA
+
+// // Number
+//
+// var myNumber = 5;
+// var mySecondNumber = 5.666;
+//
+// // String
+//
+// var str = 'some text';
+//
+// // Boolean
+//
+// var flag = true;
+// var flag2 = false;
+//
+// // null
+//
+// var nullVar = null;
+//
+// // undefined
+//
+// var notDefinedVar = undefined;
+// var someVariable;
+//
+// var type;
+//
+// type = typeof (myNumber);
+//
+// alert (type)
+//
+// var myNewVariable = 'new variable';
+// var my_new_variable = 'new variable';
+//
+// var $variable = 5;
+//
+// var MY_CONST = 100;
