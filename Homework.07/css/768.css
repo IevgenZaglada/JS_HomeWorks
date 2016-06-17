@@ -1,28 +1,27 @@
 @media (min-width: 768px) {
 
-
 header menu {
-justify-content: space-around;
+    justify-content: space-around;
 }
 
 header .header__logo {
-	text-align: left;
-	padding: 0 0 0 10px;
+    text-align: left;
+    padding: 0 0 0 10px;
 }
 
 header .menu__ul {
-	display: none;
+    display: none;
 }
 
 header .header__menu768 {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
     padding: 24px 14.6% 0 1.5%;
 }
 
@@ -31,13 +30,12 @@ header .header__menu768 li {
     height: 30px;
 }
 
-
 header .header__menu768 a {
-	font-size: 24px;
-	line-height: 33px;
-	color: #ffffff;
-	text-decoration: none;
-	text-shadow: 0 2px #5c5a5f;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 2px #5c5a5f;
 }
 
 header .header__menu768 li span {
@@ -52,23 +50,23 @@ header .header__menu768 li:first-child span {
 }
 
 header .header__menu768 li:nth-child(2) span {
-width: 50px;
+    width: 50px;
 }
 
 header .header__menu768 li:nth-child(3) span {
-width: 44px;
+    width: 44px;
 }
 
 header .header__menu768 li:nth-child(4) span {
-width: 80px;
+    width: 80px;
 }
 
 header .header__menu768 li:nth-child(5) span {
-width: 100px;
+    width: 100px;
 }
 
 header .header__menu768 li:nth-child(6) span {
-width: 115px;
+    width: 115px;
 }
 
 header .header__menu768 li:hover span {
@@ -76,7 +74,7 @@ header .header__menu768 li:hover span {
 }
 
 header nav {
-	margin: 41px 0 304px 0;
+    margin: 41px 0 304px 0;
 }
 
 header .nav__description {
@@ -120,19 +118,18 @@ header .nav__p span {
     line-height: 24px;
 }
 
-
 header .nav__description-bg {
-height: 400px;
+    height: 400px;
 }
 
 header .nav__iphone {
     display: block;
-float: right;
-height: 423px;
-width: 273px;
-margin: -22px 5.5% 0 0;
-background: url(../img/iphone.png) 0 0 no-repeat;
-background-size: 274px;
+    float: right;
+    height: 423px;
+    width: 273px;
+    margin: -22px 5.5% 0 0;
+    background: url(../img/iphone.png) 0 0 no-repeat;
+    background-size: 274px;
 }
 
 header .nav_buttons {
@@ -141,13 +138,14 @@ header .nav_buttons {
     padding: 14px 18% 0 0;
 }
 
+
 /*MAIN*/
 
 main .main__about {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-	height: 342px;
+    height: 342px;
     padding: 71px 2% 20px 3%;
 }
 
@@ -219,19 +217,18 @@ main span.main__span-3 {
 
 /*MAIN__ABOUT: ALIGNMENT*/
 
-
 main .main__content {
-	flex-flow: row nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     height: 386px;
     padding: 99px 0 0 10px;
 }
 
 main .main__testimonials {
-	    width: 339px;
-        /*padding: 0 2.45% 0px 4.65%;*/
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
+    width: 339px;
+    /*padding: 0 2.45% 0px 4.65%;*/
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 main .main__testimonials-container {
@@ -263,7 +260,7 @@ main .main__updates {
 }
 
 main .main__updates__container {
-    margin: 18px  0 0 2px;
+    margin: 18px 0 0 2px;
     padding: 0 0 0 0;
 }
 
@@ -273,7 +270,6 @@ main .main__updates__container-img {
 
 main .main__updates .main__updates__container:nth-child(3) .main__updates__container-img {
     background: url(../img/updates_sprite.png) -48px -96px no-repeat;
-
 }
 
 main .main__updates .main__updates__container:nth-child(4) .main__updates__container-img {
@@ -285,7 +281,7 @@ main .main__updates__container-img {
 }
 
 main .main__updates-more {
-        padding: 18px 20px 0 0;
+    padding: 18px 20px 0 0;
 }
 
 main .main__testimonials-input {
@@ -310,7 +306,7 @@ main .main__trust {
     padding: 10px 14px 14px 14px;
 }
 
-main .main__trust img{
+main .main__trust img {
     padding: 0;
     margin: 0;
 }
@@ -331,14 +327,14 @@ main img.main__trust-mark_4 {
 /*FOOTER*/
 
 footer {
-        background-position: top 397px center;
-				height: 597px;
+    background-position: top 397px center;
+    height: 597px;
 }
 
 footer .footer__categories {
-	flex-flow: row nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
-        height: 194px;
+    height: 194px;
     padding: 102px 0 100px 11px;
 }
 
