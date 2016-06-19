@@ -1,0 +1,375 @@
+@media (min-width: 960px) {
+
+
+/*HEADER*/
+
+header .header__logo {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+header menu {
+    display: block;
+    float: right;
+    margin: 3px -15px 0 0;
+    padding: 0 0 120px 0;
+    width: 66.9%;
+}
+
+header .header__menu768 {
+    display: flex;
+    float: right;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+header .header__menu768 li {
+    display: inline-block;
+}
+
+header nav {
+    clear: both;
+    margin: 41px 0 318px 0;
+}
+
+header .nav__description {
+    padding: 90px 0 0 0;
+}
+
+header .nav__h1 {
+    font-size: 60px;
+    line-height: 36px;
+}
+
+header .nav__h2 {
+    padding: 10px 0 0 0;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+header .nav__h2 span {
+    display: inline;
+}
+
+header .nav__p {
+    height: 152px;
+    width: 528px;
+    margin: 3px 0 0 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+header .nav__p span {
+    float: none;4
+    margin: 0;
+    line-height: 24px;
+}
+
+header .nav__p::first-line {
+    /*line-height: 30px;*/
+}
+
+header .nav__description-bg {
+    margin: 0 0 0 0;
+}
+
+header .nav__iphone {
+    margin: -17px 5.7% 0 0;
+}
+
+header .nav_buttons {
+    margin: 74px -20px 0 196px;
+}
+
+
+/*MAIN*/
+
+main .main__about {
+    padding: 75px 3% 20px 1.3%;
+}
+
+main .main__about h3 {
+    margin: 6px 0 0 2px;
+    font-size: 30px;
+    line-height: 24px;
+}
+
+main .main__about section {
+    width: 277px;
+}
+
+main section section.main__content-justify {
+    width: 229px;
+}
+
+main .main__about p {
+    display: block;
+    height: 120px;
+    width: 227px;
+    margin: 9px 0 0 1px;
+    overflow: hidden;
+}
+
+main section .main__span-1 {
+    margin: -2px 10px 0 0;
+}
+
+main .main__about-2 {
+    margin: 1px -26px 0 0;
+}
+
+main .main__about .main__h1-2 {
+    margin: 5px 0 0 3px;
+}
+
+main section .main__span-2 {
+    margin: -3px 5px 0 0;
+}
+
+main .main__about-3 {
+    margin: -2px -22px 0 0;
+}
+
+main .main__about-3 .main__p-3 {
+    margin: 10px 0 0 1px;
+}
+
+main .main__about-3 section.main__content-justify {
+    width: 200px;
+}
+
+main span.main__span-3 {
+    margin: -1px -21px 0 0;
+}
+
+main .main__about-2 i.wrench {
+    display: block;
+    width: 27px;
+    margin: 12px 0 0 0;
+    background: url(../img/wrench_sprite.png) top 0 right -27px no-repeat;
+}
+
+main .main__about-3 i.wrench {
+    display: block;
+    margin: 13px 0px 0px 27px;
+    background: url(../img/wrench_sprite.png) top 0 right -2px no-repeat;
+}
+
+main .main__testimonials-h1,
+main .main__testimonials-h2 {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 24px;
+}
+
+main .main__updates__container-img {
+    background: url(../img/updates_sprite.png) 0 -143px no-repeat;
+    margin: 0px 17px 0px 2px;
+}
+
+main .main__updates .main__updates__container:nth-child(3) .main__updates__container-img {
+    background: url(../img/updates_sprite.png) -48px -143px no-repeat;
+    margin: 0 18px 0 1px;
+}
+
+main .main__updates .main__updates__container:nth-child(4) .main__updates__container-img {
+    background: url(../img/updates_sprite.png) -96px -143px no-repeat;
+    margin: 0px 18px 0 3px;
+}
+
+main span.main__updates__container-span-960 {
+    display: inline;
+}
+
+
+/*TESTI*/
+
+main .main__content {
+    padding: 98px 0 0 0;
+}
+
+main .main__testimonials {
+    width: 453px;
+}
+
+main .main__testimonials-container {
+    width: 429px;
+    padding: 32px 0 0 39px;
+}
+
+main .main__testimonials-portrait {
+    background: url(../img/testimonial_portrait.png) 1px 18px no-repeat;
+}
+
+main .main__testimonials-p {
+    height: 166px;
+    padding: 11px 34px 0 0;
+}
+
+main .main__testimonials-p span {
+    display: none;
+}
+
+
+/*UPDATES*/
+
+main .main__updates {
+    padding: 32px 0 0 0;
+}
+
+main .main__updates-h1 {
+    display: block;
+    margin: 0 0 0 8px;
+}
+
+main .main__updates__container {
+    margin: 17px 0 0 8px;
+}
+
+main .main__updates__container-p:nth-child(2) {
+    display: block;
+    margin: 19px 0 0 0;
+}
+
+main .main__updates__container-p:nth-child(3) {
+    display: block;
+    margin: 0 0 0 0;
+}
+
+main .main__updates .main__updates__container:nth-child(3) {
+    margin: 19px 0 0 9px;
+}
+
+main .main__updates .main__updates__container:nth-child(4) {
+    margin: -3px 0 0 7px;
+}
+
+main .main__updates .main__updates__container:nth-child(4) .main__updates__container-p:nth-child(3) {
+    width: 445px;
+}
+
+main .main__updates-more span {
+    display: none;
+}
+
+main span.main__updates-more-960 {
+    display: block;
+    margin: 2px -15px 0 2px;
+}
+
+main .main__testimonials-input {
+    padding: 23px 0 0 197px;
+}
+
+main .main__trust {
+    height: 95px;
+    padding: 9px 8% 14px 10%;
+}
+
+
+/*FOOTER*/
+
+footer .footer__copy {
+    display: block;
+    width: 213px;
+}
+
+footer .footer__copy-n {
+    display: none;
+}
+
+footer .footer__copy-logo {
+    margin: 2px 0 0 -1px;
+    font-size: 48px;
+    line-height: 33.72px;
+    color: #454545;
+}
+
+footer .footer__copy-logo span {
+    color: #b9b9b9;
+}
+
+footer .footer__copy__copy {
+    display: block;
+    margin: 17px 0 0 0px;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    color: #c5c5c5;
+    letter-spacing: -0.1px;
+}
+
+footer .footer__copy__p {
+    height: 126px;
+    width: 282px;
+    padding: 7px 0 0 0;
+    font-family: Open Sans Light;
+    font-size: 16px;
+    line-height: 24px;
+    color: #787878;
+    overflow: hidden;
+}
+
+footer .footer__categories {
+    padding: 99px 0 100px 0;
+}
+
+footer .footer__categories__news-container-span {
+    display: inline;
+}
+
+footer .footer__categories__news-contaier {
+    width: 286px;
+    margin: 0 -71px 0 0;
+}
+
+footer .footer__categories__news-contaier:nth-child(3) {
+    margin: -3px -3px 0 0;
+    width: 269px;
+}
+
+footer .footer__categories__news-container__p {
+    padding: 11px 0 0 0;
+    width: 288px;
+}
+
+footer .footer__categories__news-container__h1 {
+    margin: 3px 0 0 0;
+}
+
+footer .footer__categories__news-container__h1,
+footer .footer__categories__news-container-span {
+    font-size: 30px;
+    line-height: 24px;
+}
+
+footer .footer__categories__news-container-span-cate {
+    display: none;
+}
+
+footer .footer__categories__news-container-span {
+    display: block;
+    margin: -3px 0 0 0;
+}
+
+footer .footer__categories__news-contaier:last-child {
+    display: none;
+}
+
+footer .footer__menu {
+    float: left;
+    width: 55.8%;
+    margin: 43px 0 0 0;
+    padding: 0;
+}
+
+footer .footer__signature {
+    float: right;
+    margin: 25px -16px 0 0;
+    padding: 21px 0 0 0;
+}
+
+}
