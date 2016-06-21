@@ -1,16 +1,12 @@
 // FUNCTIONS
-
-var str = 'string';
-str[0] = 'S';
-console.log(str);
-
-
+//
+//
 // function sayHi() {
 //   alert('hello world!');
 // }
 //
 // console.log(sayHi);
-
+//
 // var abc = 'global abc';
 // var a = 'global a';
 // console.log('String, specified in Global field:', abc);
@@ -20,6 +16,7 @@ console.log(str);
 //   var abc = 'local abc';
 //   console.log('String, specified in Local field:', abc);
 //   console.log('a =', a);
+//   console.log('b =', b);
 //   console.log('Calcalation "+"=', a + b);
 //   console.log('Calcalation "-"=', a - b);
 //   console.log('Calcalation "*" and custom test string added=', a * b + str);
@@ -27,36 +24,34 @@ console.log(str);
 // }
 //
 // function sum(a, b) {
-//   var  test = 2;
+//   var test = 2;
 //   console.log('Sum result: ', a + b + test);
 // }
 //
 // calculate(2, 5);
-//
 // sum(1, 1);
-
+//
 // console.log('________________________');
 //
 // function calculate(a, b, c) {
 //   var test = 'test';
-//   // console.log('c = ', c);
-//   // console.log('arguments (all arguments which pushed to fucntion wtih "CALCULATE"):', arguments);
-//   // console.log('Calling for specific argument (exact as in case with massive):', arguments[1]);
-//   // console.log('arguments length:', arguments.length);
-//   // console.log('Calculate result =', a + b + test);
+//   console.log('c = ', c);
+//   console.log('arguments (all arguments which pushed to fucntion wtih "CALCULATE"):', arguments);
+//   console.log('Calling for specific argument (exact as in case with massive):', arguments[1]);
+//   console.log('arguments length:', arguments.length);
+//   console.log('Calculate result =', a + b + test);
 //   var result = a + b + c;
-//   return  result; //this necessary method
-//
+//   return result; //this necessary method
 // }
-//
+
 // var calculationresult = calculate(2, 5, 3);
 // console.log('calculationresult', calculationresult);
-
-
-
+//
+//
+//
 // STANDART METHODS OF MASSIVES, STRINGS, NUMBERS
-
-
+//
+//
 // var str = 'TEST';
 //
 // console.log(str);
@@ -187,12 +182,12 @@ console.log(str);
 // arrTest.pop();
 //
 // console.log('"pop" if empty - deletes the last element of the array: ', arrTest);
-
-
-
+//
+//
+//
 // OBJECTS
-
-
+//
+//
 // var arr = ['1', true, 'false'];
 //
 // var obj = {
@@ -229,20 +224,21 @@ console.log(str);
 //
 // var keysList = Object.keys(student);
 // console.log('keysList:', keysList);
-
-
+//
+//
+//
 // CYCLES
-
-
+//
+//
 // var i = 0;
 // var arr = ['test', 1, 2, 'hell'];
 //
 // console.log('array', arr);
 //
-// for (var i=0; i < arr.length; i++) {
-//     console.log('arr[i] = ', arr[i]);
-//     console.log('Iterator: ', i);
-//     alert('Iteration...= '+ i)
+// for (var i = 0; i < arr.length; i++) {
+//   console.log('arr[i] = ', arr[i]);
+//   console.log('Iterator: ', i);
+//   alert('Iteration...= ' + i)
 // }
 //
 // while (i < 4) {
@@ -271,39 +267,39 @@ console.log(str);
 //
 // var arr = [1, true, '3 text', 4];
 //
-// console.log ('arr regular', arr);
-// console.log ('arr-identification_single', arr[1]);
+// console.log('arr regular', arr);
+// console.log('arr-identification_single', arr[1]);
 //
-// console.log ('arr.length', arr.length);
+// console.log('arr.length', arr.length);
 //
-// arr.push ('5');
-// console.log ('arr-push', arr);
+// arr.push('5');
+// console.log('arr-push', arr);
 //
-// arr.push (5);
-// console.log ('arr-push', arr);
+// arr.push(5);
+// console.log('arr-push', arr);
 //
-// arr.push (false);
-// console.log ('arr-push', arr);
+// arr.push(false);
+// console.log('arr-push', arr);
 //
-// arr.pop ();
-// console.log ('arr.pop()', arr);
+// arr.pop();
+// console.log('arr.pop()', arr);
 //
-// console.log ('arr.length', arr.length);
+// console.log('arr.length', arr.length);
 //
 //
-// arr.unshift ('5');
-// console.log ('unshift', arr);
+// arr.unshift('5');
+// console.log('unshift', arr);
 //
-// console.log ('length', arr.length);
+// console.log('length', arr.length);
 //
 //
 // var removedItem = arr.shift('shifted');
-// console.log ('removedItem', removedItem);
-// console.log ('shifted', arr);
-// console.log ('length', arr.length);
+// console.log('removedItem', removedItem);
+// console.log('shifted', arr);
+// console.log('length', arr.length);
 //
 // arr[10] = '10 element';
-// console.log ('10_element_shown', arr);
+// console.log('10_element_shown', arr);
 //
 //
 //
@@ -315,9 +311,9 @@ console.log(str);
 // user = prompt('Enter magic word')
 //
 // if (user == 'Dima') {
-//     alert('hello, Dima');
+//   alert('hello, Dima');
 // } else {
-//     alert('go to hell, or heaven, creature of magic');
+//   alert('go to hell, or heaven, creature of magic');
 // }
 //
 // user == 'Dima' ? alert('hello, admin') : alert('good bye');
@@ -340,13 +336,13 @@ console.log(str);
 // alert(result);
 // //
 // result += 5;
-// alert (result);
+// alert(result);
 // result -= 8;
-// alert (result);
+// alert(result);
 // result *= 5;
-// alert (result);
+// alert(result);
 // result /= 5;
-// alert (result);
+// alert(result);
 //
 // alert(a >= b);
 // alert(a == b);
@@ -358,7 +354,7 @@ console.log(str);
 // TYPES OF DATA
 //
 //
-// Number
+// // Number
 //
 // var myNumber = 5;
 // var mySecondNumber = 5.666;
@@ -385,7 +381,7 @@ console.log(str);
 //
 // type = typeof (myNumber);
 //
-// alert (type)
+// alert(type)
 //
 // var myNewVariable = 'new variable';
 // var my_new_variable = 'new variable';
