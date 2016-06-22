@@ -14,11 +14,13 @@
 // var end = power();
 // console.log('Power:', end);
 
-// Name program
+Name program
 
 var arr = [];
 var name;
 var trueName;
+var index;
+var trueName = new Boolean(false);
 
 console.log('arr initial state:', arr);
 
@@ -33,9 +35,11 @@ trueName = prompt('Please enter true name.');
 
 console.log('True name: ', trueName);
 
-for ( i; i > 0; i--) {
-  trueName == arr;
-} if (trueName == arr) {
+for (index = 0; index < arr.length; ++index) {
+  trueName === arr[index]
+}
+
+if (trueName = true) {
   alert('You have been logged in successfully');
   console.log('You have been logged in successfully');
 } else {
