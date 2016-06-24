@@ -27,6 +27,10 @@
     clear: both;
 }
 
+@media only screen
+  and (min-width: 0px)
+ {
+
 body {
     background: url(../img/background.png) top -26px center no-repeat;
     font-family: League Gothic Regular;
@@ -44,7 +48,7 @@ menu {
     justify-content: center;
 }
 
-.header__logo {
+header .header__logo {
     position: relative;
     display: block;
     font-size: 48px;
@@ -54,7 +58,7 @@ menu {
     letter-spacing: -0.5px;
 }
 
-.header__logo span {
+header .header__logo span {
     position: absolute;
     color: #745083;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
@@ -670,4 +674,6 @@ footer .footer__signature {
 
 footer .footer__signature span {
     font-family: Open Sans Extrabold;
+}
+
 }
