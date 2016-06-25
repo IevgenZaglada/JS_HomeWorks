@@ -1,9 +1,9 @@
 @media only screen and (min-width: 960px) {
 
-body {
-  /*width: 960px;*/
+/*body {
+  width: 960px;
   margin: 0 auto;
-}
+}*/
 
 
 /*HEADER*/
@@ -39,7 +39,6 @@ header .header__menu768 {
     justify-content: space-between;
     width: 98.5%;
     padding: 0;
-    margin: 0 2px 0 0;
 }
 
 header .header__menu768 li {
@@ -56,18 +55,15 @@ header .nav__description {
 }
 
 header .nav__h1 {
-    margin: 0 0 0 -4px;
     font-size: 60px;
     line-height: 36px;
-    letter-spacing: -0.47px;
+    letter-spacing: -0.5px;
 }
 
 header .nav__h2 {
-    margin: 0 0 0 -1px;
     padding: 10px 0 0 0;
     font-size: 32px;
     line-height: 36px;
-    letter-spacing: -0.04px;
 }
 
 header .nav__h2 span {
@@ -77,7 +73,7 @@ header .nav__h2 span {
 header .nav__p {
     height: 152px;
     width: 528px;
-    margin: 3px 0 0 -2px;
+    margin: 3px 0 0 0;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.03px;
@@ -109,11 +105,11 @@ header .nav__description-bg {
 }
 
 header .nav__iphone {
-    margin: -17px 7.5% 0 0;
+    margin: -17px 7.3% 0 0;
 }
 
 header .nav_buttons {
-    margin: 72px -12px 0 196px;
+  margin: 73px -7px 0 196px;
 }
 
 header .nav__buttons-cover {
@@ -146,14 +142,14 @@ main .main__about-cover {
 main .main__about {
     width: 960px;
     margin: 0 auto;
-    padding: 75px 4.4% 20px 1%;
+    padding: 75px 3% 20px 1%;
     border: none;
     background: transparent;
     height: 340px;
 }
 
 main .main__about h3 {
-    margin: 6px 0 0 1px;
+    margin: 6px 0 0 2px;
     font-size: 30px;
     line-height: 24px;
     letter-spacing: -0.1px;
@@ -167,19 +163,11 @@ main section section.main__content-justify {
     width: 229px;
 }
 
-.main__about-2 .main__p-2 {
-  margin: 11px 0 0 0;
-}
-
-.main__about-3 .main__h1-3 {
-    margin: 6px 0 0 3px;
-}
-
 main .main__about p {
     display: block;
     height: 120px;
     width: 227px;
-    margin: 10px 0 0 -2px;
+    margin: 10px 0 0 1px;
     overflow: hidden;
 }
 
@@ -196,7 +184,7 @@ main .main__about .main__h1-2 {
 }
 
 main section .main__span-2 {
-    margin: -2px 2px 0 0;
+    margin: -3px 5px 0 0;
 }
 
 main .main__about-3 {
@@ -212,7 +200,7 @@ main .main__about-3 section.main__content-justify {
 }
 
 main span.main__span-3 {
-    margin: -1px 1px 0 0;
+    margin: -1px 5px 0 0;
 }
 
 main .main__about-2 i.wrench {
@@ -224,7 +212,7 @@ main .main__about-2 i.wrench {
 
 main .main__about-3 i.wrench {
     display: block;
-    margin: 12px 0px 0px 5px;
+    margin: 12px 0px 0px 2px;
     background: url(../img/wrench_sprite.png) top 0 right -2px no-repeat;
 }
 
@@ -287,7 +275,6 @@ main .main__content {
 
 main .main__testimonials {
     width: 453px;
-    margin: 0 0 0 -2px;
 }
 
 main .main__testimonials-container {
@@ -302,7 +289,6 @@ main .main__testimonials-portrait {
 main .main__testimonials-p {
     height: 166px;
     padding: 11px 34px 0 0;
-    letter-spacing: -0.1px;
 }
 
 main .main__testimonials-p span {
@@ -313,7 +299,7 @@ main .main__testimonials-p span {
 /*UPDATES*/
 
 main .main__updates {
-    padding: 32px 11px 0 0;
+    padding: 32px 9px 0 0;
 }
 
 main .main__updates-h1 {
@@ -347,10 +333,6 @@ main .main__updates .main__updates__container:nth-child(4) .main__updates__conta
     width: 445px;
 }
 
-main .main__updates-more {
-    padding: 18px 20px 0 0;
-}
-
 main .main__updates-more span {
     display: none;
 }
@@ -365,7 +347,7 @@ main .main__testimonials-input {
 }
 
 main .main__trust {
-    width: 772px;
+    width: 768px;
     margin: 0 auto;
     height: 95px;
     padding: 9px 0% 14px 0%;
@@ -383,11 +365,11 @@ main .main__trust {
 }
 
 main .main__trus .main__trust-mark_1 {
-  margin: -1px 0 0 -1px;
+  margin: 0 0 0 0;
 }
 
 main .main__trus .main__trust-mark_2 {
-  margin: -1px 0 0 -1px;
+  margin: 0 0 0 -2px;
 }
 
 main .main__trus .main__trust-mark_3 {
@@ -399,11 +381,11 @@ main .main__trus .main__trust-mark_4 {
 }
 
 main .main__trus .main__trust-mark_5 {
-    margin: 0 0px 0 0;
+    margin: 0 -2px 0 0;
 }
 
 main .main__trus .main__trust-mark_6 {
-    margin: 0 -2px 0 0px;
+    margin: 0 -5px 0 0;
 }
 
 /*FOOTER*/
@@ -431,7 +413,7 @@ footer .footer__copy-n {
 }
 
 footer .footer__copy-logo {
-    margin: 2px 0 0 -3px;
+    margin: 2px 0 0 -1px;
     font-size: 47px;
     line-height: 33.72px;
     color: #454545;
@@ -443,7 +425,7 @@ footer .footer__copy-logo span {
 
 footer .footer__copy__copy {
     display: block;
-    margin: 18px 0 0 -3px;
+    margin: 17px 0 0 0px;
     font-family: Georgia;
     font-style: italic;
     font-size: 16px;
@@ -453,9 +435,8 @@ footer .footer__copy__copy {
 }
 
 footer .footer__copy__p {
-    width: 282px;
     height: 126px;
-    margin: -1px 0 0 -2.6px;
+    width: 282px;
     padding: 7px 0 0 0;
     font-family: Open Sans Light;
     font-size: 16px;
@@ -465,7 +446,6 @@ footer .footer__copy__p {
 }
 
 footer .footer__categories {
-    width: 958px;
     padding: 99px 0 100px 0;
 }
 
@@ -484,13 +464,12 @@ footer .footer__categories__news-contaier:nth-child(3) {
 }
 
 footer .footer__categories__news-container__p {
-    margin: 0 0 0 -1px;
     padding: 11px 0 0 0;
     width: 288px;
 }
 
 footer .footer__categories__news-container__h1 {
-    margin: 3px 0 0 -1px;
+    margin: 3px 0 0 0;
 }
 
 footer .footer__categories__news-container__h1,
@@ -514,14 +493,14 @@ footer .footer__categories__news-contaier:last-child {
 
 footer .footer__menu {
     float: left;
-    width: 54.8%;
+    width: 55%;
     margin: 40px 0 0 0;
     padding: 0;
 }
 
 footer .footer__signature {
     float: right;
-    margin: 22px 1px 0 0;
+    margin: 22px -2px 0 0;
     padding: 21px 0 0 0;
 }
 

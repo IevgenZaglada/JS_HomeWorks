@@ -32,6 +32,7 @@
  {
 
 body {
+  /*width: 320px;*/
     background: url(../img/background.png) top -26px center no-repeat;
     font-family: League Gothic Regular;
     padding: 40px 0 0 0;
@@ -289,7 +290,8 @@ nav .nav__iphone {
 }
 
 nav .nav_buttons {
-    margin: -3px 0 0 116px;
+    margin: -3px -9px 0 0;
+    text-align: center;
 }
 
 nav .nav_button-2 {
@@ -336,7 +338,7 @@ main .main__about {
     align-items: flex-end;
     justify-content: space-between;
     height: 598px;
-    padding: 70px 6% 66px 6%;
+    padding: 70px 6% 66px 8%;
     border-top: 1px solid #35273c;
     border-bottom: 1px solid #21333b;
     box-sizing: border-box;
@@ -401,14 +403,14 @@ main i.wrench {
 
 main .main__about h3 {
     float: left;
-    margin: 0 0 0 2px;
+    margin: 0 0 0 1px;
     font-size: 24px;
     line-height: 24px;
 }
 
 main .main__about p {
     float: left;
-    margin: 3px 0 0 3px;
+    margin: 3px 0 0 1px;
     font-family: Open Sans Light;
     font-size: 16px;
     line-height: 24px;
@@ -416,7 +418,7 @@ main .main__about p {
 
 main .main__about span {
     float: right;
-    margin: 7px 0 0 0;
+    margin: 7px 7px 0 0;
     font-size: 18px;
     line-height: 24px;
 }
@@ -461,6 +463,7 @@ main .main__testimonials-container {
 main .main__testimonials {
     position: relative;
     padding: 0 3.75% 0px 3.75%;
+    margin: 0 0 0 6px;
 }
 
 main .main__testimonials-portrait {
@@ -499,7 +502,7 @@ main .main__testimonials-p {
 
 main .main__testimonials-input {
     display: block;
-    padding: 23px 0 0 122px;
+    padding: 23px 0 0 124px;
     clear: both;
 }
 
@@ -536,7 +539,7 @@ main input[type="radio"]:checked+ label {
 }
 
 main .main__updates {
-    padding: 48px 3.25% 0 3.95%;
+    padding: 48px 3.25% 0 5.95%;
     color: #454545;
     overflow: hidden;
 }
@@ -595,7 +598,7 @@ main .main__updates__container-p:nth-child(3) {
 
 main .main__updates-more {
     float: right;
-    padding: 15px 8px 0 0;
+    padding: 15px 16px 0 0;
     font-size: 18px;
     line-height: 24px;
 }
@@ -614,7 +617,7 @@ main .main__trust {
     justify-content: space-between;
     align-items: center;
     height: 408px;
-    padding: 4.2% 17% 0 17%;
+    padding: 4.2% 18% 0 18%;
     border-top: 1px solid #fefefe;
 }
 
@@ -664,6 +667,7 @@ footer .footer__menu {
 }
 
 footer .footer__signature {
+    margin: -1px 0 0 0px;
     padding: 32px 0 0 0;
     font-family: Open Sans Light;
     font-size: 12px;
@@ -673,6 +677,7 @@ footer .footer__signature {
 }
 
 footer .footer__signature span {
+    margin: 0 0 0 5px;
     font-family: Open Sans Extrabold;
 }
 
