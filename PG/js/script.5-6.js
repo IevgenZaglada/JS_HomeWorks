@@ -33,9 +33,9 @@ var listItem = document.querySelector('li');
 //   console.log('it works on mouseover');
 // }
 //
-// function handlerCrossbrowser() {
-//   console.log('it works on click crossbrowser');
-// }
+function handlerCrossbrowser() {
+  console.log('it works on click crossbrowser');
+}
 //
 // function handlerWindow(event) {
 //   console.log('it works on click in entire window');
@@ -66,11 +66,13 @@ var listItem = document.querySelector('li');
 // link.attachEvent('onlick', handler);
 // link.detachlink('onlick', handler);
 
-function addEvent(el, event, callback) {
+function addEvent(link, event, callback) {
   if (window.attachedEvent) { // IE 8--
-    el.attachEvent('on' + event, callback);
+    link.attachEvent('on' + event, callback);
+    console.log("IE!!!!!");
   } else {
-    el.addEventListener(event, callback);
+    link.addEventListener(event, callback);
+    console.log("not IE!!!!!");
   }
 }
 
