@@ -52,12 +52,13 @@ nav .nav__h2 {
 }
 
 nav .nav_buttons {
-    position: absolute;
     clear: both;
 }
 
 nav .nav_buttons {
-    margin: 22px 0 0 203px;
+  position: absolute;
+    margin: 23px 6px 1px 203px;
+    text-align: left;
 }
 
 main .main__about {

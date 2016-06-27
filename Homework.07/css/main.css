@@ -32,7 +32,7 @@
  {
 
 body {
-  /*width: 320px;*/
+    position: relative;
     background: url(../img/background.png) top -26px center no-repeat;
     font-family: League Gothic Regular;
     padding: 40px 0 0 0;
@@ -290,7 +290,8 @@ nav .nav__iphone {
 }
 
 nav .nav_buttons {
-    margin: -3px -9px 0 0;
+    position: static;
+    margin: -3px 0 0 9px;
     text-align: center;
 }
 

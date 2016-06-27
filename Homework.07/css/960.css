@@ -1,17 +1,13 @@
 @media only screen and (min-width: 960px) {
 
 body {
-  /*width: 960px;*/
+  width: 960px;
   margin: 0 auto;
 }
 
 
 /*HEADER*/
 
-/*header {
-  width: 960px;
-  margin: 0 auto;
-}*/
 
 header .header__logo-menu__cover {
   margin: 0 auto;
@@ -113,8 +109,10 @@ header .nav__iphone {
 }
 
 header .nav_buttons {
-    margin: 72px -12px 0 196px;
-}
+    margin: 87px 5px 0 719px;
+    width: 84px;
+    padding: 0px 16.8% 0 0;
+  }
 
 header .nav__buttons-cover {
   width: 960px;
