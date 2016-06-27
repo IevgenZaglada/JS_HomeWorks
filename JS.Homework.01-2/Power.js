@@ -1,15 +1,15 @@
 // POW Function
 
 function power (numberInitial) {
-var numberInitial;
+var multipliedNumber;
 var multiplier;
-numberInitial = prompt ('Which number you want to be build in math degree?');
+multipliedNumber = prompt ('Which number you want to be build in math degree?');
 multiplier = prompt ('Which вупкуу value of power you wish?');
-var result = 1;
+var output = 1;
 for (var i = 0; i < multiplier; i++)
-  result = result * numberInitial;
-  return result;
+  output = output * multipliedNumber;
+  return output;
 }
 
-var end = power();
-console.log('Power:', end);
+var result = power();
+console.log('Power:', result);

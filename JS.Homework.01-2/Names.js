@@ -1,32 +1,30 @@
 // Name program
 
-var arr = [];
+var nameList = [];
 var name;
-var trueName;
-var index;
 var trueName;
 var flag = false; // Тут я прописал все переменные которые буду юзать
 
-console.log('arr initial state:', arr);
+console.log('arr initial state:', nameList);
 
 for (var i = 0; i < 5; i++) {
   name = prompt('Name, please.');
-  arr.push(name);
+  nameList.push(name);
 } // Первый цикл - заполнение массива
 
-console.log('arr filled:', arr);
+console.log('arr filled:', nameList);
 
 trueName = prompt('Please enter true name.'); // Введение проверочного имени
 
 console.log('True name:', trueName);
 
-for (index = 0; index < arr.length; ++index) {
-  if (trueName === arr[index]) {
+for (var index = 0; index < nameList.length; ++index) {
+  if (trueName === nameList[index]) {
     flag = true;
   }
 } // Проверочный цикл через boolean.
 
-if (flag === true) {
+if (flag) {
 alert(trueName +', you have been logged in successfully');
 console.log(trueName,', you have been logged in successfully');
 } else {
