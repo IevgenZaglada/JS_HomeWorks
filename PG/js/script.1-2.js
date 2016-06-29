@@ -1,16 +1,16 @@
 // FUNCTIONS
-//
-//
+
+
 // function sayHi() {
 //   alert('hello world!');
 // }
-//
+// 
 // console.log(sayHi);
 //
 // var abc = 'global abc';
 // var a = 'global a';
 // console.log('String, specified in Global field:', abc);
-//
+
 // function calculate(a, b) {
 //   var str = 'test';
 //   var abc = 'local abc';
@@ -22,12 +22,12 @@
 //   console.log('Calcalation "*" and custom test string added=', a * b + str);
 //   console.log('Calculation global/local var a testing:', a);
 // }
-//
+
 // function sum(a, b) {
 //   var test = 2;
 //   console.log('Sum result: ', a + b + test);
 // }
-//
+
 // calculate(2, 5);
 // sum(1, 1);
 //
@@ -43,15 +43,15 @@
 //   var result = a + b + c;
 //   return result; //this necessary method
 // }
-
+//
 // var calculationresult = calculate(2, 5, 3);
 // console.log('calculationresult', calculationresult);
-//
-//
-//
+
+
+
 // STANDART METHODS OF MASSIVES, STRINGS, NUMBERS
-//
-//
+
+
 // var str = 'TEST';
 //
 // console.log(str);
@@ -61,7 +61,7 @@
 // console.log(str[2]);
 // console.log(str[3]);
 //
-// str = str.replace('e', 'A');
+// str = str.replace('E', 'A');
 // console.log(str);
 //
 // str = str.toLowerCase();
@@ -153,7 +153,7 @@
 //
 // var massiveStr = arr.join();
 //
-// console.log('"join" method merges array to string, so array becomes string:', massiveStr);
+// console.log('"join" method unmerges array to string, so array becomes string:', massiveStr);
 //
 // var strWithRule = arrMassive.join(' : ');
 //
@@ -182,12 +182,12 @@
 // arrTest.pop();
 //
 // console.log('"pop" if empty - deletes the last element of the array: ', arrTest);
-//
-//
-//
+
+
+
 // OBJECTS
-//
-//
+
+
 // var arr = ['1', true, 'false'];
 //
 // var obj = {
@@ -224,35 +224,35 @@
 //
 // var keysList = Object.keys(student);
 // console.log('keysList:', keysList);
-//
-//
-//
+
+
+
 // CYCLES
 
 
-var i = 0;
-var arr = ['test', 1, 2, 'hell'];
-
-console.log('array', arr);
+// var i = 0;
+// var arr = ['test', 1, 2, 'hell'];
+//
+// console.log('array', arr);
 
 // for (var i = 0; i < arr.length; i++) {
 //   console.log('arr[i] = ', arr[i]);
 //   console.log('Iterator: ', i);
 //   alert('Iteration...= ' + i)
 // }
-//
+
 // while (i < 4) {
 //   alert(i);
 //   console.log('Iterator = ', i);
 //   i++;
 // }
-//
+
 // do {
 //   alert('execution...' + i);
 //   console.log('Iterator = ', i);
 //   i++;
 // } while (i < 4);
-//
+
 // for (var i = 0; i < 4; i++) {
 //   console.log('Iterator =', i);
 //   alert('couting...' + i);
