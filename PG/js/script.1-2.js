@@ -228,13 +228,13 @@
 //
 //
 // CYCLES
-//
-//
-// var i = 0;
-// var arr = ['test', 1, 2, 'hell'];
-//
-// console.log('array', arr);
-//
+
+
+var i = 0;
+var arr = ['test', 1, 2, 'hell'];
+
+console.log('array', arr);
+
 // for (var i = 0; i < arr.length; i++) {
 //   console.log('arr[i] = ', arr[i]);
 //   console.log('Iterator: ', i);
@@ -259,13 +259,14 @@
 // }
 //
 // console.log('out of cycle');
-//
-//
-//
+
+
+
 // MASSIVES
-//
-//
+
+
 // var arr = [1, true, '3 text', 4];
+//
 //
 // console.log('arr regular', arr);
 // console.log('arr-identification_single', arr[1]);
@@ -300,29 +301,29 @@
 //
 // arr[10] = '10 element';
 // console.log('10_element_shown', arr);
-//
-//
-//
+
+
+
 // CONDITIONAL OPERANDS
-//
-//
+
+
 // var user;
 //
 // user = prompt('Enter magic word')
 //
-// if (user == 'Dima') {
-//   alert('hello, Dima');
-// } else {
-//   alert('go to hell, or heaven, creature of magic');
-// }
+// // if (user == 'Dima') {
+// //   alert('hello, Dima');
+// // } else {
+// //   alert('go to hell, or heaven, creature of magic');
+// // }
 //
 // user == 'Dima' ? alert('hello, admin') : alert('good bye');
-//
-//
-//
+
+
+
 // OPERANDS
-//
-//
+
+
 // var a = 4;
 // var b = 9;
 //
@@ -348,12 +349,12 @@
 // alert(a == b);
 // alert(a === b);
 // alert(a <= b);
-//
-//
-//
+
+
+
 // TYPES OF DATA
-//
-//
+
+
 // // Number
 //
 // var myNumber = 5;
