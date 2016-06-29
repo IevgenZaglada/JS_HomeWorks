@@ -93,8 +93,8 @@
 //
 // var someFunctionTwo = function () {
 //   console.log('It works dealyed with some interval! Conunter =' + ' ' + counter);
-//   counter++;
-//   if (counter === 6) {
+//   counter ++;
+//   if (counter === 60) {
 //     clearInterval(interval);
 //   }
 // }
@@ -103,4 +103,45 @@
 
 
 
-//
+// Constructors, operator "NEW"
+
+
+var a = {};
+var b = [666, 'twelwe'];
+
+var c = new Object(); // Object in this example serves as calss
+console.log('New Object:', c);
+
+var d = new Array(1, 2, 3, 'string');
+console.log('New Array:', d);
+
+function Animal(newName, newColor) {
+  var self = this;
+  var abc = 'internal variable " abc " '; //local, internal variable represented in local scope
+  console.log('Internal varibale inside of a function:', abc);
+
+  console.log('I`m constructiong an animal!');
+
+  newName = newName.toUpperCase(); // makes string UPPERCASE
+  self.name = newName;
+  self.color = newColor;
+  self.noise = function() {
+    console.log('this is public method');
+    self._noise();
+  }
+  self._noise = function() { // this means that ._noise is private mothod
+    alert('Hello, I am ' + self.name);
+  }
+}
+
+
+var dog = new Animal('Jack', 'white');
+console.log('Function becomes object:', dog);
+dog.noise();
+var dog = new Animal('Mark', 'brown');
+console.log('Function becomes object:', dog);
+dog.noise(); // .noise - public method
+
+console.log(dog.name); // .name - public property
+
+console.log('Internal varibale inside of a function:', abc);
