@@ -181,3 +181,63 @@
 // var a = 5;
 //
 // console.log(this.a); //window.a
+
+
+
+// // DOM: ELEMENT SEARCHING
+
+
+// console.log(document); // Reference to root element HTML
+// console.log(document.documentElement); // Reference to root element HTML
+// console.log(document.body); // Reference <body> element HTML
+// console.log(document.body.childNodes); //Property of DOM element which calls all child elements, prepresented like massive
+// console.log(document.body.firstChild);
+// console.log(document.body.lastChild);
+//
+// var element = document.getElementById('box');
+// console.log(element);
+//
+// var litTag = document.getElementsByTagName('li');
+// console.log('li items:', litTag);
+//
+// var ulTag = document.getElementsByTagName('ul');
+// console.log('ul items:', ulTag);
+//
+// var elementClass = document.getElementsByClassName('menu');
+// console.log('Classes:', elementClass);
+//
+// var query = document.querySelector('.menu-item');
+// console.log('query selector single:', query); //single selector searches only for the first item
+//
+// var query = document.querySelectorAll('.menu-item');
+// console.log('query selector all:', query); //searches for all items
+
+// function plus() {
+//   var a,b,c;
+//   var in1 = document.getElementById('in1');
+//   var in2 = document.getElementById('in2');
+//   var in3 = document.getElementById('in3');
+//   in3.value = parseInt(in1.value) + parseInt(in2.value);
+//   console.log("ok");
+// }
+
+
+
+// DOM: ELEMENT CREATION
+
+
+// var element = document.createElement('li');
+//  element.classList.add('box');
+//  element.innerHTML = 'HELLO';
+//
+// var wrapper = document.querySelector('.wrapper');
+//
+// wrapper.appendChild(element); //insrets specified element in the end of section
+//
+// wrapper.insertBefore(element, wrapper.children[0]) // insrets specified element in specified place of section
+//
+// var list = wrapper.querySelector('li'); // searching of specific element, and assigning it as variable
+//
+// wrapper.removeChild(list);
+//
+// wrapper.replaceChild(element, list);

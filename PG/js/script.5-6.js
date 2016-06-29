@@ -79,6 +79,7 @@
 // // addEvent(link, 'click', handlerCrossbrowser);
 
 
+
 // setTimeout, setInterval
 
 // var counter = 0;
@@ -99,3 +100,7 @@
 // }
 //
 // var interval = setInterval(someFunctionTwo, 200);
+
+
+
+//
