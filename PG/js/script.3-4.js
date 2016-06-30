@@ -1,18 +1,19 @@
 // // TYPES CAST
-//
-// // Primitive ones:
-// // number
-// // string
-// // boolean -> true, false
-// // undefined
-// // null
-//
-// // Ojcets:
-// //objects
-//
-//
-// // operatror + (can merge two kinds of data despite their difference of type. like number + string = string)
-//
+
+
+// Primitive ones:
+// number
+// string
+// boolean -> true, false
+// undefined
+// null
+
+// Ojcets:
+//objects
+
+
+// operatror + (can merge two kinds of data despite their difference of type. like number + string = string)
+
 // var result = 5 + 5;
 // console.log(result);
 // console.log(typeof result);
@@ -120,8 +121,9 @@
 
 
 
-// // COPYING BY REFERENCE
-//
+// COPYING BY REFERENCE
+
+
 // var num = 123;
 //
 // var obj = {
@@ -129,7 +131,7 @@
 // }
 //
 // function updateNum(a) {
-//   a = 5;
+//   num = 5;
 //   console.log('a', a);
 // }
 //
@@ -145,9 +147,9 @@
 
 
 
-// // CONTEXT OF EXECUTING "THIS"
-//
-//
+// CONTEXT OF EXECUTING "THIS"
+
+
 // var dog = {
 //   name: 'Jack',
 //   age: 3,
@@ -184,7 +186,7 @@
 
 
 
-// // DOM: ELEMENT SEARCHING
+// DOM: ELEMENT SEARCHING
 
 
 // console.log(document); // Reference to root element HTML
@@ -194,7 +196,7 @@
 // console.log(document.body.firstChild);
 // console.log(document.body.lastChild);
 //
-// var element = document.getElementById('box');
+// var element = document.getElementById('wrapper');
 // console.log(element);
 //
 // var litTag = document.getElementsByTagName('li');
@@ -203,7 +205,7 @@
 // var ulTag = document.getElementsByTagName('ul');
 // console.log('ul items:', ulTag);
 //
-// var elementClass = document.getElementsByClassName('menu');
+// var elementClass = document.getElementsByClassName('wrapper');
 // console.log('Classes:', elementClass);
 //
 // var query = document.querySelector('.menu-item');
@@ -211,7 +213,7 @@
 //
 // var query = document.querySelectorAll('.menu-item');
 // console.log('query selector all:', query); //searches for all items
-
+//
 // function plus() {
 //   var a,b,c;
 //   var in1 = document.getElementById('in1');
@@ -219,25 +221,26 @@
 //   var in3 = document.getElementById('in3');
 //   in3.value = parseInt(in1.value) + parseInt(in2.value);
 //   console.log("ok");
-// }
+// } // ?????????????????
+// plus ();
 
 
 
 // DOM: ELEMENT CREATION
 
 
-// var element = document.createElement('li');
-//  element.classList.add('box');
-//  element.innerHTML = 'HELLO';
-//
-// var wrapper = document.querySelector('.wrapper');
-//
-// wrapper.appendChild(element); //insrets specified element in the end of section
-//
-// wrapper.insertBefore(element, wrapper.children[0]) // insrets specified element in specified place of section
-//
-// var list = wrapper.querySelector('li'); // searching of specific element, and assigning it as variable
-//
-// wrapper.removeChild(list);
-//
-// wrapper.replaceChild(element, list);
+var element = document.createElement('li');
+ element.classList.add('box');
+ element.innerHTML = 'HELLO';
+
+var wrapper = document.querySelector('.wrapper');
+
+wrapper.appendChild(element); //insrets specified element in the end of section
+
+wrapper.insertBefore(element, wrapper.children[0]) // insrets specified element in specified place of section
+
+var list = wrapper.querySelector('li'); // searching of specific element, and assigning it as variable
+
+wrapper.removeChild(list);
+
+wrapper.replaceChild(element, list);
