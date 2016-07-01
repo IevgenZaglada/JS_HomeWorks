@@ -18,3 +18,19 @@
 // console.log('arr after', arr);
 // console.log('even after', even);
 // console.log('odd aftrer', odd);
+
+
+
+var a = Math.random();
+
+console.log(a);
+a = Math.floor(a*666);
+console.log(a);
+
+function f_out() {
+  var in1 = document.getElementById("in");
+  console.log(in1);
+  console.log(in1.value);
+  console.log(in1.id);
+  console.log(in1.name);
+}
