@@ -196,7 +196,7 @@
 // console.log(document.body.firstChild);
 // console.log(document.body.lastChild);
 //
-// var element = document.getElementById('wrapper');
+// var element = document.getElementById('box');
 // console.log(element);
 //
 // var litTag = document.getElementsByTagName('li');
@@ -213,7 +213,48 @@
 //
 // var query = document.querySelectorAll('.menu-item');
 // console.log('query selector all:', query); //searches for all items
-//
+
+
+
+// DOM elements editing
+
+
+var element = document.querySelectorAll('.menu-item a');
+var link = element[2];
+
+console.log(element);
+console.log(link);
+
+link.innerHTML = 'this is new text, added with <strong>JS</strong>';
+
+console.log(link.getAttribute('href'));
+
+element[3].setAttribute('href', 'http://apple.com');
+console.log(element[3].getAttribute('href'));
+
+element[4].removeAttribute('href');
+console.log(element[4]);
+
+console.log(link.className);
+link.className = link.className + ' ' + 'js__class';
+console.log(link.className);
+
+console.log(link.classList);
+
+link.classList.add('JS-second-class');
+console.log(link.classList);
+console.log(link.className);
+
+link.classList.remove('menu-link');
+console.log(link.classList);
+
+link.style.color = 'plum';
+link.style.backgroundColor = 'navy';
+
+
+
+
+
 // function plus() {
 //   var a,b,c;
 //   var in1 = document.getElementById('in1');
@@ -229,18 +270,18 @@
 // DOM: ELEMENT CREATION
 
 
-var element = document.createElement('li');
- element.classList.add('box');
- element.innerHTML = 'HELLO';
-
-var wrapper = document.querySelector('.wrapper');
-
-wrapper.appendChild(element); //insrets specified element in the end of section
-
-wrapper.insertBefore(element, wrapper.children[0]) // insrets specified element in specified place of section
-
-var list = wrapper.querySelector('li'); // searching of specific element, and assigning it as variable
-
-wrapper.removeChild(list);
-
-wrapper.replaceChild(element, list);
+// var element = document.createElement('li');
+//  element.classList.add('box');
+//  element.innerHTML = 'HELLO';
+//
+// var wrapper = document.querySelector('.wrapper');
+//
+// wrapper.appendChild(element); //insrets specified element in the end of section
+//
+// wrapper.insertBefore(element, wrapper.children[0]) // insrets specified element in specified place of section
+//
+// var list = wrapper.querySelector('li'); // searching of specific element, and assigning it as variable
+//
+// wrapper.removeChild(list);
+//
+// wrapper.replaceChild(element, list);
