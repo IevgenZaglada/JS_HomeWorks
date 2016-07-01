@@ -21,16 +21,29 @@
 
 
 
-var a = Math.random();
+// var a = Math.random();
+//
+// console.log(a);
+// a = Math.floor(a*666);
+// console.log(a);
+//
+// function f_out() {
+//   var in1 = document.getElementById("in");
+//   console.log(in1);
+//   console.log(in1.value);
+//   console.log(in1.id);
+//   console.log(in1.name);
+// }
 
-console.log(a);
-a = Math.floor(a*666);
-console.log(a);
 
-function f_out() {
-  var in1 = document.getElementById("in");
-  console.log(in1);
-  console.log(in1.value);
-  console.log(in1.id);
-  console.log(in1.name);
-}
+// TRY THIS OUT !
+
+// function plus() {
+//   var a,b,c;
+//   var in1 = document.getElementById('in1');
+//   var in2 = document.getElementById('in2');
+//   var in3 = document.getElementById('in3');
+//   in3.value = parseInt(in1.value) + parseInt(in2.value);
+//   console.log("ok");
+// } // ?????????????????
+// plus ();
