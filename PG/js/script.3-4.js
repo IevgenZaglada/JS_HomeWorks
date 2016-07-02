@@ -256,25 +256,25 @@
 // DOM: ELEMENT CREATION
 
 
-var element = document.createElement('li');
-var elementTwo = document.createElement('a');
-var elementThree = document.createElement('li');
-element.classList.add('box');
-elementTwo.classList.add('JS_added_lnik');
-elementThree.classList.add('JS_before');
-element.innerHTML = 'dynamical created element!';
-elementTwo.innerHTML = 'JS created link';
-elementThree.innerHTML = 'Element created with "insertBefore" method which puts element in a specific position';
-
-var wrapper = document.querySelector('.wrapper');
-wrapper.appendChild(element); //insrets specified element in the end of section
-
-var wrapper = document.querySelectorAll('.wrapper');
-wrapper[0].appendChild(elementTwo);
-
-var wrapper = document.querySelector('.wrapper');
-wrapper.insertBefore(elementThree, wrapper.children[2]); //inserts specified element in a specific position
-
-var list = wrapper.querySelector('li');
-// wrapper.removeChild(list); // removes element from DOM
-wrapper.replaceChild(element, list);
+// var element = document.createElement('li');
+// var elementTwo = document.createElement('a');
+// var elementThree = docume2nt.createElement('li');
+// element.classList.add('box');
+// elementTwo.classList.add('JS_added_lnik');
+// elementThree.classList.add('JS_before');
+// element.innerHTML = 'dynamical created element!';
+// elementTwo.innerHTML = 'JS created link';
+// elementThree.innerHTML = 'Element created with "insertBefore" method which puts element in a specific position';
+//
+// var wrapper = document.querySelector('.wrapper');
+// wrapper.appendChild(element); //insrets specified element in the end of section
+//
+// var wrapper = document.querySelectorAll('.wrapper');
+// wrapper[0].appendChild(elementTwo);
+//
+// var wrapper = document.querySelector('.wrapper');
+// wrapper.insertBefore(elementThree, wrapper.children[2]); //inserts specified element in a specific position
+//
+// var list = wrapper.querySelector('li');
+// // wrapper.removeChild(list); // removes element from DOM
+// wrapper.replaceChild(element, list);
