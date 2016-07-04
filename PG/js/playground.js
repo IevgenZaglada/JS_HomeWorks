@@ -36,14 +36,30 @@
 // }
 
 
-// TRY THIS OUT !
+// Остаток отделения
 
-// function plus() {
-//   var a,b,c;
-//   var in1 = document.getElementById('in1');
-//   var in2 = document.getElementById('in2');
-//   var in3 = document.getElementById('in3');
-//   in3.value = parseInt(in1.value) + parseInt(in2.value);
-//   console.log("ok");
-// } // ?????????????????
-// plus ();
+var a = 4321;
+
+console.log(a);
+console.log(Math.floor(a/1000)%10);
+console.log(Math.floor(a/100)%10);
+console.log(Math.floor(a/10)%10);
+console.log(Math.floor(a/1)%10);
+
+
+// отделение
+
+var a = 600001;
+console.log(a);
+
+var day = Math.floor(a/86400)%365;
+// В одном дне 86400 секунд, но не более 365
+
+var hour = Math.floor(a/3600)%60;
+// На чаовом табло% в одном часу 3600 секуед
+
+var min = Math.floor(a/60)%60;
+// В минуте 60 секунд, но если больше 60 - идет переполнение
+
+var sec = Math.floor(a/1)%60;
+// В одной секунде одна секунда
