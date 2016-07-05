@@ -36,30 +36,40 @@
 // }
 
 
-// Остаток отделения
+// // Остаток отделения
+//
+// var a = 4321;
+//
+// console.log(a);
+// console.log(Math.floor(a/1000)%10);
+// console.log(Math.floor(a/100)%10);
+// console.log(Math.floor(a/10)%10);
+// console.log(Math.floor(a/1)%10);
+//
+//
+// // отделение
+//
+// var a = 600001;
+// console.log(a);
+//
+// var day = Math.floor(a/86400)%365;
+// // В одном дне 86400 секунд, но не более 365
+//
+// var hour = Math.floor(a/3600)%60;
+// // На чаовом табло% в одном часу 3600 секуед
+//
+// var min = Math.floor(a/60)%60;
+// // В минуте 60 секунд, но если больше 60 - идет переполнение
+//
+// var sec = Math.floor(a/1)%60;
+// // В одной секунде одна секунда
 
-var a = 4321;
-
-console.log(a);
-console.log(Math.floor(a/1000)%10);
-console.log(Math.floor(a/100)%10);
-console.log(Math.floor(a/10)%10);
-console.log(Math.floor(a/1)%10);
 
 
-// отделение
 
-var a = 600001;
-console.log(a);
-
-var day = Math.floor(a/86400)%365;
-// В одном дне 86400 секунд, но не более 365
-
-var hour = Math.floor(a/3600)%60;
-// На чаовом табло% в одном часу 3600 секуед
-
-var min = Math.floor(a/60)%60;
-// В минуте 60 секунд, но если больше 60 - идет переполнение
-
-var sec = Math.floor(a/1)%60;
-// В одной секунде одна секунда
+// попробовать с первой домашкой
+// <form action="#" style="width:300px;background-color:lightyellow">
+//      <fieldset>
+//          <legend>Возведение в степень</legend>
+//          <input type="button" onclick="powerAction()" value="Степень">
+//      </fieldset>
