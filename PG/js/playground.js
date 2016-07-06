@@ -73,3 +73,8 @@
 //          <legend>Возведение в степень</legend>
 //          <input type="button" onclick="powerAction()" value="Степень">
 //      </fieldset>
+
+
+
+
+  // document.body.appendChild(newElement);  //try this
