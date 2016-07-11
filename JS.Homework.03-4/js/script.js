@@ -1,87 +1,57 @@
-var content = {
-
-  LI_NUM: 3,
-  CHECKBOX_NUM: 3,
-
-  newElement: function (newElemType, newElemClassName, parentClassName, index, newElemContent) {
-
-    var newElement = document.createElement(newElemType);
-
-    if (newElemClassName) {
-      newElement.classList.add(newElemClassName);
-    }
-
-    if (parentClassName) {
-      var parentElem = document.getElementsByClassName(parentClassName);
-      console.log(document.getElementsByClassName(parentClassName));
-      if (parentElem.length) {
-        var sequence = (index > 0 && index < parentElem.length) ? index : 0;
-        if (index) {
-          parentElem[index].appendChild(newElement);
-        } else {
-          parentElem[0].appendChild(newElement);
-        }
-      }
-    } else {
-      document.body.appendChild(newElement);
-    }
-
-    if (newElemContent) {
-      newElement.innerHTML = newElemContent;
-    }
-  },
-
-
-  attribute: function (attrName, attrValue, className, index) {
-    var element = (index) ? (document.getElementsByClassName(className)[index]) : (document.getElementsByClassName(className)[0]);
-
-    var att = document.createAttribute(attrName);
-    att.value = attrValue;
-    element.setAttributeNode(att);
-  },
-
+var testQuiz = {
+  title: 'Тест по программированию',
+  questions: ['Вопрос № 1', 'Вопрос № 2', 'Вопрос № 3'],
+  answers: [
+    ['Вариант ответа № 1', 'Вариант ответа № 2', 'Вариант ответа № 3'],
+    ['Вариант ответа № 1', 'Вариант ответа № 2', 'Вариант ответа № 3'],
+    ['Вариант ответа № 1', 'Вариант ответа № 2', 'Вариант ответа № 3']
+  ],
 
   generate: function () {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'container';
+    document.body.appendChild(wrapper);
+    var selectContainer = document.getElementsByClassName('container');
 
-    this.newElement('div', 'container', 'wrapper', 0, 0);
-    this.newElement('div', 'header-title', 'container');
-    this.newElement('h1', 'title', 'header-title', 0, 'Тест по программированию');
-    this.newElement('form', 'test__container', 'container');
-    this.attribute('action', '#', 'test__container');
-    this.attribute('method', 'GET', 'test__container');
+    var quizTitle = document.createElement('h1');
+    quizTitle.className = 'heading';
+    quizTitle.innerHTML = this.title;
+    selectContainer[0].appendChild(quizTitle);
 
-    this.newElement('ul', 'test__list', 'test__container');
+    var form = document.createElement('form');
+    form.className = 'quiz_form';
+    selectContainer[0].appendChild(form);
+    var selectForm = document.getElementsByClassName('quiz_form');
 
-    var k = 1; 		// checkboxes counter
-    for (var i = 0; i < this.LI_NUM; i++) {
-        var question = 'Вопрос №' + (i + 1);
-    this.newElement('li', 'list__group__tem__' + (i + 1), 'test__list', 0, question);
+    ul = document.createElement('ul');
+    ul.className = 'list-gruop';
+    selectForm[0].appendChild(ul);
 
-        for (var j = 0; j < this.CHECKBOX_NUM; j++) {
-            var answer = 'Вариант ответа №' + (j + 1);
-            console.log('j=', j);
-            console.log('list__group__tem__', 'list__group__tem__' + (i + 1));
+    for (var i = 0; i < this.questions.length; i++) {
+      var selectUl = document.getElementsByClassName('list-gruop');
+      console.log(selectUl);
+      var li_question = document.createElement('li');
+      li_question.className = 'li questions list-group-item-' + i;
+      li_question.innerHTML = i + 1 + '. ' + this.questions[i];
+      selectUl[0].appendChild(li_question);
 
-            this.newElement('div', 'checkbox__count__' + k,
-             'list__group__tem__' + (i + 1), j); //stopped here
-            // this.newElement('div', 'count__check__' + k, 'list__group__tem__' + (i + 1), j);
-            // this.newElement('label', 'check__label__' + k, 'checkbox count__check__' + k, 0);
-            // this.newElement('input', 'checkbox__input__' + k, 'check__label__' + k);
-            // this.newElement('span', 'answer', 'check__label__' + k, 1, answer);
-            // this.attribute('type', 'checkbox', 'checkbox__input__' + k);
-        //
-        //     var checkboxValue = (i + 1) + '_' + (j + 1);
-        //     this.attribute('value', checkboxValue, 'checkbox__input__' + k);
-            k++;
-        }
+      var k = this.answers[i].length;
+      for (var j = 0; j < k; j++) {
+        var li_answer = document.createElement('li');
+        li_answer.className = 'li list-group-item-' + j;
+        li_answer.innerHTML = '<input type = checkbox>' + this.answers[i][j];
+        var selectLi = document.getElementsByClassName('questions');
+        selectLi[i].appendChild(li_answer);
+      }
     }
-
-
-
-    // this.newElement('input', 'button btn__primary', 'test__container');
-    // this.attribute('type', 'submit', 'button');
-    // this.attribute('value', 'Проверить мои результаты', 'button');
+    
+    var visualLi = document.getElementsByTagName('li');
+      for (var y = 0; y < visualLi.length; y++) {
+        visualLi[y].style.listStyle = 'none';
+      }
   }
+
+
 };
 
-content.generate();
+testQuiz.generate();
