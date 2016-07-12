@@ -24,14 +24,14 @@ var testQuiz = {
     var selectForm = document.getElementsByClassName('quiz_form');
 
     ul = document.createElement('ul');
-    ul.className = 'list-gruop';
+    ul.className = 'list-group';
     selectForm[0].appendChild(ul);
 
     for (var i = 0; i < this.questions.length; i++) {
-      var selectUl = document.getElementsByClassName('list-gruop');
+      var selectUl = document.getElementsByClassName('list-group');
       console.log(selectUl);
       var li_question = document.createElement('li');
-      li_question.className = 'li questions list-group-item-' + i;
+      li_question.className = 'list-group-item count--' + i;
       li_question.innerHTML = i + 1 + '. ' + this.questions[i];
       selectUl[0].appendChild(li_question);
 
@@ -40,11 +40,25 @@ var testQuiz = {
         var li_answer = document.createElement('li');
         li_answer.className = 'li list-group-item-' + j;
         li_answer.innerHTML = '<input type = checkbox>' + this.answers[i][j];
-        var selectLi = document.getElementsByClassName('questions');
+        var selectLi = document.getElementsByClassName('list-group-item');
         selectLi[i].appendChild(li_answer);
       }
     }
-    
+
+    // button creation
+    var buttonSubmit = document.createElement('input');
+    buttonSubmit.className = 'btn btn-primary';
+    var buttonSubmitType = document.createAttribute('type');
+    buttonSubmitType.value = 'submit';
+    var buttonSubmitValue = document.createAttribute('value');
+    buttonSubmitValue.value = 'Проверить мои результаты';
+    buttonSubmit.setAttributeNode(buttonSubmitType);
+    buttonSubmit.setAttributeNode(buttonSubmitValue);
+    var insertButton = document.getElementsByClassName('quiz_form');
+    console.log(insertButton);
+    insertButton[0].appendChild(buttonSubmit);
+
+    // minor styling
     var visualLi = document.getElementsByTagName('li');
       for (var y = 0; y < visualLi.length; y++) {
         visualLi[y].style.listStyle = 'none';
