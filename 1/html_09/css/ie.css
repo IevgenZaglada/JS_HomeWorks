@@ -1,0 +1,435 @@
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=latin,cyrillic');*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+header {
+    height: 646px;
+    background-image: url(../img/header_bg.jpg);
+}
+
+.about {
+    height: 260px;
+}
+
+.testmnl_and_blog {
+    height: 488px;
+}
+
+.logos {
+    height: 120px;
+}
+
+.texts {
+    height: 297px;
+}
+
+footer {
+    height: 114px;
+    background-image: url(../img/footer_bg1.jpg);
+}
+
+
+/*LOGO & NAV*/
+
+.logo_and_nav {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.logo {
+    margin: 20px 60px;
+    float: left;
+}
+
+.logo a img {
+    border: none;
+}
+
+.menu {
+    margin-top: 20px;
+    list-style: none;
+    margin-left: 40%;
+}
+
+.menu__item {
+    float: left;
+}
+
+.menu__link {
+    padding: 5px 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__link--selected {
+    border-bottom: 2px solid #edbfff;
+}
+
+.menu__link:hover {
+    border-bottom: 2px solid #edbfff;
+    background: none;
+}
+
+
+/*SLIDER*/
+
+figure {
+    float: left;
+    width: 274px;
+    height: 434px;
+    margin: -20px 0 0 111px;
+    padding: 0;
+    background-image: url(../img/iphone.png);
+}
+
+.wrapper {
+    margin: 30px 60px;
+}
+
+.content {
+    width: 50%;
+    float: left;
+}
+
+.content__header {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    font-size: 60px;
+    color: #fff;
+}
+
+.content__subheader {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: #edbfff;
+}
+
+.content__text {
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/*MARKERS*/
+
+.markers {
+    clear: both;
+    margin-left: 65%;
+}
+
+.markers_item {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-color: #eee;
+}
+
+.markers_item:hover {
+    background-color: #999;
+}
+
+.markers_item--active {
+    background-color: #444;
+}
+
+
+/*ABOUT*/
+
+main .about {
+    background-color: #43304C;
+    overflow: auto;
+    zoom: 1;
+}
+
+.fish {
+    margin: 60px 0 0 80px;
+    width: 320px;
+    float: left;
+}
+
+.fish__sprite {
+    height: 70px;
+    float: left;
+}
+
+.fish__sprite--tool {
+    width: 30px;
+    height: 31px;
+    background: url('../img/about_sprite2.png') no-repeat 0 0;
+}
+
+.fish__sprite--sky {
+    width: 33px;
+    height: 29px;
+    background: url('../img/about_sprite2.png') no-repeat -52px -2px;
+}
+
+.fish__sprite--note {
+    width: 29px;
+    height: 31px;
+    background: url('../img/about_sprite2.png') no-repeat -108px -1px;
+}
+
+.fish__content {
+    width: 270px;
+    float: right;
+}
+
+.fish__header {
+    margin-bottom: 5px;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.fish__paragraph {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.fish__link {
+    margin-top: 10px;
+    float: right;
+    font-size: 18px;
+    color: #eee;
+    text-decoration: none;
+}
+
+.fish__link:hover {
+    text-decoration: underline;
+}
+
+
+/*TESTIMONIALS & BLOG*/
+
+.testmnl_and_blog {
+    border-top: 1px solid #0d151b;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #F9F9F9;
+}
+
+.testimonials {
+    float: left;
+    position: relative;
+    /*margin-top: 70px;*/
+}
+
+.fish--tstmnls {
+    width: 428px;
+    height: 272px;
+    background-color: #fff;
+}
+
+.fish__image {
+    position: absolute;
+    top: 80px;
+    left: 55px;
+}
+
+.fish__header--tst {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #454545;
+}
+
+.salmon {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #edbfff;
+}
+
+.fish__paragraph--tst {
+    font-family: Arial, sans-serif;
+    margin-left: 40px;
+    width: 350px;
+    height: 155px;
+    color: #454545;
+}
+
+
+/*POSTS*/
+
+.posts {
+    font-family: Georgia, serif;
+    margin-left: 50%;
+    padding-top: 80px;
+}
+
+.post {
+    margin: 20px 0 0 0;
+}
+
+.post__image {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.posts__caption {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #000;
+}
+
+.post__caption {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.post__content {
+    margin: 10px 0 20px 0;
+}
+
+.post__paragraph {
+    color: #454545;
+}
+
+.readMore {
+    float: right;
+    margin-right: 30%;
+    text-decoration: none;
+    color: #000;
+}
+
+.readMore:hover {
+    text-decoration: underline;
+}
+
+.markers--white {
+    float: none;
+    clear: both;
+    margin-top: 70%;
+    margin-left: 45%;
+}
+
+
+/*LOGOS*/
+
+.logos {
+    background-color: #F9F9F9;
+    border-top: 1px solid #fefefe;
+    border-bottom: 1px solid #fefefe;
+    padding: 0 120px;
+}
+
+.sprite-box {
+    float: left;
+    margin: 20px 50px 0 50px;
+}
+
+.billabong {
+    width: 69px;
+    height: 64px;
+    background: url('../img/spritesheet.png') no-repeat -147px -5px;
+}
+
+.dc {
+    width: 72px;
+    height: 64px;
+    background: url('../img/spritesheet.png') no-repeat -65px -5px;
+}
+
+.tree {
+    width: 65px;
+    height: 64px;
+    background: url('../img/spritesheet.png') no-repeat -118px -79px;
+}
+
+.awsm {
+    margin-left: 25px;
+    width: 50px;
+    height: 63px;
+    background: url('../img/spritesheet.png') no-repeat -5px -5px;
+}
+
+.rvca {
+    margin-top: 40px;
+    width: 103px;
+    height: 21px;
+    background: url('../img/spritesheet.png') no-repeat -5px -79px;
+}
+
+.vonzipper {
+    width: 78px;
+    height: 61px;
+    background: url('../img/spritesheet.png') no-repeat -5px -110px;
+}
+
+
+/*TEXTS*/
+
+.fish__header--disabled {
+    display: none;
+}
+
+.texts {
+    border-top: 1px solid #d8d8d8;
+    background-color: #ececec;
+}
+
+.fish__header--texts {
+    padding-bottom: 30px;
+    color: #454545;
+}
+
+.fish__paragraph--texts {
+    color: #787878;
+}
+
+.pingbuller {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    color: #454545;
+}
+
+.er {
+    font-family: Georgia, serif;
+    color: #b9b9b9;
+}
+
+.copyright {
+    margin: 5px 0;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #c5c5c5;
+}
+
+
+/*FOOTER*/
+
+.menu--bottom {
+    margin: 0 0 0 70px;
+    padding-top: 40px;
+}
+
+.menu__link--bottom {
+    font-size: 16px;
+}
+
+.designed {
+    float: right;
+    margin-right: 15%;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+}
