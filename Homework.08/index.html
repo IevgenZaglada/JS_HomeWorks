@@ -2,17 +2,29 @@
 <html lang="en">
 
 <head>
+  <title>Document</title>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <![if !IE]>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/480.css">
     <link rel="stylesheet" href="css/768.css">
     <link rel="stylesheet" href="css/960.css">
+    <link rel="stylesheet" href="css/960+.css">
+    <![endif]>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
 </head>
 
 <body>
     <header>
+      <div class="header__logo-menu__cover">
         <section class="header__logo">PINGBULL<span>ER</span></section>
         <menu>
             <ul class="menu__ul">
@@ -35,16 +47,20 @@
                 <li><a href="#">DOLOR SIT AMET</a><span></span></li>
             </ul>
         </menu>
+        </div>
         <nav>
+          <div class="nav__description-bg__hacked">
             <div class="nav__description-bg">
                 <section class="nav__description">
                     <h1 class="nav__h1">Lorem Ipsum Dolor</h1>
                     <h2 class="nav__h2">IT WILL MAKE ALL OF YOUR DREAMS COME <span>TRUE</span></h2>
                     <p class="nav__p">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc <span>dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam
-                        quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</span></p>
+                        quis, euismod id lectus. <span class="nav__description-nula">Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</span></span></p>
                 </section>
                 <section class="nav__iphone"></section>
             </div>
+            </div>
+            <div class="nav__buttons-cover">
             <section class="nav_buttons">
                 <input class="nav_button-1" type="radio" id="nav_1" name="nav" />
                 <label for="nav_1"></label>
@@ -55,9 +71,11 @@
                 <input class="nav_button-4" type="radio" id="nav_4" name="nav" />
                 <label class="nav_button-4" for="nav_4"></label>
             </section>
+            </div>
         </nav>
     </header>
     <main>
+      <div class="main__about-cover">
         <section class="main__about">
             <section class="main__about-1">
                 <section class="main__img"><i class="wrench"></i></section>
@@ -90,7 +108,10 @@
                 <span class="main__span-3">READ MORE</span>
             </section>
         </section>
+        </div>
+        <div class="main__body-cover">
         <section class="main__body">
+          <div class="main__content-cover">
             <section class="main__content">
                 <section class="main__testimonials">
                     <section class="main__testimonials-portrait">
@@ -136,6 +157,8 @@
                     </section>
                 </section>
             </section>
+            </div>
+            <div class="main__trus">
             <section class="main__trust">
                 <img class="main__trust-mark_1" src="img/trust_mark_1.png" alt="">
                 <img class="main__trust-mark_2" src="img/trust_mark_2.png" alt="">
@@ -144,9 +167,12 @@
                 <img class="main__trust-mark_5" src="img/trust_mark_5.png" alt="">
                 <img class="main__trust-mark_6" src="img/trust_mark_6.png" alt="">
             </section>
+            </div>
         </section>
+        </div>
     </main>
     <footer>
+      <div class="footer__categories-cover">
         <section class="footer__categories">
             <section class="footer__copy">
                 <section class="footer__copy-logo">PI<span class="footer__copy-n">N</span>GBULL<span>ER</span></section>
@@ -174,6 +200,8 @@
                     odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
             </section>
         </section>
+        </div>
+        <div class="footer__end-cover">
         <section class="footer__footer-end">
             <ul class="footer__menu">
                 <li><a class="footer__menu-a" href="#">HOME</a></li>
@@ -187,8 +215,10 @@
                 Designed by<span>Pingbull AS</span>
             </section>
         </section>
+        </div>
     </footer>
 
+<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 </body>
 
 </html>

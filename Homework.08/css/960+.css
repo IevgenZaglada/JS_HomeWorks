@@ -1,0 +1,12 @@
+@media only screen and (min-width: 975px) {
+
+  body {
+    width: 100%;
+  }
+
+main .main__about {
+    padding: 75px 2.9% 20px 0.6%;
+}
+
+
+}

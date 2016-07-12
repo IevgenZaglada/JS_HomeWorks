@@ -1,0 +1,43 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+  background: url(../img/background.png) center top fixed no-repeat;
+  background-color: #605980;
+}
+
+    .header__logo {
+    float: left;
+    font-size: 48px;
+    color: #ffffff;
+    text-shadow: 0 2px #a7959c;
+    letter-spacing: -0.5px;
+}
+
+header .header__logo span {
+    color: #745083;
+}
+
+.menu__ul {
+  display: none;
+}
+
+.header__menu768 {
+  float: right;
+}
+
+.header__menu768 li {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.header__menu768 a {
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.nav__description {
+  clear: both;
+}

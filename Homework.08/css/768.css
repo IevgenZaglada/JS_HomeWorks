@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
 header menu {
     justify-content: space-around;
@@ -6,6 +6,7 @@ header menu {
 
 header .header__logo {
     text-align: left;
+    margin: 1px 0 0 8px;
     padding: 0 0 0 10px;
 }
 
@@ -22,7 +23,7 @@ header .header__menu768 {
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
-    padding: 24px 14.6% 0 1.5%;
+    padding: 23px 15.3% 0 2.5%;
 }
 
 header .header__menu768 li {
@@ -74,11 +75,11 @@ header .header__menu768 li:hover span {
 }
 
 header nav {
-    margin: 41px 0 304px 0;
+    margin: 40px 0 304px 0;
 }
 
 header .nav__description {
-    padding: 105px 0 78px 4.6%;
+    padding: 104px 0 78px 5.5%;
 }
 
 header .nav__h1 {
@@ -92,7 +93,7 @@ header .nav__h1 {
 header .nav__h2 {
     clear: both;
     float: left;
-    padding: 7px 0 0 0;
+    padding: 8px 0 0 0;
     font-size: 24px;
     line-height: 36px;
 }
@@ -103,6 +104,7 @@ header .nav__p {
     float: left;
     width: 300px;
     height: 100px;
+    margin: -1px 0 0 0;
     padding: 0 0 0 0;
     overflow: hidden;
     font-family: Open Sans Light;
@@ -127,7 +129,7 @@ header .nav__iphone {
     float: right;
     height: 423px;
     width: 273px;
-    margin: -22px 5.5% 0 0;
+    margin: -23px 6.3% 0 0;
     background: url(../img/iphone.png) 0 0 no-repeat;
     background-size: 274px;
 }
@@ -135,7 +137,7 @@ header .nav__iphone {
 header .nav_buttons {
     position: static;
     float: right;
-    padding: 14px 18% 0 0;
+    padding: 14px 17.8% 0 0;
 }
 
 
@@ -146,7 +148,11 @@ main .main__about {
     justify-content: space-between;
     align-items: flex-start;
     height: 342px;
-    padding: 71px 2% 20px 3%;
+    padding: 71px 3% 20px 4%;
+}
+
+main .main__about h3 {
+  margin: 7px 0 0 3px;
 }
 
 main .main__about section {
@@ -159,8 +165,9 @@ main .main__img {
 }
 
 main section section.main__content-justify {
+  margin: 0 -3px 0 0;
     float: right;
-    width: 154px;
+    width: 156px;
     height: 178px;
 }
 
@@ -228,7 +235,7 @@ main .main__testimonials {
     width: 339px;
     /*padding: 0 2.45% 0px 4.65%;*/
     padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    margin: 0 0 0 8px;
 }
 
 main .main__testimonials-container {
@@ -281,7 +288,7 @@ main .main__updates__container-img {
 }
 
 main .main__updates-more {
-    padding: 18px 20px 0 0;
+    padding: 18px 27px 0 0;
 }
 
 main .main__testimonials-input {
@@ -303,7 +310,7 @@ main .main__button-4 {
 main .main__trust {
     justify-content: space-between;
     height: 94px;
-    padding: 10px 14px 14px 14px;
+    padding: 10px 21px 14px 21px;
 }
 
 main .main__trust img {
@@ -335,16 +342,22 @@ footer .footer__categories {
     flex-flow: row nowrap;
     justify-content: space-between;
     height: 194px;
-    padding: 102px 0 100px 11px;
+    margin: 0 0 0 0;
+    padding: 102px 7px 100px 19px;
 }
 
 footer .footer__categories__news-contaier {
     height: 200px;
     width: 213px;
+    margin: -1px 0 0 0;
 }
 
 footer .footer__categories__news-contaier:nth-child(3) {
-    margin: 0 -3px 0 0;
+    margin: -1px -3px 0 0;
+}
+
+footer .footer__categories section:nth-child(4) {
+    margin: -1px 0 -14px 0;
 }
 
 footer .footer__categories__news-container__p {
@@ -354,12 +367,12 @@ footer .footer__categories__news-container__p {
 footer .footer__menu {
     justify-content: space-between;
     padding: 0 0 0 8px;
-    width: 70%;
+    width: 68.8%;
 }
 
 footer .footer__signature {
     text-align: right;
-    padding: 19px 16px 0 0;
+    padding: 19px 23px 0 0;
 }
 
 }
