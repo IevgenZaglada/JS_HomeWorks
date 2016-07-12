@@ -1,147 +1,92 @@
 // EVENTS
 
 
-// var link = document.querySelector('a');
-// var listItem = document.querySelector('li');
-//
-// // function handlerLink(event) {
-// //   console.log('handlerLink event target', event.target);
-// //   event.preventDefault();
-// // }
-// //
-// // function handlerListItem(event) {
-// //   console.log('handlerlistItem event target', event.target);
-// //   event.preventDefault();
-// // }
-// //
-// // link.addEventListener('click', handlerLink);
-// // listItem.addEventListener('click', handlerListItem);
-// //
-// //
-// //
-// // // handler or callback
-// // link.onclick = function () {
-// //   console.log('Basic example of click event: "onclick" method, adressed to variable "link" ');
-// // }
-// //
-// // // the most correct example of  handler
-// // function handlerClick() {
-// //   console.log('it works on click');
-// // }
-// //
-// // function handlerMO() {
-// //   console.log('it works on mouseover');
-// // }
-// //
-// // function handlerCrossbrowser() {
-// //   console.log('it works on click crossbrowser');
-// // }
-// //
-// // function handlerWindow(event) {
-// //   console.log('it works on click in entire window');
-// //   console.log('event:', event);
-// //   console.log('event:', event.keyCode);
-// //   if (event.keyCode === 13){
-// //     alert('ENTER');
-// //   }
-// // }
-// //
-// //   function handlerlink(event) {
-// //     console.log('event X Y', event.clientX, event.clientY);
-// //     console.log('event target', event.target);
-// //     event.preventDefault();
-// //   }
-// //
-// // // // Old method of event stopping by returning 'false' boolean value
-// // // link.onclick = function (event) {
-// // //   console.log('link.onclick handler');
-// // //   return false;
-// // // }
-// //
-// // link.addEventListener('mouseover', handlerMO);
-// // link.addEventListener('click', handlerClick);
-// // // link.removeEventListener('mouseover', handlerMO);
-//
-// // (if lte IE 8)
-// // link.attachEvent('onlick', handler);
-// // link.detachlink('onlick', handler);
-//
-// // function addEvent(link, event, callback) {
-// //   if (window.attachedEvent) { // IE 8--
-// //     link.attachEvent('on' + event, callback);
-// //     console.log("IE!!!!!");
-// //   } else {
-// //     link.addEventListener(event, callback);
-// //     console.log("not IE!!!!!");
-// //   }
-// // }
-// //
-// // addEvent(link, 'click', handlerCrossbrowser);
+// handler, callback
+
+// easy way
+var elem = document.querySelector('a');
+elem.onclick = function () {
+  alert('test');
+};
+
+// the most correct way
+var element =  document.getElementsByTagName('a');
+
+function handlerClick() {
+  console.log('Event triggered on click, even crossbrowserly');
+}
+function handlerMouseOver() {
+  console.log('Event triggered on mouseover, even crossbrowserly');
+}
+
+element[1].addEventListener('click', handlerClick);
+element[3].addEventListener('mouseover', handlerMouseOver);
+
+var remove = prompt('Removem y/n?', '');
+
+if (remove === 'y') {
+  element[1].removeEventListener('click', handlerClick);
+  element[3].removeEventListener('mouseover', handlerMouseOver);
+}
+
+// crossbrowser event handler method
+function addEvent (el, event, callback) {
+  if (window.attachEvent) { // IE8-
+    el.attachEvent('on' + event, callback); //  IE8 remove listener: el.detachEvent('onclick', hanlderClick);
+  } else {
+    el.addEventListener(event, callback);
+  }
+}
+addEvent(element[4], 'click', handlerClick);
+
+window.addEventListener('1click', handlerClick); // event can be addet to entire Window scope
+window.addEventListener('keydown', handlerClick); // same but for key press
+
+//////////////////////////////////////////////
+// function handlerClick(event) {
+//   console.log('Window scope events list:', event);
+// } // lsit of events
+//////////////////////////////////////////////
 
 
-
-// setTimeout, setInterval
-
-// var counter = 0;
-//
-// var someFunction = function () {
-//   console.log('It works dealyed!');
-//   clearTimeout();
-// }
-//
-// var timeout = setTimeout(someFunction, 500);
-//
-// var someFunctionTwo = function () {
-//   console.log('It works dealyed with some interval! Conunter =' + ' ' + counter);
-//   counter ++;
-//   if (counter === 60) {
-//     clearInterval(interval);
+// function handlerClick(event) {
+//   console.log('Window scope events list:', event.keyCode);
+//   if (event.keyCode === 13) {
+//     console.log('Enter is pressed');
 //   }
 // }
-//
-// var interval = setInterval(someFunctionTwo, 200);
 
 
-
-// Constructors, operator "NEW"
-
-
-// var a = {};
-// var b = [666, 'twelwe'];
-//
-// var c = new Object(); // Object in this example serves as calss
-// console.log('New Object:', c);
-//
-// var d = new Array(1, 2, 3, 'string');
-// console.log('New Array:', d);
-//
-// function Animal(newName, newColor) {
-//   var self = this;
-//   var abc = 'internal variable " abc " '; //local, internal variable represented in local scope
-//   console.log('Internal varibale inside of a function:', abc);
-//
-//   console.log('I`m constructiong an animal!');
-//
-//   newName = newName.toUpperCase(); // makes string UPPERCASE
-//   self.name = newName;
-//   self.color = newColor;
-//   self.noise = function() {
-//     console.log('this is public method');
-//     self._noise();
-//   }
-//   self._noise = function() { // this means that ._noise is private mothod
-//     alert('Hello, I am ' + self.name);
-//   }
+//////////////////////////////////////////////
+// function handlerClick(event) {
+//   console.log('Window scope events list:', event); // shows mouse events
+//   console.log('event X Y', event.clientX, event.clientY); // shows coordinates ( clientX, clientY)
 // }
-//
-//
-// var dog = new Animal('Jack', 'white');
-// console.log('Function becomes object:', dog);
-// dog.noise();
-// var dog = new Animal('Mark', 'brown');
-// console.log('Function becomes object:', dog);
-// dog.noise(); // .noise - public method
-//
-// console.log(dog.name); // .name - public property
-//
-// console.log('Internal varibale inside of a function:', abc);
+// element[4].addEventListener('click', handlerClick);
+//////////////////////////////////////////////
+
+//////////////////////////////////////////////
+// function handlerClick(event) {
+//   console.log('DOM target:', event.target); // shows DOM TARGET
+// }
+// element[4].addEventListener('click', handlerClick);
+//////////////////////////////////////////////
+
+//////////////////////////////////////////////
+// function handlerClick(event) {
+//   console.log('DOM target:', event.target); // shows DOM TARGET
+//   event.preventDefault(); //prevents specific action such as redirection to referenced link web adress or sending data from some form
+// }
+// element[4].addEventListener('click', handlerClick);
+//////////////////////////////////////////////
+
+////////////////////////////////////////////// Antother way to do this
+// element[4].onclick = function (event) {
+//   console.log('lnik.onclick handler');
+//   event.preventDefault(); // or: return false - used on old projects
+// };
+//////////////////////////////////////////////
+
+//////////////////////////////////////////////
+// lnik.addEventListener('click', handlerLink, true); // unnecessary third parameter for handling 'bubbling' effect 30:30
+//////////////////////////////////////////////
