@@ -683,3 +683,10 @@ footer .footer__signature span {
 }
 
 }
+
+
+@-moz-document url-prefix() {
+  body {
+     color:lime;
+  }
+}

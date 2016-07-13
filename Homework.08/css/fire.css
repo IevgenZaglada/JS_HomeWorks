@@ -1,0 +1,9 @@
+@-moz-document url-prefix() {
+
+
+  body {
+    color: red;
+  }
+
+
+}
