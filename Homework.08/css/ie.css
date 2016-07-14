@@ -1,3 +1,4 @@
+
 body {
   width: 960px;
   margin: 0 auto;
@@ -35,9 +36,177 @@ header .header__logo span {
 .header__menu768 a {
   color: #ffffff;
   text-decoration: none;
-
 }
+
+.nav__description-bg {
+  padding: 15px;
+  clear: both;
+  display: block;
+  height: 400px;
+  background: gray;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  background-image: url(../img/iphone.png);
+  background-repeat: no-repeat;
+  background-position: top  right;
+}
+
+.nav__h1 {
+  float: left;
+  font-size: 60px;
+  line-height: 36px;
+  color: #fefefe;
+}
+
+.nav__h2 {
+  float: left;
+  font-size: 32px;
+  line-height: 36px;
+  color: #edbfff;
+}
+
+.nav__p {
+  height: 152px;
+  width: 528px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff
+}
+
 
 .nav__description {
   clear: both;
+}
+
+.nav_buttons {
+  text-align: center;
+}
+
+.main__about-cover {
+  padding: 15px;
+  color: #fff;
+  background: #735082;
+}
+
+.main__about h3 {
+  font-size: 30px;
+}
+
+.main__body-cover {
+  background: #f9f9f9;
+}
+
+.main__content {
+  height: 400px;
+  padding: 100px 40px 50px 40px;
+
+}
+
+.main__testimonials-container {
+  padding: 10px;
+  float: left;
+  width: 429px;
+  height: 320px;
+  background: #ffffff;
+  border: 1px solid #efefef
+}
+
+.main__testimonials-h1,
+.main__testimonials-h2 {
+  font-size: 30px;
+  line-height: 24px
+}
+
+.main__testimonials-h2 {
+  color: #edbfff;
+}
+
+.main__testimonials-input {
+  display: none;
+}
+
+.main__updates {
+  padding: 15px;
+  float: right;
+  height: 320px;
+}
+
+.main__updates__container-p {
+  font-weight: bold;
+}
+
+.main__trust {
+  clear: both;
+  display: inline-block;
+  height: 120px;
+  margin: 0 100px 0 100px;
+  border-top: 1px solid #fefefe;
+  border-bottom: 1px solid #fefefe;
+}
+
+.main__trust img {
+  padding: 0 25px 0 25px;
+}
+
+.footer__categories section {
+  display: inline-block;
+}
+
+footer .footer__categories section:nth-child(4) {
+  display: none;
+}
+
+.footer__copy-logo {
+  color: #454545;
+  font-size: 47px;
+}
+
+.footer__copy-logo span {
+  color: #b9b9b9;
+}
+
+.footer__copy__copy {
+  display: none;
+}
+
+.footer__categories__news-container__p,
+.footer__copy__p {
+  color: #787878;
+}
+
+.footer__footer-end {
+  height: 150px;
+}
+
+.footer__categories__news-container-span-cate {
+  display: none;
+}
+
+.footer__categories {
+  height: 560px;
+  overflow: hidden;
+}
+
+.footer__categories-cover {
+    background: #ececec;
+    padding: 15px;
+}
+
+.footer__menu {
+  float: left;
+}
+
+.footer__menu li {
+  display: inline-block;
+}
+
+.footer__menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.footer__signature {
+  padding-top: 10px;
+  float: right;
+  color: #fff;
 }
