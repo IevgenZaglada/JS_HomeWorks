@@ -95,6 +95,8 @@
 
 // seTimeout, setInterval
 
+
+
 // var counter = 0;
 //
 // var functionTimeout = function () {
@@ -119,6 +121,7 @@
 
 
 // CONSTRUCTORS, operator "new"
+
 
 
 // var a ={};
@@ -155,3 +158,32 @@
 // console.log(dog.name); // tihs is public property
 //
 // dog.noise(); //this is public method
+
+
+// CALL, APPLY
+
+
+// calculate.call(context, arg1, arg2, ...);
+
+// function calculateMoney(a, b) {
+//   console.log('i am ' + this.firstName + ' ' +this.lastName + ' have ' + (a + b) + ' dollars');
+//   console.log(a + b);
+// }
+//
+// var context = {
+//   firstName: 'Vasya',
+//   lastName: 'Pupkin'
+// };
+//
+// calculateMoney.call(context, 5, 3);
+// calculateMoney.apply(context, [5, 3]);
+//
+//
+// function printArguments() {
+//   var args = [].slice.call(arguments);
+//   console.log('arguments', arguments);
+//   args.push('test');
+//   console.log(args);
+// }
+//
+// printArguments(1, 2, 3);
