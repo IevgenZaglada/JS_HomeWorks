@@ -1,0 +1,19 @@
+.pure-img,
+.pure-table {
+  margin: 0 auto;
+}
+
+.button-foo-start{
+  float: left;
+  background-color: forestgreen;
+}
+
+.button-foo-stop{
+  float: right;
+  background-color: OrangeRed	;
+}
+
+
+.button-foo-pause {
+  background-color: gold;
+}
