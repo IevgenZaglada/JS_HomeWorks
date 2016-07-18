@@ -1,42 +1,19 @@
-start.addEventListener('click', start_click);
-pause.addEventListener('click', pause_click);
-stp.addEventListener('click', stp_click);
+var test = document.getElementsByTagName('div');
 
-var obj = {
-  s: 'start',
-  p: 'pause',
-  st: 'stop'
-};
+console.log(test[0]);
 
-var count = 0,
-  timerIdб, go = 0;
+test[3].innerHTML += 'modified';
 
-function start_click() {
-  for_text.innerHTML = 'start_click';
-  if (go === 0) {
-    timerId = setInterval(function () {
-      count++;
-      var msek = count%1000;
-      var secs = Math.floor(count/1000)%60;
-      var mins = Math.floor(count/60000)%60;
-      var hours = Math.floor(count/3600000)%24;
-      var str = hours + ':' + mins + ':' + secs + ':' + msek + ':';
-      for_count.innerHTML = str;
-    }, 1);
-    go = 1;
-  }
-}
 
-function pause_click() {
-  clearInterval(timerId);
-  go = 0;
-  for_text.innerHTML = 'pause_click';
-}
+var aaa = document.createElement('h1');
+aaa.innerHTML = 'test1';
+var bbb = document.createElement('h1');
+bbb.innerHTML = 'test2';
+var ccc = document.createElement('h1');
+ccc.innerHTML = 'test3';
+var ddd = document.createElement('h1');
+ddd.innerHTML = 'test4';
 
-function stp_click() {
-  clearInterval(timerId);
-  go = 0;
-  count = 0;
-  for_count.innerHTML= count;
-  for_text.innerHTML = 'stp_click';
-}
+console.log(aaa);
+
+test[0].appendChild(aaa);
