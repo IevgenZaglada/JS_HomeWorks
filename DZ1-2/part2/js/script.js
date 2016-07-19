@@ -4,14 +4,14 @@ function searchName() {
 	for (i = 0; i < 5; i++) {
 		names[i] = prompt('Введите Ваше имя');
 
-		if (names[i] === null) {
-			alert('Прощайте');
-			return;
-		}
-
 		while (names[i] === '') {
 			alert('Вы не ввели имя');
 			names[i] = prompt('Введите Ваше имя');
+		}
+
+		if (names[i] === null) {
+			alert('Прощайте');
+			return;
 		}
 	}
 	var answerContainer = document.getElementById("answer");
