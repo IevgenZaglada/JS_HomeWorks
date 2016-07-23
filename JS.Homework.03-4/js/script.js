@@ -42,7 +42,7 @@ var testQuiz = {
       k++;
       for (var a = 1; a <= this.ANSWERS_QUANTITY; a++) {
         this.generateNewElement('p', 'answer ' + a, 'list-group-item ' + q, 'answer ' + a);
-        this.generateNewElement('p', 'test', 'answer ' + a, 'этот элемент должен быть в кадом answer');
+        this.generateNewElement('p', 'test', 'answer ' + a, 'по одному такому элементу должно быть в каждом answer - это будет <label> тэг ' + a);
 
         // this.generateNewElement('input', 'checkbox-input ' + a, 'check-label ' + a);
         // this.generateNewElement('p', 'answer ' + a, 'list-group-item ' + q,  this.answers + a);
