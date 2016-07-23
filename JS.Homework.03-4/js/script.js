@@ -21,18 +21,35 @@ var testQuiz = {
     }
   },
 
+  addAttribute: function (attrName, attrValue, attrParent) {
+    var attr = document.createAttribute(attrNAme);
+    attr.value = attrValue;
+    var parent = document.getElementsByClassName(attrParent);
+    if (parent.length) {
+      parent[0].setAttribute(attr);
+    }
+  },
+
   generate: function () {
     this.generateNewElement('div', 'container');
     this.generateNewElement('h1', 'heading', 'container', this.title);
     this.generateNewElement('form', 'quiz_form', 'container');
     this.generateNewElement('ul', 'list-group', 'quiz_form');
 
+    var k = 0;
     for (var q = 1; q <= this.QUESTIONS_QUANTITY; q++) {
       this.generateNewElement('li', 'list-group-item ' + q, 'list-group', q + this.questions + q);
+      k++;
       for (var a = 1; a <= this.ANSWERS_QUANTITY; a++) {
-        this.generateNewElement('p', 'answer ' + a, 'list-group-item ' + q,  this.answers + a);
+        this.generateNewElement('p', 'answer ' + a, 'list-group-item ' + q, 'answer ' + a);
+        this.generateNewElement('p', 'test', 'answer ' + a, 'этот элемент должен быть в кадом answer');
+
+        // this.generateNewElement('input', 'checkbox-input ' + a, 'check-label ' + a);
+        // this.generateNewElement('p', 'answer ' + a, 'list-group-item ' + q,  this.answers + a);
       }
+
     }
+
 
     // var ul = document.createElement('ul');
     // ul.className = 'list-group';
@@ -81,20 +98,3 @@ var testQuiz = {
 };
 
 testQuiz.generate();
-
-
-
-// var wrapper = document.createElement('div');
-// wrapper.className = 'container';
-// document.body.appendChild(wrapper);
-// var selectContainer = document.getElementsByClassName('container');
-
-// var quizTitle = document.createElement('h1');
-// quizTitle.className = 'heading';
-// quizTitle.innerHTML = this.title;
-// selectContainer[0].appendChild(quizTitle);
-//
-// var form = document.createElement('form');
-// form.className = 'quiz_form';
-// selectContainer[0].appendChild(form);
-// var selectForm = document.getElementsByClassName('quiz_form');
