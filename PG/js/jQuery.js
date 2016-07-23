@@ -1,3 +1,4 @@
+console.time('test');
 // jQuery | $ - two ways to trigger jQuery
 console.log(jQuery);
 console.log($);
@@ -96,3 +97,5 @@ $(function () {
   });
 
 });
+
+console.timeEnd('test');
