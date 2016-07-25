@@ -1,18 +1,27 @@
 var testQuiz = {
 
-  QUESTIONS_QUANTITY: 3,
-  ANSWERS_QUANTITY: 3,
+  questionsQuantity: 3,
+  answersQuantity: 3,
 
   title: 'Тест по программированию',
   questions: '. Вопрос № ',
   answers: 'Вариант ответа № ',
 
-  generateNewElement: function (newElemTag, newElemClass, newElemParent, newElemContent) {
+  generateNewElement: function (newElemTag, newElemClass, newElemParent, newElemContent, order) {
     var newElem = document.createElement(newElemTag);
     newElem.className = newElemClass;
-    var parent = document.getElementsByClassName(newElemParent);
-    if (parent.length) {
-      parent[0].appendChild(newElem);
+    if (newElemParent) {
+      var parent = document.getElementsByClassName(newElemParent);
+      if (parent.length) {
+        var ordNum = (order > 0 && order < parent.length) ? order : 0;
+        if (ordNum) {
+          parent[ordNum].appendChild(newElem);
+        } else {
+          parent[0].appendChild(newElem);
+        }
+      } else {
+        console.log('Error! Wrong parentElemClassName');
+      }
     } else {
       document.body.appendChild(newElem);
     }
@@ -22,7 +31,7 @@ var testQuiz = {
   },
 
   addAttribute: function (attrName, attrValue, attrParent) {
-    var attr = document.createAttribute(attrNAme);
+    var attr = document.createAttribute(attrName);
     attr.value = attrValue;
     var parent = document.getElementsByClassName(attrParent);
     if (parent.length) {
@@ -36,65 +45,22 @@ var testQuiz = {
     this.generateNewElement('form', 'quiz_form', 'container');
     this.generateNewElement('ul', 'list-group', 'quiz_form');
 
-    var k = 0;
-    for (var q = 1; q <= this.QUESTIONS_QUANTITY; q++) {
+    var k = 1;
+    for (var q = 1; q <= this.questionsQuantity; q++) {
       this.generateNewElement('li', 'list-group-item ' + q, 'list-group', q + this.questions + q);
-      k++;
-      for (var a = 1; a <= this.ANSWERS_QUANTITY; a++) {
-        this.generateNewElement('p', 'answer ' + a, 'list-group-item ' + q, 'answer ' + a);
-        this.generateNewElement('p', 'test', 'answer ' + a, 'по одному такому элементу должно быть в каждом answer - это будет <label> тэг ' + a); // ВОТ ЗДЕСЬ ПРОБЛЕМА
-
-        // this.generateNewElement('input', 'checkbox-input ' + a, 'check-label ' + a);
-        // this.generateNewElement('p', 'answer ' + a, 'list-group-item ' + q,  this.answers + a);
+      for (var a = 1; a <= this.answersQuantity; a++) {
+        this.generateNewElement('p', 'answer-container ' + k, 'list-group-item ' + q, 0, a);
+        this.generateNewElement('label', 'check-label ' + k, 'answer-container ' + k, 0, 0);
+        this.generateNewElement('input', 'checkbox-input ' + k, 'check-label ' + k);
+        this.generateNewElement('span', 'answer ' + a, 'check-label ' + k, this.answers + a);
+        k++;
+        this.addAttribute('input', 'checkbox', 'checkbox-input ' + k);
       }
-
     }
-
-
-    // var ul = document.createElement('ul');
-    // ul.className = 'list-group';
-    // selectForm[0].appendChild(ul);
-
-    // //content: questions
-    // for (var i = 0; i < this.questions.length; i++) {
-    //   var selectUl = document.getElementsByClassName('list-group');
-    //   console.log(selectUl);
-    //   var li_question = document.createElement('li');
-    //   li_question.className = 'list-group-item count--' + i;
-    //   li_question.innerHTML = i + 1 + '. ' + this.questions[i];
-    //   selectUl[0].appendChild(li_question);
-
-    //   //content: answers
-    //   var k = this.answers[i].length;
-    //   for (var j = 0; j < k; j++) {
-    //     var li_answer = document.createElement('li');
-    //     li_answer.className = 'li list-group-item-' + j;
-    //     li_answer.innerHTML = '<input type = checkbox>' + this.answers[i][j];
-    //     var selectLi = document.getElementsByClassName('list-group-item');
-    //     selectLi[i].appendChild(li_answer);
-    // }
+    this.generateNewElement('input', 'btn btn-primary', 'quiz_form');
+    this.addAttribute('type', 'submit', 'btn');
+    this.addAttribute('value', 'Проверить мои результаты', 'btn');
   }
-
-  // button creation
-  // var buttonSubmit = document.createElement('input');
-  // buttonSubmit.className = 'btn btn-primary';
-  // var buttonSubmitType = document.createAttribute('type');
-  // buttonSubmitType.value = 'submit';
-  // var buttonSubmitValue = document.createAttribute('value');
-  // buttonSubmitValue.value = 'Проверить мои результаты';
-  // buttonSubmit.setAttributeNode(buttonSubmitType);
-  // buttonSubmit.setAttributeNode(buttonSubmitValue);
-  // var insertButton = document.getElementsByClassName('quiz_form');
-  // console.log(insertButton);
-  // insertButton[0].appendChild(buttonSubmit);
-
-  // minor styling
-  // var visualLi = document.getElementsByTagName('li');
-  // for (var y = 0; y < visualLi.length; y++) {
-  //   visualLi[y].style.listStyle = 'none';
-  // }
-  // }
-
 };
 
 testQuiz.generate();
