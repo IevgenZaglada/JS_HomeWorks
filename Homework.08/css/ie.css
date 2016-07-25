@@ -72,6 +72,10 @@ header .header__logo span {
   color: #ffffff
 }
 
+header .nav__h2 {
+  width: 700px;
+}
+
 
 .nav__description {
   clear: both;
@@ -79,6 +83,15 @@ header .header__logo span {
 
 .nav_buttons {
   text-align: center;
+}
+
+.main__about {
+  padding: 25px 25px 25px 25px;
+}
+
+main .main__about section {
+  display: inline-block;
+  width: 277px;
 }
 
 .main__about-cover {
@@ -151,8 +164,35 @@ header .header__logo span {
   display: inline-block;
 }
 
-footer .footer__categories section:nth-child(4) {
-  display: none;
+footer section {
+  display: inline-block;
+}
+
+.footer__categories {
+      padding: 10px 0 100px 25px;
+      height: 200px;
+}
+
+ .footer__copy {
+      width: 300px;
+      height: 240px;
+      overflow: hidden;
+}
+
+ .footer__categories__news-contaier {
+      width: 300px;
+      height: 260px;
+      overflow: hidden;
+      float: right;
+      margin-top: -20px;
+}
+.inet {
+  display: block;
+  width: 0;
+}
+
+footer .footer__categories__news-container__p {
+  margin-top: -8px;
 }
 
 .footer__copy-logo {
@@ -181,11 +221,6 @@ footer .footer__categories section:nth-child(4) {
   display: none;
 }
 
-.footer__categories {
-  height: 560px;
-  overflow: hidden;
-}
-
 .footer__categories-cover {
     background: #ececec;
     padding: 15px;
@@ -208,5 +243,7 @@ footer .footer__categories section:nth-child(4) {
 .footer__signature {
   padding-top: 10px;
   float: right;
+  display: inline-block;
+  margin-right: -400px;
   color: #fff;
 }
