@@ -30,14 +30,6 @@ var testQuiz = {
     }
   },
 
-  // addAttribute: function (attrName, attrValue, attrParent) {
-  //   var attr = document.createAttribute(attrName);
-  //   attr.value = attrValue;
-  //   var parent = document.getElementsByClassName(attrParent);
-  //   if (parent.length) {
-  //     parent.setAttribute(attr);
-  //   }
-
   addAttribute: function (attrName, attrValue, className, ordinalNum) {
     var element = (ordinalNum) ? (document.getElementsByClassName(className)[ordinalNum]) :
       (document.getElementsByClassName(className)[0]);
