@@ -77,3 +77,13 @@ width: 1000px;
   background: green;
   text-align: center;
 }
+
+.css-box {
+  left: 0;
+  transition: all 1s;
+}
+
+.css-box-animated {
+  left: 520px;
+  /*opacity: 0;*/
+}
