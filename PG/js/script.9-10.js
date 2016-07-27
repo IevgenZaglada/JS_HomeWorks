@@ -5,6 +5,26 @@ $(function () {
   $('.fancybox').fancybox();
 });
 
+$( function() {
+    var state = true;
+    $( ".jQuery-color" ).on( "click", function() {
+      if ( state ) {
+        $( ".jQuery-color" ).animate({
+          backgroundColor: "#9fe38f",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( ".jQuery-color" ).animate({
+          backgroundColor: "#84e",
+          color: "#000",
+          width: 240
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
+
 
 
 // ANIMATION

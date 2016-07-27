@@ -87,3 +87,9 @@ width: 1000px;
   left: 520px;
   /*opacity: 0;*/
 }
+
+.jQuery-color {
+  background-color: #0cF;
+  height: 50px;
+  width: 50px;
+}
