@@ -1,15 +1,12 @@
-.one {
-  background: blue;
+#cat {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: pink;
 }
 
-.two {
-  background: red;
-}
-
-.three {
-  background: purple;
-}
-
-.four {
-  background: pink;
+.cat {
+  background-color: yellow;
+  transition: all 1s;
+  left: 520px;
 }
