@@ -1,0 +1,26 @@
+body {
+  padding: 100px;
+  background-color: BlanchedAlmond;
+}
+
+p {
+  width: 90%;
+  font-size: 19px;
+}
+
+.container {
+  float: left;
+  background-color: Cornsilk;
+  width: 800px;
+  padding: 25px;
+  border: 1px solid BurlyWood;
+}
+
+.buttons {
+  padding: 5px;
+}
+
+.col-md-12 {
+  border: 1px solid BurlyWood;
+  padding: 25px;
+}
