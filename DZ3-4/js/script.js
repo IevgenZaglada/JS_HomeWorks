@@ -1,65 +1,74 @@
-var globalObject = {
-	createTitle: function(text) {
-		var title = document.createElement('h1');
-		var wrapper = document.querySelector('body');
-		wrapper.appendChild(title);
-		title.innerHTML = text;
-		title.className = 'text-center alert alert_title alert-success col-lg-6 col-lg-offset-3';
-	},
-	createQuestion: function(textNew) {
-		var questionOne = document.createElement('p');
-		var wrapper = document.querySelector('body');
-		wrapper.appendChild(questionOne);
-		questionOne.innerHTML = textNew;
-		questionOne.className = 'lead alert alert-danger col-lg-4 col-lg-offset-4';
-	},
-	createAnswer: function(textAnswer) {
-		var answerBox = document.createElement('div');
-		var wrapper = document.querySelector('body');
-		wrapper.appendChild(answerBox);
-		answerBox.className = 'alert alert-danger col-lg-4 col-lg-offset-4';
-
-
-		var answerOne = document.createElement('input');
-		answerBox.appendChild(answerOne);
-		answerOne.setAttribute('type', 'checkbox');
-		answerOne.className = 'col-lg-2 col-lg-offset-2';
-
-		var answerOneText = document.createElement('label');
-		answerBox.appendChild(answerOneText);
-		answerOneText.className = 'col-lg-6';
-		answerOneText.innerHTML = textAnswer;
-	},
-	createButton: function(newText) {
-		var checkResult = document.createElement('button');
-		var wrapper = document.querySelector('body');
-		wrapper.appendChild(checkResult);
-		checkResult.innerHTML = newText;
-		checkResult.setAttribute('type', 'submit' );
-		checkResult.className = 'btn btn-primary col-lg-2 col-lg-offset-5';
-	},
-	globalFunction: function() {
-		this.createTitle('Тест по программированию');
-		for (var i = 1; i <=  3; i++) {
-			this.createQuestion(i+ '. Вопрос № ' +i);
-		for (var j = 1; j <= 4; j++) {
-			this.createAnswer('Вариант ответа №' + j);
-	}
-	}
-		this.createButton('Проверить мои результаты');
-	}
+var createPage = {
+		callTitle: function() {
+			createHtml.createTitle('Тест по программированию');
+		},
+		callQuestion: function() {
+			for (var i = 1; i <=  3; i++) {
+				createHtml.createQuestion('. Вопрос № ', i);
+			for (var j = 1; j <= 3; j++) {
+				createHtml.createAnswer('Вариант ответа №', j);
+		}
+		}
+		},
+		callButton: function() {
+			createHtml.createButton('Проверить мои результаты')
+		},
+		callPage: function() {
+			this.callTitle();
+			this.callQuestion();
+			this.callButton();
+		}
 }
 
-/*globalObject.createTitle('Тест по программированию');
+var createHtml = {
+	newVariable: function(element, text, classAdd, parent) {
+		var variable = document.createElement(element);
+		this.addElement(variable, parent);
+		this.addText(variable, text);
+		this.addClass(variable, classAdd);
+			if (element === 'input') {
+		this.addAttribute(variable, 'type', 'checkbox');
+			};
+			if (element === 'button') {
+		this.addAttribute(variable, 'type', 'submit');
+			};
+		return variable;
+	},
 
-	for (var i = 1; i <=  3; i++) {
-		globalObject.createQuestion(i+ '. Вопрос № ' +i);
-			for (var j = 1; j <= 3; j++) {
-		globalObject.createAnswer('Вариант ответа №' + j);
+
+	addElement: function(element, parent) {
+		if (parent != undefined && parent != '') {
+		  parent.appendChild(element);
+		}
+		else {
+		document.body.appendChild(element);
 	}
+	},
+	addText: function(element, text) {
+		element.innerHTML = text;
+	},
+	addClass: function(element, classAdd) {
+		element.className = classAdd;
+	},
+	addAttribute: function(element, type, value) {
+		element.setAttribute(type, value);
+	},
+
+
+	createTitle: function() {
+		this.newVariable('h1', 'Тест по программированию', 'text-center alert alert_title alert-success col-lg-6 col-lg-offset-3');
+	},
+	createQuestion: function(text, number) {
+		this.newVariable('p', number + text+number, 'lead alert alert-danger col-lg-4 col-lg-offset-4');
+	},
+	createAnswer: function(text, number) {
+	 var box = this.newVariable('div', '', 'alert alert-danger col-lg-4 col-lg-offset-4');
+		this.newVariable('input', '', 'col-lg-2 col-lg-offset-2', box);
+		this.newVariable('label', text+number, 'col-lg-6', box);
+	},
+	createButton: function() {
+		this.newVariable('button', 'Проверить мои результаты', 'btn btn-primary col-lg-2 col-lg-offset-5')
 	}
 
-
-globalObject.createButton('Проверить мои результаты');*/
-
-globalObject.globalFunction();
+}
+createPage.callPage();
