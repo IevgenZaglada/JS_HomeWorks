@@ -67,3 +67,10 @@ $('.jquery-box').on('click', function () {
 $('.css-box').on('click', function () {
   $(this).addClass('css-box-animated');
 });
+
+
+// ANIMATION SMOOTHING
+
+$('.easing-box').on('click', function () {
+    $(this).animate({left: '+=520'}, 1000, 'easeOutElastic');
+});
