@@ -1,13 +1,9 @@
 $('.hover-1').hover(function () {
-  $('.tooltip-1').animate({ 'opacity': '1' }, 50);
-  // $('.tooltip-1').toggleClass('activetip');
-  $(this).mouseout(function () {
-    $('.tooltip-1').css('opacity', '0');
-  });
+  $('.tooltip-1').toggleClass('activetip');
 });
 
 $('.hover-2').hover(function () {
-  $('.tooltip-2').fadein();
+  $('.tooltip-2').toggleClass('activetip');
 });
 
 $('.hover-3').hover(function () {

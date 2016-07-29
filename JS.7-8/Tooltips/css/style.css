@@ -1,19 +1,26 @@
 body {
   background-color: Linen;
+
 }
 
 #adress {
   margin-left: 19px;
 }
 
+.container {
+  float: left;
+  padding-left: 10%;
+}
+
 .tip {
-  display: inline-block;
-  opacity: 0;
-  background-color: Khaki;
-  border: 1px solid SaddleBrown;
-  width: 300px;
+display: inline-block;
+opacity: 0;
 }
 
 .activetip {
-
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  background-color: Khaki;
+  border: 1px solid SaddleBrown;
+  width: 300px;
 }
