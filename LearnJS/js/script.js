@@ -1,9 +1,8 @@
-var x = document.getElementById('cat');
 
+var obj = {a: 1};
 
-x.addEventListener('click', a()
-);
+var increment = function(obj ) { obj = {a: 2} ;}  ;
 
-function a() {
-  className += '.cat';
-}
+increment(obj);
+
+console.log(obj.a);

@@ -5,3 +5,15 @@ body {
 #adress {
   margin-left: 19px;
 }
+
+.tip {
+  display: inline-block;
+  opacity: 0;
+  background-color: Khaki;
+  border: 1px solid SaddleBrown;
+  width: 300px;
+}
+
+.activetip {
+
+}
