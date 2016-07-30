@@ -1,12 +1,13 @@
 body {
   height: 1200px;
-  background: rgb(76,76,76); /* Old browsers */
-  background: linear-gradient(to bottom,  rgb(48, 48, 48) 0%,rgba(19,19,19,1) 100%);
+  background: rgb(76,76,76);
+  /* Old browsers */
+  background: linear-gradient(to bottom, rgb(48, 48, 48) 0%,rgba(19,19,19,1) 100%);
   font-family: 'Space Mono', monospace;
 }
 
 .content {
-  padding: 100px 100px 25px 100px;
+  padding: 100px 100px 25px;
 }
 
 /*Dropdown menu*/
@@ -14,7 +15,7 @@ body {
 nav {
   display: block;
   height: 40px;
-  padding: 5px  0 5px 0;
+  padding: 5px 0;
   background-color: DarkOrange;
   border-bottom: 1px solid black;
   box-shadow: 1px 1px 1px black;
@@ -22,7 +23,7 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: space-around;;
+  justify-content: space-around;
   align-content: center;
 }
 
@@ -50,12 +51,12 @@ nav ul li {
   top: 0;
 }
 
-.dropdown-initial-a,
 .dropdown-drop-a,
-.dropdown-drop-drop-a {
+.dropdown-drop-drop-a,
+.dropdown-initial-a {
   display: block;
   cursor: pointer;
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
   height: 20px;
   width: 150px;
   color: black;
@@ -77,30 +78,29 @@ nav ul li {
 }
 
 .one {
-  background-image: url(../img/one.png);
+  background-image: url('../img/one.png');
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: 15px 12px;
 }
 
 .two {
-  background-image: url(../img/hands.png);
+  background-image: url('../img/hands.png');
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: 5px 12px;
 }
 
 .three {
-  background-image: url(../img/uni.png);
+  /*background-image: url('../img/uni.png');
   background-size: 15px;
   background-repeat: no-repeat;
-  background-position: 15px 15px;
+  background-position: 15px 15px;*/
 }
 
-
-.dropdown-initial-a:hover,
 .dropdown-drop-a:hover,
-.dropdown-drop-drop-a:hover {
+.dropdown-drop-drop-a:hover,
+.dropdown-initial-a:hover {
   background-color: #faf357;
 }
 
@@ -110,13 +110,13 @@ nav ul li {
 
 .wrapper {
   padding-top: 50px;
-  background: url('../img/bg.png') top 37px center  no-repeat;
+  background: url('../img/bg.png') top 37px center no-repeat;
   height: 690px;
   background-size: 673px 653px;
 }
 
 img::selection {
-  background: rgba(255, 0, 0, 0);;
+  background: rgba(255, 0, 0, 0);
 }
 
 h1 {
@@ -137,7 +137,7 @@ h1 span {
 }
 
 span::selection {
-background: #000;
+  background: #000;
 }
 
 .selectbox {
@@ -180,10 +180,9 @@ p::selection {
   color: gold;
 }
 
-.iCheck-label{
+.iCheck-label {
   color: gold;
 }
-
 
 /*CSS checkbox*/
 
@@ -206,7 +205,7 @@ p::selection {
   display: inline-block;
   width: 17px;
   height: 17px;
-  background: url(../img/css-check.png);
+  background: url('../img/css-check.png');
   position: relative;
   top: 3px;
   margin-left: -22px;

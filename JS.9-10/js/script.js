@@ -148,7 +148,7 @@ $(document).ready(function () {
 
 // custom checkbox
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.iCheck').iCheck({
     checkboxClass: 'icheckbox_minimal-yellow',
     radioClass: 'iradio_minimal-yellow',
@@ -158,9 +158,6 @@ $(document).ready(function(){
 
 
 // dropdown menu
-
-
-
 
 $('.trigger').hover(function () {
   $('.aftermath').slideToggle('fast');
