@@ -1,8 +1,23 @@
+(function ($) {
 
-var obj = {a: 1};
+$.fn.greenify = function (options) {
 
-var increment = function(obj ) { obj = {a: 2} ;}  ;
+  var settings = $.extend({
+    color: 'rgb(62, 82, 150)',
+    backgroundColor: 'rgb(193, 156, 101)'
+  }, options);
 
-increment(obj);
+  return this.css({
+    color: settings.color,
+    backgroundColor: settings.backgroundColor
+  });
+};
+}(jQuery));
 
-console.log(obj.a);
+
+$('div').greenify({
+  color: 'orange',
+  backgroundColor: 'pink'
+}).animate({
+  // 'opacity': 0.25
+});
