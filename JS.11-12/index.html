@@ -7,30 +7,52 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-
+  <div class="carousel-arrow-left"><span>Left</span></div>
   <div class="carousel-hider">
-    <ul calss="carousel-list">
-      <li class="carousel-element"><img src="img/image1.png" alt="">One</li>
-      <li class="carousel-element"><img src="img/image2.png" alt="">Two</li>
-      <li class="carousel-element"><img src="img/image3.png" alt="">Three</li>
-      <li class="carousel-element"><img src="img/image4.png" alt="">Four</li>
-      <li class="carousel-element"><img src="img/image5.png" alt="">Five</li>
-      <li class="carousel-element"><img src="img/image6.png" alt="">Six</li>
-      <li class="carousel-element"><img src="img/image7.png" alt="">Seven</li>
-      <li class="carousel-element"><img src="img/image8.png" alt="">Eight</li>
-      <li class="carousel-element"><img src="img/image9.png" alt="">Nine</li>
-      <li class="carousel-element"><img src="img/image10.png" alt="">Ten</li>
-      <li class="carousel-element"><img src="img/image11.png" alt="">Eleven</li>
-      <li class="carousel-element"><img src="img/image12.png" alt="">Twelve</li>
+    <ul class="carousel-list">
+      <li class="carousel-element"><img src="img/image1.png" alt=""><p>One</p></li>
+      <li class="carousel-element"><img src="img/image2.png" alt=""><p>Two</p></li>
+      <li class="carousel-element"><img src="img/image3.png" alt=""><p>Three</p></li>
+      <li class="carousel-element"><img src="img/image4.png" alt=""><p>Four</p></li>
+      <li class="carousel-element"><img src="img/image5.png" alt=""><p>Five</p></li>
+      <li class="carousel-element"><img src="img/image6.png" alt=""><p>Six</p></li>
+      <li class="carousel-element"><img src="img/image7.png" alt=""><p>Seven</p></li>
+      <li class="carousel-element"><img src="img/image8.png" alt=""><p>Eight</p></li>
+      <li class="carousel-element"><img src="img/image9.png" alt=""><p>Nine</p></li>
+      <li class="carousel-element"><img src="img/image10.png" alt=""><p>Ten</p></li>
+      <li class="carousel-element"><img src="img/image11.png" alt=""><p>Eleven</p></li>
+      <li class="carousel-element"><img src="img/image12.png" alt=""><p>Twelve</p></li>
     </ul>
   </div>
+  <div class="carousel-arrow-right"><span>Right</span></div>
+  <div class="content">
+  <script type="text/template" id="userProfile">
 
+    <% for (var i = 0; i < data.length; i++) { %>
+    <h1><%= data[i].title %></h1>
+    <% }; %>
+
+  </script>
+</div>
+
+
+
+  <script src="js/customCarousel.js"></script>
+  <script src="js/tmpl.js"></script>
   <script src="js/script.js"></script>
 </body>
 
 </html>
+<!-- <script type="text/template" id="userProfile">
+  <% for (var i = 0; i < data.length; i++) { %>
+  <h1><%= data[i].title %></h1>
+  <p><%= data[i].content %></p>
+  <% }; %>
+</script>
+</div> -->
