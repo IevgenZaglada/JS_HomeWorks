@@ -1,5 +1,4 @@
-// 'use strict';
-
+// 'use strict'
 // Adding data to local storage
 
 var questionsQuantity = 3;
@@ -10,33 +9,30 @@ for (var i = 0; i < answersQuantity; i++) {
   storedAnswers[i] = new Array(answersQuantity);
 }
 
-
-
 storedQuestions[0] = {"question": "Релиз какой OS состоялся раньше всего?"};
-storedQuestions[1] = 'Кто являеться создателем JavaScript?';
-storedQuestions[2] = 'Как называеться самый первый в мире веб-браузер?';
+storedQuestions[1] = {"question": "Кто являеться создателем JavaScript?"};
+storedQuestions[2] = {"question": "Как называеться самый первый в мире веб-браузер?"};
 
-storedAnswers[0][0] = 'OS X';
-storedAnswers[0][1] = 'Linux';
-storedAnswers[0][2] = 'Windows';
+storedAnswers[0][0] = {"answer": "OS X"};
+storedAnswers[0][1] = {"answer": "Linux"};
+storedAnswers[0][2] = {"answer": "Windows"};
 
-storedAnswers[1][0] = 'Брендад Эйх';
-storedAnswers[1][1] = 'Ларри Уол';
-storedAnswers[1][2] = 'Билл Гейтс';
+storedAnswers[1][0] = {"answer": "Брендад Эйх"};
+storedAnswers[1][1] = {"answer": "Ларри Уолл"};
+storedAnswers[1][2] = {"answer": "Билл Гейтс"};
 
-storedAnswers[2][0] = 'Mosaic';
-storedAnswers[2][1] = 'Internet Explorer';
-storedAnswers[2][2] = 'Netscape';
+storedAnswers[2][0] = {"answer": "Mosaic"};
+storedAnswers[2][1] = {"answer": "Internet Explorer"};
+storedAnswers[2][2] = {"answer": "Netscape"};
 
 for (i = 0; i < questionsQuantity; i++) {
-  localStorage.setItem('q ' + (i + 1), storedQuestions[i]);
+  localStorage.setItem('q ' + (i + 1), JSON.stringify(storedQuestions[i]));
   for (var j = 0; j < answersQuantity; j++) {
-    localStorage.setItem('a ' + (i + 1) + '-' + (j + 1), storedAnswers[i][j]);
+    localStorage.setItem('a ' + (i + 1) + '-' + (j + 1), JSON.stringify(storedAnswers[i][j]));
   }
 }
 
 // Generating HTML using template
-
 
 var html = $('#testQuiz').html();
 
@@ -50,11 +46,13 @@ for (var i = 0; i < answersQuantity; i++) {
 }
 
 for (i = 0; i < questionsQuantity; i++) {
-  parsedQuestions[i] = JSON.parse(localStorage.getItem('q' + (i + 1)));
-  for (j = 0; i < answersQuantity; i++) {
-    parsedAnswers[i][j] = JSON.parse(localStorage.getItem('a' + (i + 1) + '-' + (j + 1)));
+  parsedQuestions[i] = JSON.parse(localStorage.getItem('q ' + (i + 1)));
+  for (j = 0; j < answersQuantity; j++) {
+    parsedAnswers[i][j] = JSON.parse(localStorage.getItem('a ' + (i + 1) + '-' + (j + 1)));
   }
 }
+
+console.log(parsedAnswers);
 
 var quiz = tmpl(html, {
   headTitle: quizTitle,
@@ -62,6 +60,8 @@ var quiz = tmpl(html, {
   a_data: parsedAnswers,
   submitValue: quizButton
 });
+
+// console.log(a_data);
 
 $('body').append(quiz);
 
