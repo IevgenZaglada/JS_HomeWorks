@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Custom carousel</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -33,12 +33,17 @@
   <div class="carousel-arrow-right"><span>Right</span></div>
   <div class="content">
   <script type="text/template" id="userProfile">
-
-    <% for (var i = 0; i < data.length; i++) { %>
-    <h1><%= data[i].title %></h1>
-    <% }; %>
-
-  </script>
+  <% for (var i = 0; i < data.length; i++) { %>
+  <h3 class="page-heading"><%= data[i].title %></h3>
+  <% if (i < 1) { %>
+  <li><%= data[i].listItemOne %></li>
+  <li><%= data[i].listItemTwo %></li>
+  <li><%= data[i].listItemThree %></li>
+  <% } %>
+  <p><%= data[i].content %></p>
+  <% }; %>
+</script>
+</div>
 </div>
 
 
@@ -49,10 +54,3 @@
 </body>
 
 </html>
-<!-- <script type="text/template" id="userProfile">
-  <% for (var i = 0; i < data.length; i++) { %>
-  <h1><%= data[i].title %></h1>
-  <p><%= data[i].content %></p>
-  <% }; %>
-</script>
-</div> -->

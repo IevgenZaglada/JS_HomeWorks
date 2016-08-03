@@ -1,30 +1,32 @@
-$(function () {
-  var html = $('#userProfile').html();
-  var profileData = [{
-    title: 'ASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDF',
-  }];
-  var content = tmpl(html,{data: profileData});
-});
-$('.content').append(content);
-
-
-//
-// var html =  $('#userProfile').html();
-// var articles =  [
-//   {
-//     title: 'Article 1',
-//     content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-//   },
-//   {
-//     title: 'Article 2',
-//     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-//   },
-//   {
-//     title: 'Article 3',
-//     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-//   }
-// ];
-// var content = tmpl(html,{
-//   data: articles
+// $(function () {
+//   var html = $('#userProfile').html();
+//   var profileData = [{
+//     title: 'ASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDF',
+//   }];
+//   var content = tmpl(html,{data: profileData});
 // });
-// $('body').append(content);
+// $('.content').append(content);
+
+
+
+var html =  $('#userProfile').html();
+var articles =  [
+  {
+    title: 'I want to be a frontend developer becuase',
+    listItemOne: 'It is really good to make something instead of breaking something ',
+    listItemTwo: 'It is good to make things beautiful using high technologies.',
+    listItemThree: 'Finally i`ll able to make a website with a content under restriction'
+  },
+  {
+    title: 'My phone is: +3080930373861',
+    content: 'Feel free to poke me at my VK profile.'
+  },
+  {
+    title: 'My feedback:',
+    content: 'I wish more offline meeting. Offline makes a party.'
+  }
+];
+var content = tmpl(html,{
+  data: articles
+});
+$('body').append(content);
