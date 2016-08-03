@@ -1,12 +1,13 @@
 (function ($) {
 
-  $.fn.delay = function () {
+  $.fn.delayed = function () {
 
   $(this).on('click', function () {
     var url = "test/next.html";
-    $('.link').animate({
+    $('.wrapper').animate({
       'opacity': '0'
-    }, 1000).attr('href', url);
+    }, 1000);
+    $('.link').delay(1500).attr('href', url);
     // $('.link').
 
   });
@@ -16,4 +17,4 @@
 
 })(jQuery);
 
-$('.link').delay();
+$('.link').delayed();
