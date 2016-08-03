@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'railwayregular';
+    src: url('../fonts/railway/railway-webfont.eot');
+    src: url('../fonts/railway/railway-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/railway/railway-webfont.woff2') format('woff2'),
+         url('../fonts/railway/railway-webfont.woff') format('woff'),
+         url('../fonts/railway/railway-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gooddogregular';
+    src: url('../fonts/goodDog/gooddog-webfont.eot');
+    src: url('../fonts/goodDog/gooddog-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/goodDog/gooddog-webfont.woff2') format('woff2'),
+         url('../fonts/goodDog/gooddog-webfont.woff') format('woff'),
+         url('../fonts/goodDog/gooddog-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	background-color: #f7f6f6;
+	text-align: center;
+}
+
+#title {
+	text-transform: uppercase;
+	font-size: 60px;
+	font-family: 'gooddogregular';
+}
+
+#timer {
+	width: 600px;
+	height: 90px;
+	margin: 40px auto;
+	border: 5px solid #000000;
+	background-color: #dcdada;
+	border-radius: 15px;
+	position: relative;
+}
+
+#output {
+	background-color: #dcdada;
+	font-size: 84px;
+	line-height: 50px;
+	
+}
+
+#outputMili {
+	font-size: 20px;
+	position: absolute;
+	right: 131px;
+	font-weight: bold;
+	bottom: 2px;
+}
+
+.text {
+	font: bold 30px/30px 'railwayregular', Arial, sans-serif;
+	border-radius: 15px;
+	color: #000000;
+	padding: 15px 20px;
+}
+
+button {
+	width: 250px;
+	border: 5px solid black;
+	cursor: pointer;
+}
+
+#start {
+	background-color: green;
+}
+
+#reset {
+	background-color: red;
+}
