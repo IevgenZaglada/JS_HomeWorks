@@ -1,14 +1,3 @@
-// $(function () {
-//   var html = $('#userProfile').html();
-//   var profileData = [{
-//     title: 'ASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDF',
-//   }];
-//   var content = tmpl(html,{data: profileData});
-// });
-// $('.content').append(content);
-
-
-
 var html =  $('#userProfile').html();
 var articles =  [
   {
