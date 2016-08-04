@@ -23,26 +23,26 @@
 
       switch (correctAnswersCounter) {
         case 0:
-          $modal = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>You can try again.</p><div class="start_again"><input type="submit" class="btn btn-danger again" value="Начать заново"></div></div>');
+          $modalBox = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>You can try again.</p><div class="start_again"><input type="submit" class="btn btn-danger again" value="Начать заново"></div></div>');
           break;
         case 1:
-          $modal = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>A bit closer. You can try again.</p><div class="start_again"><input type="submit" class="btn btn-warning again" value="Начать заново"></div></div>');
+          $modalBox = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>A bit closer. You can try again.</p><div class="start_again"><input type="submit" class="btn btn-warning again" value="Начать заново"></div></div>');
           break;
         case 2:
-          $modal = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>Almost here. You can try again.</p><div class="start_again"><input type="submit" class="btn btn-warning again" value="Начать заново"></div></div>');
+          $modalBox = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>Almost here. You can try again.</p><div class="start_again"><input type="submit" class="btn btn-warning again" value="Начать заново"></div></div>');
           break;
         case 3:
-          $modal = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>Woho! Correct! Victory!</p><div class="start_again"><input type="submit" class="btn btn-success again" value="Начать заново again"></div></div>');
+          $modalBox = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>Woho! Correct! Victory!</p><div class="start_again"><input type="submit" class="btn btn-success again" value="Начать заново again"></div></div>');
           break;
       }
 
       $overlay = $('<div class="modal-overlay"></div>');
       $($body).append($overlay);
-      $($body).append($modal);
+      $($body).append($modalBox);
       $($overlay).animate({
         'opacity': '1'
       }, 1000);
-      $($modal).animate({
+      $($modalBox).animate({
         'opacity': '1',
         'top': '40%'
       }, 1000);
@@ -52,7 +52,7 @@
 
     function hideModal() {
       var $answersOptions = $('.for-checking');
-      $modal.animate({
+      $modalBox.animate({
         'opacity': '0',
         'top': '-50%'
       }, 1000);
@@ -60,7 +60,7 @@
         'opacity': '0'
       }, 1000);
       setTimeout(function () {
-        $modal.remove();
+        $modalBox.remove();
         $overlay.remove();
       }, 1000);
       for (var i = 0; i < $answersOptions.length; i++) {
