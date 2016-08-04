@@ -1,4 +1,4 @@
-// 'use strict'
+'use strict'
 // Adding data to local storage
 
 var questionsQuantity = 3;
@@ -52,8 +52,6 @@ for (i = 0; i < questionsQuantity; i++) {
   }
 }
 
-console.log(parsedAnswers);
-
 var quiz = tmpl(html, {
   headTitle: quizTitle,
   q_data: parsedQuestions,
@@ -64,6 +62,4 @@ var quiz = tmpl(html, {
 $('body').append(quiz);
 
 
-$('.btn').modal();
-
-console.log($('.for-checking'));
+$('.btn').modal(); // Separate plugin calling modal window
