@@ -1,53 +1,40 @@
-$(function() {
+var $searchForm = $('.searchForm');
+var $searchSubmit = $('.searchSubmit');
+var $content = $('content');
+var API_KEY = '3044055-26f05a0ce42eac2412c64079c';
 
-    var API_KEY = '2957253-77eda47a6d8c06c5cf8269032';
+(function ($) {
 
-    $('.search-input').keypress(function(e) {
-        var key = e.which;
-        if (key === 13) {
-            $('.test').click();
-        }
+  $.fn.search = function () {
+
+    $('a').remove();
+    $('p').remove();
+
+    $.ajax({
+      url: "https://pixabay.com/api/?key=" + API_KEY + "&q=" + encodeURIComponent($searchForm.val()),
+      dataType: 'jsonp',
+
+      success: function (data) {
+        if (parseInt(data.totalHits) > 0)
+          $.each(data.hits, function (i, hit) {
+
+            var image = hit.previewURL;
+            var page = hit.pageURL;
+            $content.append('<a href="' + page + '"><img class="foundImages" src="' + image + '"></a>');
+          });
+        else
+          $content.append('<p>No images found.</p>');
+      }
     });
+  };
+})(jQuery);
 
-    $('.test').on('click', function() {
-
-        var searchInput = $('.search-input').val();
-        $.ajax({
-
-            url: "https://pixabay.com/api/?key=" + API_KEY + "&q=" + encodeURIComponent(searchInput) + "&per_page=" + 42,
-            dataType: "jsonp",
-
-            success: function(data) {
-                var ul = document.createElement("ul");
-                if (parseInt(data.totalHits) > 0) {
-                    $.each(data.hits, function(i, hit) {
-                        var li = document.createElement("li");
-                        var inner = '<a href="' + hit.pageURL + '" target="_blank">  <img src="' + hit.previewURL + '"></a>';
-                        li.innerHTML = inner;
-                        ul.appendChild(li);
-                    });
-                    $('.search-results').html(ul);
-                } else {
-                    var message = $('<p>Sorry. No matches found :(</p>');
-                    $('.search-results').html(message);
-                }
-            }
-        });
-    });
+$searchForm.keydown(function (event) {
+  if (event.keyCode == 13) {
+    $searchSubmit.search();
+  }
 });
 
-
-function GoogleCallback(jqueryObj, data) {
-  console.log('arguments', arguments);
-}
-
-
-var API_KEY = '2957253-77eda47a6d8c06c5cf8269032';
-
-function googleSearch(e){
-        $.ajax({
-          url: "https://pixabay.com/api/?key=3044055-26f05a0ce42eac2412c64079c&q='+ '",
-          dataType: "jsonp",
+$searchSubmit.on('click', function () {
+  $(this).search();
 });
-}
-googleSearch('search');
