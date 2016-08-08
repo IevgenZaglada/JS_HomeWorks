@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/jquery.selectBox.min.js" type="text/javascript"></script>
-  <script src="js/jquery.selectBox.js" type="text/javascript"></script>
   <script src="js/jquery.jcarousel.min.js"></script>
   <script src="js/zepto.js" type="text/javascript"></script>
   <script src="js/customCheckbox.js"></script>
@@ -14,11 +12,12 @@
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/carousel.css">
-  <link href="css/jquery.selectBox.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link rel="stylesheet" href="css/yellow.css">
-
+  <script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
+  <script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
 </head>
 
 <!-- Dropdown menu -->
@@ -92,19 +91,15 @@
 
     <!-- Custon Selectbox/ -->
 
-    <p class="selectbox">
-      <label for="standard-dropdown">Select your favorite</label>
-      <br/>
-      <select id="standard-dropdown" name="standard-dropdown" class="custom-class1 custom-class2" style="width: 200px;">
-        <option value="1" class="test-class-1">Aurora</option>
-        <option value="2" class="test-class-2">Universe</option>
-        <option value="3" class="test-class-3">Lion
-        </option>
-        <option value="4" class="test-class-4">Starry night</option>
-        <option value="5" class="test-class-5">Fudzi</option>
-        <option value="5" class="test-class-6">Yosemite</option>
-      </select>
-    </p>
+    <select class="sss" id="selectboxCustom" name="test">
+      <option value="Select your favorite">Select your favorite</option>
+      <option value="Aurora">Aurora</option>
+      <option value="Universe">Universe</option>
+      <option value="Lion">Lion</option>
+      <option value="Starry night">Starry night</option>
+      <option value="Fudzi">Fudzi</option>
+      <option value="Yosemite">Yosemite</option>
+    </select>
 
     <!-- Custom checkbox with jQuery -->
 
@@ -138,6 +133,8 @@
       </ul>
 
       <!-- Custom checkbox using CSS -->
+
+
 
     </div>
     <div class="css-check">

@@ -161,10 +161,15 @@ p::selection {
   background: #000;
 }
 
+/*SELECTBOX*/
+
+
+
 /*jQuery checkbox*/
 
 .j-check {
   float: left;
+  width: 35%;
 }
 
 .j-check h6 {
