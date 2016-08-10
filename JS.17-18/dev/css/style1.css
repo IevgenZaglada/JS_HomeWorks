@@ -1,0 +1,9 @@
+.pure-img,
+.pure-table {
+  margin: 0 auto;
+}
+
+.button-foo-start{
+  float: left;
+  background-color: forestgreen;
+}
