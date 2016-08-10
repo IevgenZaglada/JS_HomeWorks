@@ -1,6 +1,6 @@
+(function () {
 var time = 0;
 var running = 0;
-
 function start() {
 	if (running == 0) {
 		running = 1;
@@ -46,3 +46,9 @@ function increase() {
 		}, 10)
 	}
 }
+var startWatch = document.getElementById('start');
+var resetWatch = document.getElementById('reset');
+
+startWatch.addEventListener('click', start);
+resetWatch.addEventListener('click', reset);
+}) ();
