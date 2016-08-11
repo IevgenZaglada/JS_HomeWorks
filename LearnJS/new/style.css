@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.inh, .her {
+  color: red; }
+
+body {
+  font: 100% helvetica, sans-serif;
+  color: purple;
+  background: purple; }
+
+h1 {
+  font-size: 30px;
+  display: block;
+  border: 2px solid black;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  color: #333; }
+
+div {
+  color: skyblue; }
+  div .in {
+    color: green; }
+
+/*# sourceMappingURL=style.css.map */

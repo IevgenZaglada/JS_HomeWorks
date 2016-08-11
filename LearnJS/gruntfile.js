@@ -32,9 +32,15 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'css',
           src: ['*.scss'],
-          dest: 'css',
+          dest: 'new',
           ext: '.css'
         }]
+      }
+    },
+    watch: {
+      sass: {
+        files: ['css/*.scss'],
+        tasks: ['sass']
       }
     }
   });
@@ -44,6 +50,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'sass']);
 

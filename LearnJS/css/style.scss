@@ -1,3 +1,32 @@
+@import 'reset';
+@import 'variables';
+@import "mixins";
+
+.inh   {
+  color: red;
+}
+
 body {
-  color: pink;
+    font: 100% $font-stack;
+    color: $primary-color;
+    background: $primary-color;
+}
+h1 {
+    font-size: 30px;
+    display: block;
+    border: 2px solid black;
+    @include border-radius(50px);
+    color: #333;
+}
+div {
+    color: skyblue;
+
+    .in {
+        color: $greenColor;
+    }
+}
+
+.her {
+  @extend .inh;
+  // color: black;
 }
