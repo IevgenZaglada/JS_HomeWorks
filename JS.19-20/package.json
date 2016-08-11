@@ -1,0 +1,14 @@
+{
+  "name": "build_home",
+  "version": "1.0.0",
+  "description": "First grunt project.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umaturman/DV_Homeworks/tree/master/JS.19-20"
+  },
+  "author": "Dima",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
