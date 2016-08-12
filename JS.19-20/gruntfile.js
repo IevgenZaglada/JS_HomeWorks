@@ -46,62 +46,35 @@ module.exports = function (grunt) {
         dest: 'prod/js/main.min.js'
       },
     },
-    // watch: {
-    //   scripts: {
-    //     files: ['**/*.js'],
-    //     tasks: ['jshint'],
-    //     options: {
-    //       spawn: false,
-    //     },
-    //   },
-    // },
-    // copy: {
-    //   main: {
-    //     files: [
-    //       // includes files within path
-    //       {
-    //         expand: true,
-    //         src: ['path/*'],
-    //         dest: 'dest/',
-    //         filter: 'isFile'
-    //       },
-    //
-    //       // includes files within path and its sub-directories
-    //       {
-    //         expand: true,
-    //         src: ['path/**'],
-    //         dest: 'dest/'
-    //       },
-    //
-    //       // makes all src relative to cwd
-    //       {
-    //         expand: true,
-    //         cwd: 'path/',
-    //         src: ['**'],
-    //         dest: 'dest/'
-    //       },
-    //
-    //       // flattens results to a single level
-    //       {
-    //         expand: true,
-    //         flatten: true,
-    //         src: ['path/**'],
-    //         dest: 'dest/',
-    //         filter: 'isFile'
-    //       },
-    //     ],
-    //   },
-    // },
-    // browserSync: {
-    //   bsFiles: {
-    //     src: 'assets/css/*.css'
-    //   },
-    //   options: {
-    //     server: {
-    //       baseDir: "./"
-    //     }
-    //   }
-    // }
+    copy: {
+      main: {
+        files: [{
+          expand: true,
+          cwd: 'src/',
+          src: ['index.html'],
+          dest: 'prod/',
+          filter: 'isFile'
+        }, ],
+      },
+      img: {
+        files: [{
+          expand: true,
+          cwd: 'src/',
+          src: ['img/*.jpg', 'img/*.png'],
+          dest: 'prod/',
+        }]
+      }
+    },
+    watch: {
+      options: {
+        spawn: false,
+      },
+      files: {
+        files: ['src/**/*'],
+        tasks: ['sass', 'concat', 'cssmin', 'uglify', 'copy'],
+      },
+    },
+
   });
 
 
@@ -109,10 +82,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  // grunt.loadNpmTasks('grunt-contrib-watch');
-  // grunt.loadNpmTasks('grunt-contrib-watch');
-  // grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['sass', 'concat', 'cssmin', 'uglify']);
-
+  grunt.registerTask('default', ['sass', 'concat', 'cssmin', 'uglify', 'copy']);
 };

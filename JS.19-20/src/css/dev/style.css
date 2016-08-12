@@ -1,7 +1,10 @@
 body {
-  background-color: gold; }
+  background-color: #ffd700;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 1240px; }
 
 h1 {
-  color: red; }
+  color: #0e97a4; }
 
 /*# sourceMappingURL=style.css.map */

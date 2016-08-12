@@ -1,48 +1,36 @@
 @mixin button {
-    border-radius: 4px;
-    border: 4px solid black;
+  border-radius: 4px;
+  border: 4px solid black;
 }
-
 .search-button {
-    @include button;
-    background-color: blue;
+  @include button;
+  background-color: blue;
 }
-
 .cancel-button {
-    @include button;
-    background-color: red;
+  @include button;
+  background-color: red;
 }
-
 // Чтобы генерировать уникальный CSS для каждого класса, включите примесь в значения каждого аргумента:
-
-@include button('search', blue);
-@include button('cancel', red);
-
-//
-
+@include button( 'search', blue);
+@include button( 'cancel', red); //
 .button {
-    border-radius: 4px;
-    border: 4px solid black;
+  border-radius: 4px;
+  border: 4px solid black;
 }
-
 .search-button {
-    @extend .button;
-    background: blue;
+  @extend .button;
+  background: blue;
 }
-
 //  happy together
-
 .button {
-    border-radius: 4px;
-    border: 4px solid black;
+  border-radius: 4px;
+  border: 4px solid black;
 }
-
 @mixin button($name, $background-color) {
-    .#{$name}-button {
-        background-color: $background-color;
-        @extend .button;
-    }
+  .#{$name}-button {
+    background-color: $background-color;
+    @extend .button;
+  }
 }
-
-@include button('search', blue);
-@include button('cancel', red);
+@include button( 'search', blue);
+@include button( 'cancel', red);
