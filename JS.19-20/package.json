@@ -1,6 +1,7 @@
 {
   "name": "build_home",
   "version": "1.0.0",
+  "sasslintConfig": "~/Users/Mason/dv/JS.19-20/.sass-lint.yml",
   "description": "First grunt project.",
   "repository": {
     "type": "git",
@@ -16,6 +17,7 @@
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-express": "^1.4.1",
-    "grunt-sass": "^1.2.0"
+    "grunt-sass": "^1.2.0",
+    "sass-lint": "^1.8.2"
   }
 }
