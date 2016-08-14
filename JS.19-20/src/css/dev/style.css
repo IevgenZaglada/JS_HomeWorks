@@ -100,11 +100,34 @@ body {
   height: 56px;
   width: 1160px; }
   .menu__item {
+    border-right: 1px solid #181a1d;
     color: #fff;
+    display: inline-block;
     font-family: Ubuntu Condensed;
     font-size: 14px;
-    text-decoration: none; }
+    padding: 21px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 114px; }
+    .menu__item:first-child {
+      background-color: #248cec; }
+    .menu__item:hover {
+      color: #f4b60d;
+      cursor: pointer; }
   .menu__search {
-    float: right; }
+    background: url("../img/search.png") 212px 12px no-repeat;
+    background-color: #35383c;
+    border: 1px solid #181a1d;
+    float: right;
+    height: 38px;
+    margin: 8px;
+    width: 240px; }
+    .menu__search:focus {
+      outline: none; }
+    .menu__search::-webkit-input-placeholder {
+      color: #626466;
+      font-family: Arial Regular;
+      font-size: 19px;
+      padding: 14px; }
 
 /*# sourceMappingURL=style.css.map */

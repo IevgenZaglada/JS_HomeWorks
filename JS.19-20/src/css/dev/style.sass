@@ -61,9 +61,32 @@ body
   height: 56px
   width: 1160px
   &__item
+    border-right: $border-color-dark
     color: $white
+    display: inline-block
     font-family: Ubuntu Condensed
     font-size: 14px
+    padding: 21px 0
+    text-align: center
     text-decoration: none
+    width: 114px
+    &:first-child
+      background-color: $color-skyblue
+    &:hover
+      color: $color-gold
+      cursor: pointer
   &__search
+    background: url('../img/search.png') 212px 12px no-repeat
+    background-color: $input-text-bg-color
+    border: $border-color-dark
     float: right
+    height: 38px
+    margin: 8px
+    width: 240px
+    &:focus
+      outline: none
+    &::-webkit-input-placeholder
+      color: $font-color-input
+      font-family: Arial Regular
+      font-size: 19px
+      padding: 14px
