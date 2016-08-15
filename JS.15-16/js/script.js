@@ -68,8 +68,22 @@ function Student(info) {
   };
 }
 
-Worker.prototype = new Human();
-// Student.prototype = new Human();
+Worker.prototype = new Human({});
+Student.prototype = new Human({});
+
+var dima = new Worker({
+  name: 'dima',
+  age: 24,
+  work: 'programmer'
+});
+
+console.log(dima);
+
+var dimas = new Human ({
+  name: 'dima',
+});
+
+console.log(dimas);
 
 
 
