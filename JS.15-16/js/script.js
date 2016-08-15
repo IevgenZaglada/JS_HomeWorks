@@ -41,45 +41,82 @@ $searchSubmit.on('click', function () {
 
 
 
-
 // prototyping
 
-function Human() {
-  this.name = 'Dima';
-  this.age = 24;
-  this.state = 'man';
-  this.height = 176;
-  this.weight = 80;
+
+function Human(info) {
+  this.name = info.name;
+  this.age = info.age;
+  this.state = info.state;
+  this.height = info.height;
+  this.weight = info.weight;
 }
 
-function Worker() {
-  this.work = 'programmer';
-  this.salary = '500.000 $';
+function Worker(info) {
+  this.work = info.work;
+  this.salary = info.salary;
   this.toWork = function () {
     console.log('i am working');
   };
 }
 
-function Student() {
-  this.university = 'Harvard';
-  this.scholarship = '100$';
+function Student(info) {
+  this.university = info.university;
+  this.scholarship = info.scholarship;
   this.watchMovies = function () {
     console.log('i am watching movies');
   };
 }
 
 Worker.prototype = new Human();
-Student.prototype = new Human();
+// Student.prototype = new Human();
 
-var workerReneDekart = new Worker();
-var workerAristotel = new Worker();
-var workerPlaton = new Worker();
 
-var studentBradPit = new Student();
-var studentNeo = new Student();
-var studentJustinBieber = new Student();
 
-console.log('Rene Descartes:', workerReneDekart.name);
-console.log('Aristotel:', workerAristotel.age);
-console.log('Brad Pit:',studentBradPit.state);
-console.log('Justin Bieber:', studentJustinBieber.height);
+
+
+
+
+
+
+
+
+
+// var dima = new Worker({
+//   work: 'programmer',
+//   salary: 500000,
+//   // toWork: toWork()
+// });
+//
+// console.log(dima);
+
+// var dima = new Human({
+//   name: 'Dima',
+//   age: 24,
+//   state: 'male',
+//   height: 189,
+//   weight: 70
+// });
+//
+// console.log(dima);
+
+
+
+
+
+
+
+
+
+// var workerReneDekart = new Worker();
+// var workerAristotel = new Worker();
+// var workerPlaton = new Worker();
+//
+// var studentBradPit = new Student();
+// var studentNeo = new Student();
+// var studentJustinBieber = new Student();
+//
+// console.log('Rene Descartes:', workerReneDekart.name);
+// console.log('Aristotel:', workerAristotel.age);
+// console.log('Brad Pit:',studentBradPit.state);
+// console.log('Justin Bieber:', studentJustinBieber.height);
