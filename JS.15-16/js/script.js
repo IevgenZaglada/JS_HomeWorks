@@ -68,7 +68,7 @@ function Student(info) {
   };
 }
 
-Worker.prototype = new Human({});
+Worker.prototype = new Human({}); // похоже, не работает
 Student.prototype = new Human({});
 
 var dima = new Worker({
