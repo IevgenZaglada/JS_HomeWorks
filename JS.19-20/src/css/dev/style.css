@@ -41,6 +41,34 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Ubuntu Light"), local("Ubuntu-Light") url("../fonts/ubuntuLight.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Ubuntu Medium"), local("Ubuntu-Medium"), url("../fonts/ubuntuMedium.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Ubuntu Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu Condensed"), local("UbuntuCondensed-Regular"), url("../fonts/ubuntuCondensed.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'ArialMT';
+  font-style: normal;
+  font-weight: 400;
+  src: local("ArialMT"), url("../fonts/ArialMT.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
 body {
   background-color: #fff;
   box-sizing: border-box;
@@ -57,7 +85,7 @@ body {
   .logo__title {
     color: #434343;
     float: right;
-    font-family: Ubuntu medium;
+    font-family: 'Ubuntu Medium';
     font-size: 30px; }
   .logo__subtitle {
     color: #8f8f8f;
@@ -98,6 +126,7 @@ body {
   background-color: #2a2d32;
   clear: both;
   height: 56px;
+  margin: 40px 0;
   width: 1160px; }
   .menu__item {
     border-right: 1px solid #181a1d;
@@ -129,5 +158,50 @@ body {
       font-family: Arial Regular;
       font-size: 19px;
       padding: 14px; }
+
+.jcarousel {
+  overflow: hidden;
+  position: relative;
+  width: 1160px; }
+  .jcarousel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 20000em; }
+    .jcarousel ul li {
+      float: left; }
+
+.jcarousel-pagination {
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  margin-top: -34px;
+  position: absolute;
+  width: 75px; }
+  .jcarousel-pagination a {
+    background-color: #fff;
+    border: 3px solid #fff;
+    display: inline-block;
+    height: 9px;
+    width: 9px; }
+
+#active {
+  background-color: #000; }
+
+.description {
+  display: flex;
+  justify-content: space-between; }
+  .description-item {
+    display: block;
+    width: 360px; }
+    .description-item__count {
+      color: #efeff0;
+      float: left;
+      font-family: Ubuntu Medium;
+      font-size: 90px;
+      width: 120px; }
+      .description-item__count__content {
+        float: right; }
 
 /*# sourceMappingURL=style.css.map */

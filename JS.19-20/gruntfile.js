@@ -48,22 +48,28 @@ module.exports = function (grunt) {
     },
     copy: {
       main: {
+        fonts: [{
+          expand: true,
+          cwd: 'src/',
+          src: ['fonts/*.woff2'],
+          dest: 'prod/',
+        }],
         files: [{
           expand: true,
           cwd: 'src/',
           src: ['index.html'],
           dest: 'prod/',
           filter: 'isFile'
-        }, ],
+        },],
       },
       img: {
         files: [{
           expand: true,
           cwd: 'src/',
-          src: ['img/*.jpg', 'img/*.png'],
+          src: ['img/*.jpg', 'img/*.png', 'fonts/**'],
           dest: 'prod/',
-        }]
-      }
+        },],
+      },
     },
     watch: {
       options: {

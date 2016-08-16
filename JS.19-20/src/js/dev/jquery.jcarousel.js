@@ -1,22 +1,4 @@
-(function ($) {
-  $(function () {
-    $('.jcarousel')
-      .jcarousel({
-        // Options go here
-      });
-    $('.jcarousel-pagination')
-      .on('jcarouselpagination:active', 'a', function () {
-        $(this).attr('id', 'active');
-      })
-      .on('jcarouselpagination:inactive', 'a', function () {
-        $(this).removeAttr('id');
-      })
-      .jcarouselPagination({
-
-      });
-  });
-})(jQuery);
-;/*! jCarousel - v0.3.4 - 2015-09-23
+/*! jCarousel - v0.3.4 - 2015-09-23
 * http://sorgalla.com/jcarousel/
 * Copyright (c) 2006-2015 Jan Sorgalla; Licensed MIT */
 (function($) {
@@ -1485,4 +1467,3 @@
         }
     });
 }(jQuery, document));
-;console.log('Hello, world!');
