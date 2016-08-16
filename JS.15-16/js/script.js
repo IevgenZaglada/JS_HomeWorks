@@ -40,8 +40,8 @@ $searchSubmit.on('click', function () {
 });
 
 
-
 // prototyping
+
 
 
 function Human(info) {
@@ -53,84 +53,86 @@ function Human(info) {
 }
 
 function Worker(info) {
+  Human.apply(this, [info]);
+  this.company = info.company;
   this.work = info.work;
   this.salary = info.salary;
-  this.toWork = function () {
-    console.log('i am working');
-  };
 }
 
 function Student(info) {
+  Human.apply(this, [info]);
   this.university = info.university;
   this.scholarship = info.scholarship;
-  this.watchMovies = function () {
-    console.log('i am watching movies');
-  };
-}
+  }
 
-Worker.prototype = new Human({}); // похоже, не работает
-Student.prototype = new Human({});
+Worker.prototype = Object.create(Human.prototype);
+Worker.prototype.constructor = Worker;
+Worker.prototype.toWork = function() {
+    console.log(this.name + ' is working.');
+};
 
-var dima = new Worker({
-  name: 'dima',
+Student.prototype = Object.create(Human.prototype);
+Student.prototype.constructor = Student;
+Student.prototype.toWatch = function () {
+  console.log(this.name + ' is watching moves.');
+};
+
+var dima = {
+  name: 'Dima',
   age: 24,
-  work: 'programmer'
-});
+  state: 'male',
+  height: 180,
+  weight: 80,
+  work: 'programmer',
+  company: 'Google',
+  salary: 500000
+};
 
-console.log(dima);
+var dimas = {
+  name: 'Dimas',
+  age: 24,
+  state: 'male',
+  height: 180,
+  weight: 80,
+  university: 'Harvrad',
+  scholarship: 1000
+};
 
-var dimas = new Human ({
-  name: 'dima',
-});
+var kate = {
+  name: 'Kate',
+  age: 28,
+  state: 'female',
+  height: 177,
+  weight: 75,
+  work: 'BI',
+  company: 'Apple',
+  salary: 120000,
+  university: 'Yale',
+  scholarship: 1200
+};
 
-console.log(dimas);
+var jane = {
+  name: 'Jane',
+  age: 22,
+  state: 'female',
+  height: 170,
+  weight: 65,
+  work: 'Data analyst',
+  company: 'Facebook',
+  salary: 120000,
+  university: 'Brooklyn',
+  scholarship: 900
+};
 
+var engineerDima = new Worker (dima);
+var studentDiam = new Student (dimas);
+var biKate = new Worker (kate);
+var dataAnalystJane = new Worker (jane);
 
+console.log(engineerDima);
+console.log(studentDiam);
+console.log(biKate);
+console.log(dataAnalystJane);
 
-
-
-
-
-
-
-
-
-
-// var dima = new Worker({
-//   work: 'programmer',
-//   salary: 500000,
-//   // toWork: toWork()
-// });
-//
-// console.log(dima);
-
-// var dima = new Human({
-//   name: 'Dima',
-//   age: 24,
-//   state: 'male',
-//   height: 189,
-//   weight: 70
-// });
-//
-// console.log(dima);
-
-
-
-
-
-
-
-
-
-// var workerReneDekart = new Worker();
-// var workerAristotel = new Worker();
-// var workerPlaton = new Worker();
-//
-// var studentBradPit = new Student();
-// var studentNeo = new Student();
-// var studentJustinBieber = new Student();
-//
-// console.log('Rene Descartes:', workerReneDekart.name);
-// console.log('Aristotel:', workerAristotel.age);
-// console.log('Brad Pit:',studentBradPit.state);
-// console.log('Justin Bieber:', studentJustinBieber.height);
+engineerDima.toWork();
+studentDiam.toWatch();
