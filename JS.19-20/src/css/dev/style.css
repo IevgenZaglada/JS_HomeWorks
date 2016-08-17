@@ -45,21 +45,21 @@ table {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 300;
-  src: local("Ubuntu Light"), local("Ubuntu-Light") url("../fonts/ubuntuLight.woff2") format("woff2");
+  src: local("Ubuntu Light"), local("Ubuntu-Light"), url("fonts/ubuntuLight.woff2"), format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
-  src: local("Ubuntu Medium"), local("Ubuntu-Medium"), url("../fonts/ubuntuMedium.woff2") format("woff2");
+  src: local("Ubuntu Medium"), local("Ubuntu-Medium"), url("fonts/ubuntuMedium.woff2"), format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
 @font-face {
   font-family: 'Ubuntu Condensed';
   font-style: normal;
   font-weight: 400;
-  src: local("Ubuntu Condensed"), local("UbuntuCondensed-Regular"), url("../fonts/ubuntuCondensed.woff2") format("woff2");
+  src: local("Ubuntu Condensed"), local("UbuntuCondensed-Regular"), url("fonts/ubuntuCondensed.woff2"), format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
 @font-face {
@@ -72,6 +72,7 @@ table {
 body {
   background-color: #fff;
   box-sizing: border-box;
+  font-family: 'ubuntu', sans-serif;
   margin: 0 auto;
   padding: 40px;
   width: 1240px; }
@@ -85,11 +86,9 @@ body {
   .logo__title {
     color: #434343;
     float: right;
-    font-family: 'Ubuntu Medium';
     font-size: 30px; }
   .logo__subtitle {
     color: #8f8f8f;
-    font-family: Ubuntu Light;
     font-size: 12px; }
 
 .media {
@@ -132,7 +131,7 @@ body {
     border-right: 1px solid #181a1d;
     color: #fff;
     display: inline-block;
-    font-family: Ubuntu Condensed;
+    font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 14px;
     padding: 21px 0;
     text-align: center;

@@ -70,6 +70,22 @@ module.exports = function (grunt) {
           dest: 'prod/',
         },],
       },
+      json: {
+        files: [{
+          expand: true,
+          cwd: 'src/',
+          src: ['js/dev/*.json'],
+          dest: 'prod/',
+        },],
+      },
+      lodash: {
+        files: [{
+          expand: true,
+          cwd: 'src/',
+          src: ['js/dev/lodash.js'],
+          dest: 'prod/',
+        },],
+      },
     },
     watch: {
       options: {
@@ -82,7 +98,6 @@ module.exports = function (grunt) {
     },
 
   });
-
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-concat');
