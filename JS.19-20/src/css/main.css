@@ -73,9 +73,13 @@ body {
   background-color: #fff;
   box-sizing: border-box;
   font-family: 'ubuntu', sans-serif;
+  font-weight: normal;
   margin: 0 auto;
   padding: 40px;
   width: 1240px; }
+
+.header {
+  margin-bottom: 75px; }
 
 .logo {
   float: left; }
@@ -89,13 +93,15 @@ body {
     font-size: 30px; }
   .logo__subtitle {
     color: #8f8f8f;
-    font-size: 12px; }
+    font-size: 12px;
+    font-weight: lighter; }
 
 .media {
   float: right; }
   .media__list {
     display: inline-block;
-    text-decoration: none; }
+    margin-left: 10px;
+    text-decoration-line: none; }
     .media__list:nth-child(2) > a {
       background-position: -9px 0; }
       .media__list:nth-child(2) > a:hover {
@@ -124,8 +130,10 @@ body {
 .menu {
   background-color: #2a2d32;
   clear: both;
+  position: relative;
+  top: 30px;
   height: 56px;
-  margin: 40px 0;
+  margin: 70px 0;
   width: 1160px; }
   .menu__item {
     border-right: 1px solid #181a1d;
@@ -154,8 +162,8 @@ body {
       outline: none; }
     .menu__search::-webkit-input-placeholder {
       color: #626466;
-      font-family: Arial Regular;
-      font-size: 19px;
+      font-family: Arial Regular, sans-serif;
+      font-size: 12px;
       padding: 14px; }
 
 .jcarousel {
@@ -197,10 +205,34 @@ body {
     .description-item__count {
       color: #efeff0;
       float: left;
-      font-family: Ubuntu Medium;
+      height: 175px;
+      font-family: Ubuntu, sans-serif;
       font-size: 90px;
-      width: 120px; }
-      .description-item__count__content {
-        float: right; }
+      width: 85px; }
+    .description-item__content {
+      float: right;
+      padding: 15px;
+      margin-bottom: 87px;
+      width: 235px; }
+    .description-item__name {
+      font-size: 20px;
+      padding: 16px 0; }
+    .description-item__body {
+      color: #8f8f8f;
+      font-size: 13px;
+      padding-bottom: 24px; }
+    .description-item__link {
+      text-decoration: none; }
+    .description-item__more {
+      color: #000;
+      font-size: 13px; }
+      .description-item__more:hover {
+        color: #248cec; }
+
+.services {
+  background-color: #2a2d32;
+  display: block;
+  height: 500px;
+  width: 2000px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,7 +18,7 @@ var flatSorted = _.sortBy(keyFlat);
 
 // Sorting out duplciates
 
-var sortedOutDuplcates = _.uniq(flatSorted);
+/**/var sortedOutDuplcates = _.uniq(flatSorted);
 
 console.log(sortedOutDuplcates);
 
