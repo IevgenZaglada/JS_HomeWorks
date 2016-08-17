@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81494470-c021-45e0-bfb3-68c11b7b2fc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/prod/css/main.min.css" afterPath="$PROJECT_DIR$/JS.19-20/prod/css/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/prod/index.html" afterPath="$PROJECT_DIR$/JS.19-20/prod/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.css" afterPath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.css.map" afterPath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.sass" afterPath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/css/main.css" afterPath="$PROJECT_DIR$/JS.19-20/src/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/index.html" afterPath="$PROJECT_DIR$/JS.19-20/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/js/dev/script.js" afterPath="$PROJECT_DIR$/JS.19-20/src/js/dev/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/js/main.js" afterPath="$PROJECT_DIR$/JS.19-20/src/js/main.js" />
-    </list>
+    <list default="true" id="81494470-c021-45e0-bfb3-68c11b7b2fc0" name="Default" comment="" />
     <ignored path="dv.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -120,8 +106,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="778" />
-    <option name="height" value="1200" />
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1916" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -234,7 +222,6 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -295,12 +282,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1471452363870</updated>
-      <workItem from="1471452364957" duration="7061000" />
+      <workItem from="1471452364957" duration="7602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7061000" />
+    <option name="totallyTimeSpent" value="7602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -312,7 +299,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="778" height="1200" extended-state="6" />
+    <frame x="4" y="23" width="1916" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32490975" sideWeight="0.49292034" order="0" side_tool="false" content_ui="combo" />
