@@ -155,7 +155,103 @@
       &:hover
         color: $color-skyblue
 
-.services
+.services-wrap
   background-color: $element-filler
   display: block
   height: 500px
+
+.services
+  +center
+  &__link
+    text-decoration: none
+    :hover
+      color: $color-gold
+  &__heading
+    color: $white
+    font-size: 24px
+    padding: 48px 0 47px 0
+  &__content
+    display: flex
+    justify-content: space-between
+  &__image
+    background-image: url(../img/service1.png)
+    background-position: center
+    width: 260px
+    height: 260px
+    &--two
+      background-image: url(../img/service2.png)
+    &--three
+      background-image: url(../img/service3.png)
+    &--four
+      background-image: url(../img/service4.png)
+  &__description
+    color: $white
+    font-size: 16px
+    line-height: 05
+    margin: 35px 0 0 60px
+
+.updates-wrap
+  background-color: $color-dimgray
+
+.updates
+  +center
+  display: flex
+  justify-content: space-between
+  height: 545px
+  padding: 65px 0 83px 0
+
+.news
+  display: flex
+  height: 396px
+  justify-content: space-between
+  flex-direction: column
+  &__section-name
+    color: $element-filler
+    font-size: 24px
+    padding-bottom: 50px
+  &__image
+    float: left
+    width: 150px
+    height: 150px
+    background-image: url(../img/news1.png)
+    &--two
+      background-image: url(../img/news2.png)
+
+.banners
+  &__heading
+    @extend .news__section-name
+
+.sponsors
+  +center
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 240px
+  img
+    height: 64px
+
+.footer
+  height: 385px
+  background-color: $element-filler
+  &__references
+    display: flex
+    justify-content: space-around
+    height: 325px
+    section
+      display: flex
+      flex-direction: column
+      width: 260px
+  &__contacts--wrapper
+    background-color: $input-text-bg-color
+  &__contacts
+    display: flex
+    align-items: center
+    height: 60px
+  &__adress
+    background: url(../img/gps.png) no-repeat
+  &__phone
+    background: url(../img/phone.png) no-repeat
+  &__email
+    background: url(../img/letter.png) no-repeat
+
+

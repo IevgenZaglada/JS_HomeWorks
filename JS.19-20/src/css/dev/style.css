@@ -236,9 +236,102 @@ body {
       .description-item__more:hover {
         color: #248cec; }
 
-.services {
+.services-wrap {
   background-color: #2a2d32;
   display: block;
   height: 500px; }
+
+.services {
+  margin: 0 auto;
+  width: 1160px; }
+  .services__link {
+    text-decoration: none; }
+    .services__link :hover {
+      color: #f4b60d; }
+  .services__heading {
+    color: #fff;
+    font-size: 24px;
+    padding: 48px 0 47px 0; }
+  .services__content {
+    display: flex;
+    justify-content: space-between; }
+  .services__image {
+    background-image: url(../img/service1.png);
+    background-position: center;
+    width: 260px;
+    height: 260px; }
+    .services__image--two {
+      background-image: url(../img/service2.png); }
+    .services__image--three {
+      background-image: url(../img/service3.png); }
+    .services__image--four {
+      background-image: url(../img/service4.png); }
+  .services__description {
+    color: #fff;
+    font-size: 16px;
+    line-height: 05;
+    margin: 35px 0 0 60px; }
+
+.updates-wrap {
+  background-color: #efeff0; }
+
+.updates {
+  margin: 0 auto;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  height: 545px;
+  padding: 65px 0 83px 0; }
+
+.news {
+  display: flex;
+  height: 396px;
+  justify-content: space-between;
+  flex-direction: column; }
+  .news__section-name, .banners__heading {
+    color: #2a2d32;
+    font-size: 24px;
+    padding-bottom: 50px; }
+  .news__image {
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/news1.png); }
+    .news__image--two {
+      background-image: url(../img/news2.png); }
+
+.sponsors {
+  margin: 0 auto;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 240px; }
+  .sponsors img {
+    height: 64px; }
+
+.footer {
+  height: 385px;
+  background-color: #2a2d32; }
+  .footer__references {
+    display: flex;
+    justify-content: space-around;
+    height: 325px; }
+    .footer__references section {
+      display: flex;
+      flex-direction: column;
+      width: 260px; }
+  .footer__contacts--wrapper {
+    background-color: #35383c; }
+  .footer__contacts {
+    display: flex;
+    align-items: center;
+    height: 60px; }
+  .footer__adress {
+    background: url(../img/gps.png) no-repeat; }
+  .footer__phone {
+    background: url(../img/phone.png) no-repeat; }
+  .footer__email {
+    background: url(../img/letter.png) no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
