@@ -74,9 +74,16 @@ body {
   box-sizing: border-box;
   font-family: 'ubuntu', sans-serif;
   font-weight: normal;
+  margin: 0 auto; }
+
+.header {
   margin: 0 auto;
-  padding: 40px;
-  width: 1240px; }
+  width: 1160px;
+  padding-top: 40px; }
+
+.description {
+  margin: 0 auto;
+  width: 1160px; }
 
 .header {
   margin-bottom: 75px; }
@@ -130,10 +137,10 @@ body {
 .menu {
   background-color: #2a2d32;
   clear: both;
-  position: relative;
-  top: 30px;
   height: 56px;
   margin: 70px 0;
+  position: relative;
+  top: 30px;
   width: 1160px; }
   .menu__item {
     border-right: 1px solid #181a1d;
@@ -205,14 +212,14 @@ body {
     .description-item__count {
       color: #efeff0;
       float: left;
-      height: 175px;
       font-family: Ubuntu, sans-serif;
       font-size: 90px;
+      height: 175px;
       width: 85px; }
     .description-item__content {
       float: right;
-      padding: 15px;
       margin-bottom: 87px;
+      padding: 15px;
       width: 235px; }
     .description-item__name {
       font-size: 20px;
@@ -232,7 +239,6 @@ body {
 .services {
   background-color: #2a2d32;
   display: block;
-  height: 500px;
-  width: 2000px; }
+  height: 500px; }
 
 /*# sourceMappingURL=style.css.map */
