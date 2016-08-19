@@ -18218,29 +18218,36 @@
     root._ = _;
   }
 }.call(this));
-;// console.log(userData);
+;console.log(userData);
 
 
-// 1
+// Sorting out `skills` unique keys, alphabetically arranged
 
-// Sorting out `skills` key
+var sortedSkills = _.sortBy(_.uniq(_.flatten(_.map(userData, 'skills'))));
+console.log(sortedSkills);
 
-var sortSkills = _.map(userData, 'skills');
+// Sorting namea sorted by quntity of friends
 
-// Setting up one-level array
+var sortedNames = _.map(userData, 'name');
+console.log(sortedNames);
 
-var keyFlat = _.flattenDeep(sortSkills);
+var sortedFriends = _.flatten(_.map(userData, 'friends'));
+console.log(sortedFriends);
 
+// All unique friends of all users
 
-// Alphabetical sorting
-
-var flatSorted = _.sortBy(keyFlat);
-
-// Sorting out duplciates
-
-/**/var sortedOutDuplcates = _.uniq(flatSorted);
-
-console.log(sortedOutDuplcates);
+// var keyFlat = _.flattenDeep(sortSkills);
+//
+//
+// // Alphabetical sorting
+//
+// var flatSorted = _.sortBy(keyFlat);
+//
+// // Sorting out duplciates
+//
+// /**/var sortedOutDuplcates = _.uniq(flatSorted);
+//
+// console.log(sortedOutDuplcates);
 
 //
 // //2
@@ -18257,60 +18264,60 @@ console.log(sortedOutDuplcates);
 // console.log(friendsFlat);
 
 // 1
-for (var i = 0; i < 5; i++) {
-  console.log('testing for');
-}
-
-_.times(5, function () {
-  console.log('testing dash');
-});
-
-// 2
-
-var ownerArr = [{
-  "owner": "Colin",
-  "pets": [{
-    "name": "dog1"
-  }, {
-    "name": "dog2"
-  }]
-}, {
-  "owner": "John",
-  "pets": [{
-    "name": "dog3"
-  }, {
-    "name": "dog4"
-  }]
-}];
-
-console.log(_.map(ownerArr, 'pets[0].name'));
-
-// 3
-
-console.log(_.times(7, _.uniqueId.bind(null, 'testCell_')));
-
-console.log(_.times(7, _.partial(_.uniqueId, 'testCell_')));
-
-// 4
-
-var objA = {
-  "name": "colin"
-};
-
-var objB = _.cloneDeep(objA); console.log(objB === objA); //false
-
-// 5
-
-function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-console.log(getRandomNumber(15, 20));
-
-console.log('Lodash random: ', _.random(15, 20));
-//or simply
-console.log('Lodash random simplified:', _.random(20));
-//or even
-console.log('Lodash random float: ', _.random(5, 20, true));
+// for (var i = 0; i < 5; i++) {
+//   console.log('testing for');
+// }
+//
+// _.times(5, function () {
+//   console.log('testing dash');
+// });
+//
+// // 2
+//
+// var ownerArr = [{
+//   "owner": "Colin",
+//   "pets": [{
+//     "name": "dog1"
+//   }, {
+//     "name": "dog2"
+//   }]
+// }, {
+//   "owner": "John",
+//   "pets": [{
+//     "name": "dog3"
+//   }, {
+//     "name": "dog4"
+//   }]
+// }];
+//
+// console.log(_.map(ownerArr, 'pets[0].name'));
+//
+// // 3
+//
+// console.log(_.times(7, _.uniqueId.bind(null, 'testCell_')));
+//
+// console.log(_.times(7, _.partial(_.uniqueId, 'testCell_')));
+//
+// // 4
+//
+// var objA = {
+//   "name": "colin"
+// };
+//
+// var objB = _.cloneDeep(objA); console.log(objB === objA); //false
+//
+// // 5
+//
+// function getRandomNumber(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// console.log(getRandomNumber(15, 20));
+//
+// console.log('Lodash random: ', _.random(15, 20));
+// //or simply
+// console.log('Lodash random simplified:', _.random(20));
+// //or even
+// console.log('Lodash random float: ', _.random(5, 20, true));
 
 // 6 extending object
 //  Adding extend function to Object.prototype <-------------- ???????????????????
@@ -18385,37 +18392,37 @@ console.log('Lodash random float: ', _.random(5, 20, true));
 
 // 9 Selecting a random item from a list
 
-var luckyDraw = ["Colin", "John", "James", "Lily", "Mary"];
-
-function pickRandomPerson(luckyDraw) {
-  var index = Math.floor(Math.random() * (luckyDraw.length));
-  return luckyDraw[index];
-}
-
-pickRandomPerson(luckyDraw);
-
-_.sample(luckyDraw);
-// or
-_.sample(luckyDraw, 2);
-
-// 10 Error handling for JSON.parse
-
-// Using try-catch to handle the JSON.parse error
-
-function parse(str) {
-  try {
-    return JSON.parse(str);
-  } catch (e) {
-    return false;
-  }
-}
-
-function parseLodash(str) {
-  return _.attempt(JSON.parse.bind(null, str));
-}
-
-parse('a'); //false
-parseLodash('a'); // Return an error object
-
-parse('{"name": "colin"}'); // Return {"name": "colin"}
-parseLodash('{"name": "colin"}'); // Return {"name": "colin"}
+// var luckyDraw = ["Colin", "John", "James", "Lily", "Mary"];
+//
+// function pickRandomPerson(luckyDraw) {
+//   var index = Math.floor(Math.random() * (luckyDraw.length));
+//   return luckyDraw[index];
+// }
+//
+// pickRandomPerson(luckyDraw);
+//
+// _.sample(luckyDraw);
+// // or
+// _.sample(luckyDraw, 2);
+//
+// // 10 Error handling for JSON.parse
+//
+// // Using try-catch to handle the JSON.parse error
+//
+// function parse(str) {
+//   try {
+//     return JSON.parse(str);
+//   } catch (e) {
+//     return false;
+//   }
+// }
+//
+// function parseLodash(str) {
+//   return _.attempt(JSON.parse.bind(null, str));
+// }
+//
+// parse('a'); //false
+// parseLodash('a'); // Return an error object
+//
+// parse('{"name": "colin"}'); // Return {"name": "colin"}
+// parseLodash('{"name": "colin"}'); // Return {"name": "colin"}
