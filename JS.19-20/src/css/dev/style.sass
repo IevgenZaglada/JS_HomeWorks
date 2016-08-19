@@ -162,33 +162,44 @@
 
 .services
   +center
-  &__link
-    text-decoration: none
-    :hover
-      color: $color-gold
   &__heading
     color: $white
     font-size: 24px
-    padding: 48px 0 47px 0
+    padding: 48px 0 47px
   &__content
     display: flex
     justify-content: space-between
   &__image
-    background-image: url(../img/service1.png)
+    background-image: url('../img/service1.png')
     background-position: center
-    width: 260px
     height: 260px
+    width: 260px
     &--two
-      background-image: url(../img/service2.png)
+      background-image: url('../img/service2.png')
     &--three
-      background-image: url(../img/service3.png)
+      background-image: url('../img/service3.png')
     &--four
-      background-image: url(../img/service4.png)
+      background-image: url('../img/service4.png')
   &__description
     color: $white
     font-size: 16px
     line-height: 05
     margin: 35px 0 0 60px
+  &__image--hover
+    background-color: $color-skyblue
+    display: block
+    height: 260px
+    opacity: 0
+    width: 260px
+
+.services__link
+  :hover
+    .services__description
+      color: $color-gold
+      text-decoration: none
+    .services__image--hover
+      opacity: 1
+
 
 .updates-wrap
   background-color: $color-dimgray
@@ -196,26 +207,26 @@
 .updates
   +center
   display: flex
-  justify-content: space-between
   height: 545px
-  padding: 65px 0 83px 0
+  justify-content: space-between
+  padding: 65px 0 83px
 
 .news
   display: flex
+  flex-direction: column
   height: 396px
   justify-content: space-between
-  flex-direction: column
   &__section-name
     color: $element-filler
     font-size: 24px
     padding-bottom: 50px
   &__image
+    background-image: url('../img/news1.png')
     float: left
-    width: 150px
     height: 150px
-    background-image: url(../img/news1.png)
+    width: 150px
     &--two
-      background-image: url(../img/news2.png)
+      background-image: url('../img/news2.png')
 
 .banners
   &__heading
@@ -223,20 +234,20 @@
 
 .sponsors
   +center
-  display: flex
-  justify-content: space-between
   align-items: center
+  display: flex
   height: 240px
+  justify-content: space-between
   img
     height: 64px
 
 .footer
-  height: 385px
   background-color: $element-filler
+  height: 385px
   &__references
     display: flex
-    justify-content: space-around
     height: 325px
+    justify-content: space-around
     section
       display: flex
       flex-direction: column
@@ -244,14 +255,12 @@
   &__contacts--wrapper
     background-color: $input-text-bg-color
   &__contacts
-    display: flex
     align-items: center
+    display: flex
     height: 60px
   &__adress
-    background: url(../img/gps.png) no-repeat
+    background: url('../img/gps.png') no-repeat
   &__phone
-    background: url(../img/phone.png) no-repeat
+    background: url('../img/phone.png') no-repeat
   &__email
-    background: url(../img/letter.png) no-repeat
-
-
+    background: url('../img/letter.png') no-repeat

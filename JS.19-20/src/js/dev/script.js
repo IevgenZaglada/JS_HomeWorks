@@ -1,27 +1,27 @@
 // console.log(userData);
-//
-//
-// // 1
-//
-// // Sorting out `skills` key
-//
-// var sortSkills = _.map(userData, 'skills');
-//
-// // Setting up one-level array
-//
-// var keyFlat = _.flattenDeep(sortSkills);
-//
-//
-// // Alphabetical sorting
-//
-// var flatSorted = _.sortBy(keyFlat);
-//
-// // Sorting out duplciates
-//
-// /**/var sortedOutDuplcates = _.uniq(flatSorted);
-//
-// console.log(sortedOutDuplcates);
-//
+
+
+// 1
+
+// Sorting out `skills` key
+
+var sortSkills = _.map(userData, 'skills');
+
+// Setting up one-level array
+
+var keyFlat = _.flattenDeep(sortSkills);
+
+
+// Alphabetical sorting
+
+var flatSorted = _.sortBy(keyFlat);
+
+// Sorting out duplciates
+
+/**/var sortedOutDuplcates = _.uniq(flatSorted);
+
+console.log(sortedOutDuplcates);
+
 //
 // //2
 //
@@ -48,11 +48,19 @@ _.times(5, function () {
 // 2
 
 var ownerArr = [{
-    "owner": "Colin",
-    "pets": [{"name":"dog1"}, {"name": "dog2"}]
+  "owner": "Colin",
+  "pets": [{
+    "name": "dog1"
+  }, {
+    "name": "dog2"
+  }]
 }, {
-    "owner": "John",
-    "pets": [{"name":"dog3"}, {"name": "dog4"}]
+  "owner": "John",
+  "pets": [{
+    "name": "dog3"
+  }, {
+    "name": "dog4"
+  }]
 }];
 
 console.log(_.map(ownerArr, 'pets[0].name'));
@@ -66,18 +74,17 @@ console.log(_.times(7, _.partial(_.uniqueId, 'testCell_')));
 // 4
 
 var objA = {
-    "name": "colin"
+  "name": "colin"
 };
 
-var objB = _.cloneDeep(objA);
-console.log(objB === objA); //false
+var objB = _.cloneDeep(objA); console.log(objB === objA); //false
 
 // 5
 
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-console.log(getRandomNumber(15,20));
+console.log(getRandomNumber(15, 20));
 
 console.log('Lodash random: ', _.random(15, 20));
 //or simply
