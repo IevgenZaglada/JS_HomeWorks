@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81494470-c021-45e0-bfb3-68c11b7b2fc0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/prod/css/main.min.css" afterPath="$PROJECT_DIR$/JS.19-20/prod/css/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/prod/index.html" afterPath="$PROJECT_DIR$/JS.19-20/prod/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/css/dev/source/_var.sass" afterPath="$PROJECT_DIR$/JS.19-20/src/css/dev/source/_var.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.css" afterPath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.css.map" afterPath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.sass" afterPath="$PROJECT_DIR$/JS.19-20/src/css/dev/style.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/css/main.css" afterPath="$PROJECT_DIR$/JS.19-20/src/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.19-20/src/index.html" afterPath="$PROJECT_DIR$/JS.19-20/src/index.html" />
-    </list>
+    <list default="true" id="81494470-c021-45e0-bfb3-68c11b7b2fc0" name="Default" comment="" />
     <ignored path="dv.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/JS.19-20/src/css/dev/style.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
-              <caret line="186" column="31" selection-start-line="186" selection-start-column="31" selection-end-line="186" selection-end-column="31" />
+              <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -304,12 +294,12 @@
       <option name="presentableId" value="Default" />
       <updated>1471452363870</updated>
       <workItem from="1471452364957" duration="9200000" />
-      <workItem from="1471541657506" duration="13246000" />
+      <workItem from="1471541657506" duration="14054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22446000" />
+    <option name="totallyTimeSpent" value="23254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -452,7 +442,7 @@
     <entry file="file://$PROJECT_DIR$/JS.19-20/src/css/dev/style.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
-          <caret line="186" column="31" selection-start-line="186" selection-start-column="31" selection-end-line="186" selection-end-column="31" />
+          <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
           <folding />
         </state>
       </provider>
