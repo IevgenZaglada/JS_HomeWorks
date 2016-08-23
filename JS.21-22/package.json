@@ -1,0 +1,24 @@
+{
+  "name": "js.21-22",
+  "version": "1.0.0",
+  "description": "unit tests + es6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "grunt-babel": "^6.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jasmine": "^2.4.1",
+    "load-grunt-tasks": "^3.5.2",
+    "phantomjs": "^2.1.7"
+  }
+}
