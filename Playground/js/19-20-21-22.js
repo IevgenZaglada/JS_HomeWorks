@@ -85,17 +85,17 @@
 //   console.log(key + " = " + unit1[key] + " own = " + own);
 // }
 
-var animal = {
-  jumps: null
-};
-
-var rabbit = {
-  jumps: true
-};
-
-rabbit.__protob__ = animal;
-console.log(rabbit.jumps);
-delete rabbit.jumps;
-console.log(rabbit.jumps);
-delete animal.jumps;
-console.log(rabbit.jumps);
+// var animal = {
+//   jumps: null
+// };
+//
+// var rabbit = {
+//   jumps: true
+// };
+//
+// rabbit.__protob__ = animal;
+// console.log(rabbit.jumps);
+// delete rabbit.jumps;
+// console.log(rabbit.jumps);
+// delete animal.jumps;
+// console.log(rabbit.jumps);

@@ -10,7 +10,7 @@ function power(numberInitial) {
     output = output * multipliedNumber;
   }
   return output;
-};
+}
 
 var result = power();
 console.log('Power:', result);
