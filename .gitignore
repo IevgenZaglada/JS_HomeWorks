@@ -4,3 +4,4 @@ learnjs/node_modules
 JS.19-20/node_modules
 JS.21-22/node_modules
 es6/node_modules
+.idea .vscode *.log
