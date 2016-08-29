@@ -1,0 +1,60 @@
+.wrapper {
+	width: 50%;
+	height: 50px;
+	margin: 20px auto;
+	background-color: #6e85f7;
+}
+
+.menu {
+	position: relative;
+}
+
+.menuItem {
+	display: inline-block;
+	width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+	cursor: pointer;
+}
+
+.menuLink, .subMenuLink, .secondSubmenu li a {
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	color: white;
+}
+
+.menu li a:hover {
+	color: black;
+}
+
+.submenu {
+	display: none;
+	height: 260px;
+	width: 200px;
+	position: absolute;
+	top: 50px;
+	border: 1px solid black;
+	background-color: #ca9595;
+}
+
+.subMenuItem {
+	border: 1px solid black;
+}
+
+.secondSubmenu {
+	position: absolute;
+	left: 200px;
+	top: 155px;
+	background-color: #f19898;
+}
+
+.secondSubmenu li {
+	border: 1px solid black;
+}
+
+.secondSubmenu li a:hover {
+	color: black;
+}
+
+
