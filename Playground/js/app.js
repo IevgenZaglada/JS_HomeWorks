@@ -12,11 +12,13 @@ requirejs.config({
 require(
   [
     'module1',
-    // 'jquery'
+    'module2',
+    'jquery',
   ],
-  function (module1) {
-    // console.log('$', $);
+  function (module1, module2, $) {
+    console.log('$', $);
     console.log('module1', module1);
     module1.sayHello();
+    module2.sayHelloToDima();
   }
 );

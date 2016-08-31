@@ -4,11 +4,11 @@
   $.fn.modal = function () {
 
     var $btn = this;
-    var $modalBox;
-    var $overlay;
+    var $modalBox = void 0;
+    var $overlay = void 0;
     var $body = $('body');
 
-    function showModal(e) {
+    var showModal = function showModal(e) {
       e.preventDefault();
 
       var correctAnswers = [2, 3, 6];
@@ -46,9 +46,9 @@
       }, 1000);
       $('.again').one('click', hideModal);
       correctAnswersCounter = 0;
-    }
+    };
 
-    function hideModal() {
+    var hideModal = function hideModal() {
       var $answersOptions = $('.for-checking');
       $modalBox.animate({
         'opacity': '0',
@@ -64,9 +64,9 @@
       for (var i = 0; i < $answersOptions.length; i++) {
         $answersOptions[i].checked = false;
       }
-    }
+    };
 
     $($btn).on('click', showModal);
   };
-  return this;
+  return undefined;
 })(jQuery);

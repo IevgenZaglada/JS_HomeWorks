@@ -1,38 +1,38 @@
 'use strict';
 
-(function ($) {
-  $.fn.modal = function () {
+( $ => {
+  $.fn.modal = function() {
 
-    var $btn = this;
-    var $modalBox;
-    var $overlay;
-    var $body = $('body');
+    let $btn = this;
+    let $modalBox;
+    let  $overlay;
+    const $body = $('body');
 
 
-    function showModal(e) {
+    const showModal = (e) => {
       e.preventDefault();
 
-      var correctAnswers = [2, 3, 6];
-      var correctAnswersCounter = 0;
-      var $answersOptions = $('.for-checking');
+      const correctAnswers = [2, 3, 6];
+      let correctAnswersCounter = 0;
+      let $answersOptions = $('.for-checking');
 
-      for (var i = 0; i < correctAnswers.length; i++) {
+      for (let i = 0; i < correctAnswers.length; i++) {
         if ($answersOptions[correctAnswers[i]].checked)
           correctAnswersCounter++;
       }
 
       switch (correctAnswersCounter) {
         case 0:
-          $modalBox = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>You can try again.</p><div class="start_again"><input type="submit" class="btn btn-danger again" value="Начать заново"></div></div>');
+          $modalBox = $(`<div class="modal-box">Your score is: ${correctAnswersCounter}. <p>You can try again.</p><div class="start_again"><input type="submit" class="btn btn-danger again" value="Начать заново"></div></div>`);
           break;
         case 1:
-          $modalBox = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>A bit closer. You can try again.</p><div class="start_again"><input type="submit" class="btn btn-warning again" value="Начать заново"></div></div>');
+          $modalBox = $(`<div class="modal-box">Your score is: ${correctAnswersCounter}. <p>A bit closer. You can try again.</p><div class="start_again"><input type="submit" class="btn btn-warning again" value="Начать заново"></div></div>`);
           break;
         case 2:
-          $modalBox = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>Almost here. You can try again.</p><div class="start_again"><input type="submit" class="btn btn-warning again" value="Начать заново"></div></div>');
+          $modalBox = $(`<div class="modal-box">Your score is: ${correctAnswersCounter}. <p>Almost here. You can try again.</p><div class="start_again"><input type="submit" class="btn btn-warning again" value="Начать заново"></div></div>`);
           break;
         case 3:
-          $modalBox = $('<div class="modal-box">Your score is: ' + correctAnswersCounter + '. <p>Woho! Correct! Victory!</p><div class="start_again"><input type="submit" class="btn btn-success again" value="Начать заново again"></div></div>');
+          $modalBox = $(`<div class="modal-box">Your score is: ${correctAnswersCounter}. <p>Woho! Correct! Victory!</p><div class="start_again"><input type="submit" class="btn btn-success again" value="Начать заново again"></div></div>`);
           break;
       }
 
@@ -48,10 +48,10 @@
       }, 1000);
       $('.again').one('click', hideModal);
       correctAnswersCounter = 0;
-    }
+    };
 
-    function hideModal() {
-      var $answersOptions = $('.for-checking');
+    const hideModal = () => {
+      const $answersOptions = $('.for-checking');
       $modalBox.animate({
         'opacity': '0',
         'top': '-50%'
@@ -59,11 +59,11 @@
       $overlay.animate({
         'opacity': '0'
       }, 1000);
-      setTimeout(function () {
+      setTimeout(() => {
         $modalBox.remove();
         $overlay.remove();
       }, 1000);
-      for (var i = 0; i < $answersOptions.length; i++) {
+      for (let i = 0; i < $answersOptions.length; i++) {
         $answersOptions[i].checked = false;
       }
     }
