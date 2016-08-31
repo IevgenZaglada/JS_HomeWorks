@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнее задание №11-12. Часть 2</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+<script type="text/html" id="aboutMe">
+	
+	<div class="header">
+		<h1><%= title %></h1>
+		<img src="<%= image %>" alt="">
+		<p><%= text %></p>
+	</div>
+	<div class="motivation">
+		<p><%= motivation %></p>
+	</div>
+		<% for (var i = 0; i < list.length; i++) { %>
+	<div>
+		<ul>
+			<li><%= list[i].reason%></li>
+		</ul>
+	</div>
+		<% }; %>
+	<div class="infoAboutMe">
+	<div>
+		<p><%= myPhone %></p>
+		<p><%= myNumber %></p>
+	</div>
+
+	<div>
+		<p><%= myVK %></p>
+		<p><a href="https://vk.com/id11574832" target="_blank"><%= linkVK %></a></p>
+	</div>
+	</div>
+
+	<div class="footer">
+		<p><%= feedback %></p>
+		<p><%= text1 %></p>
+	</div>
+
+	
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,46 @@
+	h1 {
+		text-align: center;
+	}
+	
+   div {
+   	width: 684px;
+   	margin: 30px auto;
+   }
+
+   img {
+   	margin: 10px 242px;
+   	width: 200px;
+   	height: 250px;
+   }
+
+	body {
+	margin: 0;
+	font-size: 17px;
+	font-family: Tahoma, sans-serif;
+}
+
+	.header {
+		margin-top: 50px;
+		border-bottom: 1px solid black;
+	}
+
+	.footer {
+		margin-bottom: 50px;
+	}
+
+	.footer p:first-child, .motivation {
+		font-weight: bold;
+	}
+
+	.infoAboutMe {
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+	
+	li {
+		margin: 10px -5px;
+	}
+
+	p {
+		margin: 10px 18px;
+	}
