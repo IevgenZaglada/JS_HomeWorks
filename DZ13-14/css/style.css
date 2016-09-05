@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'railwayregular';
+    src: url('../fonts/railway-webfont.eot');
+    src: url('../fonts/railway-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/railway-webfont.woff2') format('woff2'),
+         url('../fonts/railway-webfont.woff') format('woff'),
+         url('../fonts/railway-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'railwayregular', Arial, Tahoma;
+	background-color: #ebefdc;
+}
+
+
+.labelwidth {
+	width: 83%;
+}
+
+.listItem {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.modalBox {
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	top: 25%;
+	left: 38%;
+	background-color: rgba(247,243,198,1);
+	text-align: center;
+	border: 3px solid #f0ad4e;
+	border-radius: 10px;
+}
+
+.modalBox h1 {
+	margin-bottom: 30px;
+}
+
+.modalBox p {
+	font-size: 20px;
+}
+
+.btn {
+	height: 50px;
+}
+
+.btn-warning-modal {
+	position: relative;
+	top: 100px;
+	left: 0;
+	border-radius: 10px;
+	width: 135px;
+	font-size: 20px;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}

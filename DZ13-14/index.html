@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнее задание №13-14</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+<script type="text/html" id="test">
+	<h1 class="text-center alert alert_title alert-info col-lg-6 col-lg-offset-3"><%= title%></h1>
+
+	<% for ( var i = 0; i < questions.length; i++ ) { %>
+	<li class="listItem lead alert alert-danger col-lg-4 col-lg-offset-4">Вопрос №<%= i+1 %>: <%= questions[i] %></li>
+	<ul>
+		<div class="alert alert-danger col-lg-4 col-lg-offset-4">
+			<% for ( var j = 0; j < answers[i].length; j++ ) { %>
+			<li><input type="radio" name="a<%=i%>" id="<%= i %><%= j %>" class="col-lg-2 col-lg-offset-2 checkAnswer"><label for="<%= i %><%= j %>" class="labelwidth col-lg-6"><%= answers[i][j]%></label></li>
+			 <% } %>
+		</div>
+	</ul>
+	 <% } %>
+	 <input type="submit" value="<%= button %>" class="btn btn-primary col-lg-4 col-lg-offset-4 ">
+</script>
+
+
+</body>
+</html>
