@@ -1,25 +1,26 @@
 var list = {
-  value: 0,
+  value: 1,
   next: {
-    value: 1,
+    value: 2,
     next: {
-      value: 2,
+      value: 3,
       next: {
-        value: 3,
+        value: 4,
         next: null
       }
     }
   }
 };
 
-function printList(list) {
+function printReverseList(list) {
 
-  var temp = list;
+  console.log(list.value);
 
-  while (temp) {
-    console.log(temp.value);
-    temp = temp.next;
-  }
+if (list.next) {
+  printReverseList(list.next);
+}
+
 
 }
-printList(list);
+
+printReverseList(list);
