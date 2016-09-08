@@ -1,26 +1,19 @@
-var list = {
-  value: 1,
-  next: {
-    value: 2,
-    next: {
-      value: 3,
-      next: {
-        value: 4,
-        next: null
-      }
+function unique(arr) {
+  var result = [];
+
+  nextInput:
+  for (var i = 0; i < arr.length; i++) {
+    var str = arr[i];
+    for (var j = 0; j < result.length; j++) {
+      if (result[j] == str) continue nextInput;
     }
+    result.push(str);
   }
-};
-
-function printReverseList(list) {
-
-  console.log(list.value);
-
-if (list.next) {
-  printReverseList(list.next);
+  console.log(result);
 }
 
+var strings = ["кришна", "кришна", "харе", "харе",
+  "харе", "харе", "кришна", "кришна", "8-()"
+];
 
-}
-
-printReverseList(list);
+unique(strings);
