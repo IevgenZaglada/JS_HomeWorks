@@ -1,19 +1,12 @@
-function unique(arr) {
-  var result = [];
+var date = new Date();
 
-  nextInput:
-  for (var i = 0; i < arr.length; i++) {
-    var str = arr[i];
-    for (var j = 0; j < result.length; j++) {
-      if (result[j] == str) continue nextInput;
-    }
-    result.push(str);
-  }
-  console.log(result);
+function difference(now, diff) {
+
+ var output = date - diff;
+ return output;
 }
 
-var strings = ["кришна", "кришна", "харе", "харе",
-  "харе", "харе", "кришна", "кришна", "8-()"
-];
+var result = difference(date, 2);
 
-unique(strings);
+console.log(date);
+console.log(result);
