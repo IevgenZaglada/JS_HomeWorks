@@ -6,40 +6,42 @@ define(
 
   function (model, view) {
 
-      return {
-
-
+    return {
       sayHelloC: function () {
-      console.log('Hello, Controller');
-    },
+        console.log('Hello, Controller');
+      },
 
-    // view.elements.addBtn.on('click', addItem);
-    // view.elements.listContainer.on('click', '.item-delete', removeItem);
-    //
-    // function addItem() {
-    //   var newItem = view.elements.input.val();
-    //
-    //   model.addItem(newItem);
-    //   view.renderList(model.data);
-    //   view.elements.input.val(' ');
-    // }
-    //
-    // function removeItem() {
-    //   var item = $(this).attr('data-value');
-    //
-    //   model.removeItem(item);
-    //   view.renderList(model.data);
-    // }
+      init(view) {
+          view.elements.addBtn.on('click', this.addItem);
+          view.elements.listContainer.on('click', '.item-delete', this.removeItem);
+          view.elements.listContainer.on('click', '.item-edit', this.editItem);
+          view.elements.listContainer.on('click', '.apply', this.applyItem);
+      },
 
-  };
-}
+      addItem() {
+          const newItem = view.elements.input.val();
+          model.addItem(newItem);
+          view.renderList(model.data);
+          view.elements.input.val('');
+      },
 
+      removeItem() {
+          const item = $(this).attr('data-value');
+          model.removeItem(item);
+          view.renderList(model.data);
+      },
 
+      editItem() {
+          const item = $(this).attr('data-value');
+          model.editItem(item);
+          view.changeState(item);
+      },
 
-  // $(function () {
-  //   var firstToDoList = ['1', '2', '3'];
-  //   var model = new Model(firstToDoList);
-  //   var view = new View(model);
-  //   var controller = new Controller(model, view);
-  // })
+      applyItem() {
+          const newItem = view.elements.editInput.val();
+          model.changeItem(newItem);
+          view.renderList(model.data);
+      }
+    };
+  }
 );

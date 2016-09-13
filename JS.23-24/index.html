@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>MVC</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
   <!-- <script src="js/tmpl.js"></script> -->
   <!-- <script src="js/script.js"></script> -->
   <script data-main="js/app" src="js/require.js"></script>
@@ -13,27 +13,30 @@
 
 <body>
 
+
   <script type="text/template" id="wrapper-template">
 
-    <div class="wrapper">
-      <ul class="item-list">
-
-      </ul>
-      <div class="controls">
-        <input type="text" class="item-value">
-        <button class="item-add">Add</button>
+      <div class="wrapper">
+          <h1>A Simple ToDo List</h1>
+          <ul class="list"></ul>
+          <div class="controls">
+              <input type="text" class="item-value" placeholder="Add new task">
+              <button class="item-add">Add</button>
+          </div>
       </div>
-    </div>
 
   </script>
 
+  <!--Template only for list items-->
   <script type="text/template" id="list-template">
-    <% for (var i = 0; i < data.length; i++) { %>
 
-      <li><%= data[i] %><span data-value="<%= data[i] %>" class="item-delete"> x</span></li>
-
+      <% for (var i = 0; i < data.length; i++) { %>
+      <li class="list__item"><%= data[i] %><span data-value="<%= data[i] %>" class="item-edit"></span> <span
+              data-value="<%= data[i] %>" class="item-delete"></span></li>
       <% }; %>
+
   </script>
+
 
 
 </body>

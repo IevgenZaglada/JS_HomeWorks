@@ -1,38 +1,50 @@
 define(
+    // module name
+    'view',
 
-  'view',
+    // dependencies list
+    ['model', 'tmpl', 'jquery'],
 
-  ['model', 'tmpl', 'jquery'],
+    // module description
+    function (model) {
 
-  function (model) {
+        return {
+            init() {
 
-    return {
+                const wrapper = tmpl($('#wrapper-template').html());
+                $('body').append(wrapper);
 
+                this.elements = {
+                    input: $('.item-value'),
+                    addBtn: $('.item-add'),
+                    listContainer: $('.list')
+                };
 
-      sayHelloV: function () {
-        console.log('Hello, View.');
-      },
+                this.renderList(model.data);
+            },
 
-      //   function init() {
-      //     var wrapper = tmpl($('#wrapper-template').html());
-      //
-      //     $('body').append(wrapper);
-      //     self.elements = {
-      //       input: $('.item-value'),
-      //       addBtn: $('.item-add'),
-      //       listContainer: $('.item-list')
-      //     };
-      //     self.renderList(model.data);
-      //   }
-      //
-      //   self.renderList = function (data) {
-      //     var list = tmpl($('#list-template').html(), {
-      //       data: data
-      //     });
-      //     self.elements.listContainer.html(list);
-      //   };
-      //
-      //   init();
-    };
-  }
+            renderList(data) {
+                const list = tmpl($('#list-template').html(), {data: data});
+                this.elements.listContainer.html(list);
+            },
+
+            checkStates() {
+                const inputs = $('li > input');
+                if (inputs.length)
+                    this.renderList(model.data);
+            },
+
+            changeState(item) {
+                this.checkStates();
+
+                let $elem = $("li").filter(function() {
+                    return $.trim($(this).text()) === item;
+                });
+                $elem.replaceWith('<li class="list__item--edit"><input class="newInput" type="text" value="' + item + '"><span class="apply"></span></li>');
+
+                this.elements.editInput = $('.newInput');
+                this.elements.editInput.focus();
+            }
+        };
+    }
 );
