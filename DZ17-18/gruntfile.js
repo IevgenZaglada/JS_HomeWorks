@@ -7,30 +7,30 @@ module.exports = function(grunt) {
       options: {
        separator: ';'
       },
-      src: ['js/src/*.js'],
-      dest: 'js/dist/script.main.js'
+      src: ['js/*.js'],
+      dest: 'dist/script.main.js'
       
       },
     css: {
       options: {
        separator: ''
       },
-        src: ['css/search/*.css'],
-        dest: 'css/district/style.css'
+        src: ['css/*.css'],
+        dest: 'dist/style.css'
     }
     },
 
   uglify: {
     js: {
-      src: ['js/dist/script.main.js'],
-      dest: 'js/dist/script.main.min.js'
+      src: ['dist/script.main.js'],
+      dest: 'dist/script.main.min.js'
       }
     },
 
   cssmin: {
     css: {
-      src: ['css/district/style.css'],
-      dest: 'css/district/style.min.css'
+      src: ['dist/style.css'],
+      dest: 'dist/style.min.css'
       }
     }
     });
