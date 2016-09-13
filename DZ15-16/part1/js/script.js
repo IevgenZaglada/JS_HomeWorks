@@ -5,44 +5,51 @@ $(function() {
 	var preview;
 	var page;
 
-	function searchInfo() {
-		$('a').remove();
-		$('p').remove();
-
-		function outputResult() {
+		function addResultInHtml(page, preview) {
 			$content.append('<a href="'+ page +'"><img src="'+ preview +'"></a>');
 		};
 
-		function notFoundResult() {
+		function didNotFindResult() {
 			$content.append('<p>Страница не найдена</p>');
 		};
+
+		function  clearResultsFromHtml() {
+			$('a').remove();
+			$('p').remove();
+		};
+
+		function didNotEnterWord() {
+			$content.append('<p>Нужно ввести слово</p>');
+		};
+
+	function receiveQueryResult() {
+
+		clearResultsFromHtml();
 
 		$.ajax({
 			url: "https://pixabay.com/api/?key=3257095-9ba73a171b86ba863f1b822f8&q=" + encodeURIComponent($input.val()),
 			dataType: 'jsonp',
 			success: function(data) {
 				if ($input.val() == '') {
-					$content.append('<p>Нужно ввести слово</p>');
+					didNotEnterWord();
 				} else
 				if (parseInt(data.totalHits) > 0) 
 					$.each(data.hits, function(i, hit) {
-						preview = hit.previewURL;
-						page = hit.pageURL;
 
-						outputResult();
+						addResultInHtml(hit.pageURL, hit.previewURL);
 					});
 				else {
-					notFoundResult();
+					didNotFindResult();
 				}
 
 			}
 		});
 	};
-		$button.on('click', searchInfo);
+		$button.on('click', receiveQueryResult);
 
 		$input.keydown(function(event) {
 			if (event.keyCode == 13) {
-				searchInfo();
+				receiveQueryResult();
 			}
 		});
 });
