@@ -24,7 +24,7 @@ require(
 
     // invoked function after all modules were loaded. This is an application start point
     function (model, view, controller, tmpl, $) {
-        var firstToDoList = ['learn JS', 'learn C#', 'become a programmer'];
+      var firstToDoList = ['Learn Javascript', 'Learn Gulp', 'Learn React', 'Play drums', 'Do yoga'];
         model.init(firstToDoList);
         view.init();
         controller.init(view);

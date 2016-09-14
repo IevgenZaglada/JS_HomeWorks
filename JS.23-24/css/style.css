@@ -1,130 +1,164 @@
-
-body {
-    background: url("../img/concrete_seamless.png");
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html {
+  background: radial-gradient(#FFF176, #F57F17);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    font-family: 'Slabo 27px', Georgia, serif;
-    font-size: 64px;
+    font-size: 60px;
+    font-weight: 100;
+    color: #F57F17;
+    text-align: center;
 }
 
 .list {
-    width: 500px;
     margin: 0 0 40px;
     padding: 0;
     list-style: none;
-    /*background-color: pink;*/
+    color: gray;
+}
+
+.wrapper {
+  background: white;
+  padding: 40px 100px;
+  box-shadow: 0px 50px 30px -30px rgba(0,0,0,0.3);
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .list__item {
     position: relative;
-    font-family: Cabin, Arial, sans-serif;
     font-size: 18px;
     padding: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    transition: all 300ms ease;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 300ms ease-in;
 }
 
 .list__item:hover {
-    list-style: disc;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(125, 150, 12, 0.1);
+    border: 1px solid #F57F17;
+
 }
 
 .item-delete {
-    display: flex;
-    width: 20px;
-    height: 20px;
+    display: none;
     position: absolute;
-    right: 5px;
+    right: 35px;
     justify-content: center;
     align-items: center;
-    top: 12px;
+    top: 16px;
 }
 
 .item-edit {
-    display: flex;
-    width: 20px;
-    height: 20px;
+    display: none;
     position: absolute;
-    right: 40px;
+    right: 60px;
     justify-content: center;
     align-items: center;
-    top: 12px;
-
+    top: 16px;
 }
 
-.item-delete:hover,
+.list__item,
+.apply:hover,
 .item-edit:hover,
-.apply:hover {
+.item-delete:hover {
     cursor: pointer;
 }
 
 .list__item:hover .item-edit {
-    background-image: url('../img/edit1.png');
+  display: flex;
+  background: radial-gradient(#e9cf22, #ffc700);
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
 }
 
 .list__item:hover .item-delete {
-    background-image: url('../img/delete1.png');
+  display: flex;
+  background: radial-gradient(#ff3d00, #ec2f0e);
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
 }
 
 .apply {
-    display: flex;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 5px;
-    justify-content: center;
-    align-items: center;
-    top: 12px;
+  display: flex;
+  background: radial-gradient(#7afb45, #2da714);
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 65px;
+  justify-content: center;
+  align-items: center;
+  top: 16px;
 }
 
 .controls {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-between;
+    align-items: flex-start;
 }
 
-.item-value {
-    width: 200px;
-    height: 30px;
-    padding-left: 10px;
-    margin-right: 5px;
-    border-radius: 5px;
-    outline: none;
-    font-family: Cabin, Arial, sans-serif;
-    font-size: 14px;
+input[type="text"] {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: block;
+  width: 400px;
+  /*margin-bottom: 20px;*/
+  margin-left: 5px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #FF6F00
 }
 
 .item-add {
-    height: 30px;
-    margin-bottom: 2px;
-    border-radius: 5px;
-    outline: none;
-    font-family: Cabin, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background: #FF6F00;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.item-add:focus {
+  outline: none;
+}
+
+.item-add:hover {
+  background: #ed6801;
 }
 
 .list__item--edit {
     position: relative;
 }
 
-.list__item--edit:hover .apply {
-    background-image: url('../img/primary-ok1.png');
+.newInput {
+  position: relative;
+  font-size: 18px;
+  padding: 10px;
+  width: 450px;
+  color: black;
+  margin-left: 5px;
+  border: 1px solid #F57F17;
+  border-radius: 10px;
+  transition: all 300ms ease-in;
 }
 
-.newInput {
-    padding: 10px;
-    width: 480px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    height: 22px;
-    font-family: Cabin, Arial, sans-serif;
-    font-size: 18px;
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.1);
+.newInput:focus {
+  outline: none;
 }
