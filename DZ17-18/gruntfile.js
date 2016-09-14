@@ -8,7 +8,7 @@ module.exports = function(grunt) {
        separator: ';'
       },
       src: ['js/*.js'],
-      dest: 'dist/script.main.js'
+      dest: 'node_modules/dist/script.main.js'
       
       },
     css: {
@@ -16,21 +16,21 @@ module.exports = function(grunt) {
        separator: ''
       },
         src: ['css/*.css'],
-        dest: 'dist/style.css'
+        dest: 'node_modules/dist/style.css'
     }
     },
 
   uglify: {
     js: {
-      src: ['dist/script.main.js'],
-      dest: 'dist/script.main.min.js'
+      src: ['node_modules/dist/script.main.js'],
+      dest: 'node_modules/dist/script.main.min.js'
       }
     },
 
   cssmin: {
     css: {
-      src: ['dist/style.css'],
-      dest: 'dist/style.min.css'
+      src: ['node_modules/dist/style.css'],
+      dest: 'node_modules/dist/style.min.css'
       }
     }
     });
