@@ -1,14 +1,15 @@
-// var y = 23;
-// var x = function () {
-//   return y;
-// };
-//
-// var z = function (z) {
-//   var y = 10;
-//   return z();
-// };
-//
-// console.log(z(x));
+var y = 23;
+var x = function () {
+  return y;
+};
+
+var z = function (z) {
+  var y = 10;
+  console.log('inner', y);
+  return z();
+};
+
+console.log(z(x));
 
 // /////////////
 //
