@@ -1,1 +1,0 @@
-{"version":3,"sources":["css/add.scss","css/main.scss"],"names":[],"mappings":"AAAA,KACE,iBAAkB,OCCpB,GACE,MAAO,KADT,SAGI,MAAO","file":"css/main.css","sourcesContent":["body {\n  background-color: purple;\n}","@import './add';\n\nh1 {\n  color: gold;\n  &:hover {\n    color: antiquewhite;\n  }\n}\n\n\n\n"],"sourceRoot":"/source/"}
