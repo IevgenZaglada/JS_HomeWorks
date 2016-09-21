@@ -1,0 +1,465 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'ubuntumedium';
+  src: url("../fonts/ubuntu-m-webfont.eot");
+  src: url("../fonts/ubuntu-m-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-m-webfont.woff2") format("woff2"), url("../fonts/ubuntu-m-webfont.woff") format("woff"), url("../fonts/ubuntu-m-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntulight';
+  src: url("../fonts/ubuntu-l-webfont.eot");
+  src: url("../fonts/ubuntu-l-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-l-webfont.woff2") format("woff2"), url("../fonts/ubuntu-l-webfont.woff") format("woff"), url("../fonts/ubuntu-l-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntu_condensedregular';
+  src: url("../fonts/ubuntu-c-webfont.eot");
+  src: url("../fonts/ubuntu-c-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-c-webfont.woff2") format("woff2"), url("../fonts/ubuntu-c-webfont.woff") format("woff"), url("../fonts/ubuntu-c-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  width: 1660px;
+  height: 2680; }
+
+.header {
+  width: 1160px;
+  height: 110px;
+  margin: 0 auto; }
+  .header .header__logoOfCompany, .header .header__companyContact {
+    width: 25%;
+    height: 40px;
+    float: left;
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%); }
+    .header .header__logoOfCompany .header__link, .header .header__companyContact .header__link {
+      cursor: pointer;
+      text-decoration: none; }
+    .header .header__logoOfCompany .header__logo, .header .header__companyContact .header__logo {
+      float: left;
+      height: 40px; }
+    .header .header__logoOfCompany .header__title, .header .header__companyContact .header__title {
+      font-family: "ubuntumedium", sans-serif;
+      font-size: 28px;
+      color: #434343;
+      text-decoration: none; }
+    .header .header__logoOfCompany .header__text, .header .header__companyContact .header__text {
+      font-family: "ubuntulight", sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #7a7a7a;
+      letter-spacing: 2.8px;
+      text-decoration: none; }
+  .header .header__companyContact {
+    padding-top: 10px;
+    float: right;
+    width: 13%;
+    box-sizing: border-box;
+    right: 15%; }
+    .header .header__companyContact .header__companyContact_facebook, .header .header__companyContact .header__companyContact_twitter, .header .header__companyContact .header__companyContact_rss, .header .header__companyContact .header__companyContact_linkedin, .header .header__companyContact .header__companyContact_skype {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      padding-right: 20px;
+      background: url(../img/sprite/facebook.svg) no-repeat; }
+    .header .header__companyContact .header__companyContact_twitter {
+      background: url(../img/sprite/twitter.svg) no-repeat; }
+    .header .header__companyContact .header__companyContact_rss {
+      background: url(../img/sprite/rss.svg) no-repeat; }
+    .header .header__companyContact .header__companyContact_linkedin {
+      background: url(../img/sprite/linkedIn.svg) no-repeat; }
+    .header .header__companyContact .header__companyContact_skype {
+      background: url(../img/sprite/skype.svg) no-repeat; }
+    .header .header__companyContact .header__companyContact_facebook:hover, .header .header__companyContact .header__companyContact_twitter:hover, .header .header__companyContact .header__companyContact_rss:hover, .header .header__companyContact .header__companyContact_linkedin:hover, .header .header__companyContact .header__companyContact_skype:hover {
+      background: url(../img/sprite/facebook1.svg) no-repeat; }
+    .header .header__companyContact .header__companyContact_twitter:hover {
+      background: url(../img/sprite/twitter1.svg) no-repeat; }
+    .header .header__companyContact .header__companyContact_rss:hover {
+      background: url(../img/sprite/rss1.svg) no-repeat; }
+    .header .header__companyContact .header__companyContact_linkedin:hover {
+      background: url(../img/sprite/linkedin1.svg) no-repeat; }
+    .header .header__companyContact .header__companyContact_skype:hover {
+      background: url(../img/sprite/skype1.svg) no-repeat; }
+
+.menu {
+  width: 1160px;
+  height: 56px;
+  margin: 0 auto 40px;
+  background-color: #2a2d32; }
+  .menu .menu__navigation {
+    line-height: 56px; }
+    .menu .menu__navigation .menu__item {
+      display: inline-block;
+      border-right: 1px solid #181a1d;
+      height: 56px;
+      float: left; }
+      .menu .menu__navigation .menu__item .menu__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "ubuntu_condensedregular", sans-serif;
+        font-size: 14px;
+        color: #fff;
+        padding: 0 30px; }
+      .menu .menu__navigation .menu__item .menu__link:hover {
+        color: #f4b60d; }
+    .menu .menu__navigation .menu__input {
+      border: 1px solid #181a1d;
+      float: right;
+      line-height: 34px;
+      margin: 8px;
+      width: 200px;
+      padding-left: 5px;
+      background: url(../img/search.png) no-repeat 180px 10px #35383c; }
+    .menu .menu__navigation .menu__item:first-child {
+      background-color: #248cec; }
+
+.jcarousel-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0, 0, 2px, #999;
+  -moz-box-shadow: 0, 0, 2px, #999;
+  -ms-box-shadow: 0, 0, 2px, #999;
+  box-shadow: 0, 0, 2px, #999; }
+  .jcarousel-wrapper .jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 1160px;
+    height: 470px; }
+    .jcarousel-wrapper .jcarousel .jcarousel__list {
+      width: 20000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .jcarousel-wrapper .jcarousel .jcarousel__list .jcarousel__item {
+        float: left; }
+  .jcarousel-wrapper .jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 530px; }
+    .jcarousel-wrapper .jcarousel-pagination .jcarousel_page {
+      display: inline-block;
+      margin: 15px;
+      width: 15px;
+      height: 15px;
+      background: #ffffff;
+      border: 4px #ffffff solid;
+      transition: all 0.2s linear; }
+    .jcarousel-wrapper .jcarousel-pagination .active {
+      background: #2a2d32; }
+
+.main {
+  width: 1160px;
+  height: 337px;
+  margin: 0 auto; }
+  .main .main__description {
+    width: 100%;
+    height: 100%; }
+    .main .main__description .main__description__item {
+      float: left;
+      width: 33%; }
+      .main .main__description .main__description__item .main__description__item_count {
+        width: 25%;
+        height: 337px;
+        float: left;
+        font-family: "ubuntumedium", sans-serif;
+        font-size: 90px;
+        color: #e9e9ea;
+        line-height: 210px; }
+      .main .main__description .main__description__item .main__description__item_content {
+        float: right;
+        width: 63%;
+        padding: 0 17px;
+        margin-top: 75px; }
+        .main .main__description .main__description__item .main__description__item_content .main__description__item_picture {
+          display: block; }
+        .main .main__description .main__description__item .main__description__item_content .main__description__item_name {
+          font-family: "ubuntumedium", sans-serif;
+          font-size: 20px;
+          color: #2a2b2e;
+          line-height: 60px; }
+        .main .main__description .main__description__item .main__description__item_content .main__description__item_body {
+          font-size: 13px;
+          font-family: Arial, sans-serif;
+          color: #8a8a8a;
+          padding-bottom: 20px;
+          line-height: 20px; }
+        .main .main__description .main__description__item .main__description__item_content .main__description__item_link {
+          text-decoration: none;
+          font-family: "ubuntumedium", sans-serif;
+          font-size: 13px;
+          color: #2a2b2e; }
+          .main .main__description .main__description__item .main__description__item_content .main__description__item_link .main__description__item_link_arrow {
+            color: #248cec; }
+        .main .main__description .main__description__item .main__description__item_content .main__description__item_link:hover {
+          color: #248cec; }
+    .main .main__description .main__description__itemRight {
+      float: right; }
+
+.services {
+  background-color: #2a2d32; }
+  .services .services__block {
+    width: 1160px;
+    height: 500px;
+    margin: 0 auto; }
+    .services .services__block .services__block_title {
+      font-family: "ubuntumedium", sans-serif;
+      font-size: 24px;
+      color: #fff;
+      line-height: 110px;
+      margin-bottom: 10px; }
+    .services .services__block .services__block_section {
+      display: inline-block;
+      padding-right: 36px; }
+      .services .services__block .services__block_section .services__block_section_link {
+        width: 260px;
+        height: 260px;
+        display: block;
+        background-color: #248CEC;
+        text-decoration: none; }
+        .services .services__block .services__block_section .services__block_section_link .services__block_section_picture {
+          display: block; }
+        .services .services__block .services__block_section .services__block_section_link .services__block_section_picture:hover {
+          opacity: 0.5; }
+      .services .services__block .services__block_section .services__block_section_description:hover {
+        color: #f4b60d;
+        cursor: pointer; }
+    .services .services__block .services__block_section:last-child {
+      padding-right: 0; }
+    .services .services__block .services__block_section_description {
+      text-align: center;
+      font-family: "ubuntumedium", sans-serif;
+      font-size: 16px;
+      color: #fff;
+      line-height: 75px; }
+
+.news-banner {
+  background-color: #f7f7f7; }
+  .news-banner .news-banner__box {
+    width: 1160px;
+    height: 543px;
+    margin: 0 auto; }
+    .news-banner .news-banner__box .news__block {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      float: left; }
+      .news-banner .news-banner__box .news__block .news__block_title {
+        font-family: "ubuntumedium", sans-serif;
+        font-size: 24px;
+        line-height: 130px;
+        padding-left: 5px; }
+      .news-banner .news-banner__box .news__block .news__block_data {
+        width: 40px;
+        height: 80px;
+        position: absolute;
+        left: -20px;
+        margin-top: 12px; }
+        .news-banner .news-banner__box .news__block .news__block_data .news__block_data_month {
+          text-align: center;
+          width: 40px;
+          height: 40px;
+          font-family: "ubuntumedium", sans-serif;
+          font-size: 15px;
+          background-color: #248cec;
+          line-height: 40px;
+          color: #fff; }
+        .news-banner .news-banner__box .news__block .news__block_data .news__block_data_number {
+          text-align: center;
+          width: 40px;
+          height: 40px;
+          font-family: "ubuntumedium", sans-serif;
+          font-size: 18px;
+          background-color: #f4b60d;
+          line-height: 40px;
+          color: #2a2b2e; }
+      .news-banner .news-banner__box .news__block .news__block_picture {
+        margin-bottom: 30px; }
+      .news-banner .news-banner__box .news__block .news__block_article {
+        width: 68%;
+        float: right; }
+        .news-banner .news-banner__box .news__block .news__block_article .news__block_article_title {
+          font-family: "ubuntumedium", sans-serif;
+          font-size: 16px;
+          color: #2a2d32;
+          text-decoration: none;
+          line-height: 32px; }
+        .news-banner .news-banner__box .news__block .news__block_article .news__block_article_title:hover {
+          color: #248cec; }
+        .news-banner .news-banner__box .news__block .news__block_article .news__block_article_author {
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+          color: #9d9d9d;
+          line-height: 30px;
+          padding-bottom: 20px; }
+          .news-banner .news-banner__box .news__block .news__block_article .news__block_article_author .news__block_article_author--link {
+            color: #0187f4;
+            text-decoration: none; }
+        .news-banner .news-banner__box .news__block .news__block_article .news__block_article_text {
+          font-size: 13px;
+          font-family: Arial, sans-serif;
+          color: #8a8a8a; }
+    .news-banner .news-banner__box .banner__block {
+      width: 50%;
+      float: right;
+      height: 100%; }
+      .news-banner .news-banner__box .banner__block .banner__block_title {
+        font-family: "ubuntumedium", sans-serif;
+        font-size: 24px;
+        line-height: 130px; }
+      .news-banner .news-banner__box .banner__block .banner__block_accordion {
+        height: 413px; }
+        .news-banner .news-banner__box .banner__block .banner__block_accordion .banner__block_accordion_menu {
+          width: 98%;
+          height: 37px;
+          border: 1px solid #e8e8e8;
+          background-color: #fff;
+          font-family: "ubuntumedium", sans-serif;
+          font-size: 13px;
+          text-transform: uppercase;
+          color: #2a2d32;
+          line-height: 37px;
+          padding-left: 10px;
+          margin-bottom: 15px;
+          cursor: pointer; }
+        .news-banner .news-banner__box .banner__block .banner__block_accordion .banner__block_accordion_menu.open {
+          background: #f4b60d;
+          border-bottom: 0px;
+          color: #fff; }
+        .news-banner .news-banner__box .banner__block .banner__block_accordion .banner__block_accordion_menu.open .banner__block_accordion_type {
+          float: right;
+          background: url(../img/line.png) center no-repeat;
+          padding: 18px; }
+        .news-banner .news-banner__box .banner__block .banner__block_accordion .banner__block_accordion_type {
+          float: right;
+          background: url(../img/plus.png) center no-repeat;
+          padding: 18px; }
+        .news-banner .news-banner__box .banner__block .banner__block_accordion .banner__block_accordion_text {
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+          color: #8a8a8a;
+          padding: 10px;
+          box-sizing: border-box;
+          line-height: 20px;
+          margin-bottom: 10px;
+          display: none; }
+
+.sponsors {
+  width: 1160px;
+  height: 240px;
+  margin: 0 auto;
+  position: relative; }
+  .sponsors .sponsors__logo {
+    position: absolute;
+    top: 40%; }
+
+.footer {
+  height: 385px;
+  background-color: #2a2d32; }
+  .footer .footer__menu {
+    width: 1160px;
+    height: 325px;
+    margin: 0 auto; }
+    .footer .footer__menu .footer__menu__block {
+      width: 25%;
+      float: left; }
+      .footer .footer__menu .footer__menu__block .footer__menu_title {
+        font-family: "ubuntumedium", sans-serif;
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 150px; }
+      .footer .footer__menu .footer__menu__block .footer__menu_link {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #828385;
+        text-decoration: none;
+        display: block;
+        border-bottom: 1px solid #393c40;
+        line-height: 30px;
+        width: 85%; }
+      .footer .footer__menu .footer__menu__block .footer__menu_link:last-child {
+        border-bottom: none; }
+      .footer .footer__menu .footer__menu__block .footer__menu_link:hover {
+        color: #248cec; }
+  .footer .footer__contacts {
+    width: 100%;
+    height: 60px;
+    background-color: #35383c; }
+    .footer .footer__contacts .contacts__info {
+      width: 1160px;
+      margin: 0 auto;
+      align-items: center;
+      line-height: 60px; }
+      .footer .footer__contacts .contacts__info .footer__contacts_block {
+        display: inline-block;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        color: #686a6c; }
+      .footer .footer__contacts .contacts__info .footer__contacts_location {
+        background: url(../img/footer/location-pin.svg) no-repeat 0 center;
+        padding-left: 20px;
+        margin-right: 30px; }
+      .footer .footer__contacts .contacts__info .footer__contacts_phone {
+        background: url(../img/footer/cell-phone.svg) no-repeat 0 center;
+        padding-left: 20px;
+        margin-right: 30px; }
+      .footer .footer__contacts .contacts__info .footer__contacts_mail {
+        background: url(../img/footer/multimedia.svg) no-repeat 0 center;
+        padding-left: 20px;
+        margin-right: 30px; }
+      .footer .footer__contacts .contacts__info .footer__contacts_copy {
+        float: right; }
+
+/*# sourceMappingURL=main.css.map */

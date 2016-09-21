@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнее задание №19-20. Часть 1</title>
+	<link rel="stylesheet" href="dist/main.min.css">
+	<script  src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="plugins/jquery.jcarousel.min.js"></script>
+	<script src="plugins/lodash.js"></script>
+	<script src="js/data.json"></script>
+	<script src="dist/script.min.js" async></script>
+</head>
+<body>
+
+	<header class="header">
+
+		<div class="header__logoOfCompany">
+			<a href="#" class="header__link">
+				<img class="header__logo" src="img/img1.png" alt="">
+				<h1 class="header__title">Build Home</h1>
+				<h3 class="header__text">industrial theme</h3>
+			</a>
+		</div>
+		<div class="header__companyContact">
+			<a href="" class="header__companyContact_facebook"></a>
+			<a href="" class="header__companyContact_twitter"></a>
+			<a href="" class="header__companyContact_rss"></a>
+			<a href="" class="header__companyContact_linkedin"></a>
+			<a href="" class="header__companyContact_skype"></a>
+		</div>
+
+	</header>
+
+	<nav class="menu">
+		<ul class="menu__navigation">
+			<li class="menu__item"><a class="menu__link" href="#">home</a></li>
+			<li class="menu__item"><a class="menu__link" href="#">features</a></li>
+			<li class="menu__item"><a class="menu__link" href="#">services</a></li>
+			<li class="menu__item"><a class="menu__link" href="#">news</a></li>
+			<li class="menu__item"><a class="menu__link" href="#">shop</a></li>
+			<input class="menu__input" type="text" placeholder="Search...">
+		</ul>
+	</nav>
+
+    <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+            <ul class="jcarousel__list">
+                <li class="jcarousel__item"><img src="img/carousel/photo.jpg" width="1160" height="470" alt=""></li>
+                <li class="jcarousel__item"><img src="img/carousel/photo2.jpg" width="1160" height="470" alt=""></li>
+                <li class="jcarousel__item"><img src="img/carousel/photo3.jpg" width="1160" height="470" alt=""></li>
+            </ul>
+        </div>
+
+        <p class="jcarousel-pagination">
+                    
+        </p>
+    </div>
+
+<main class="main">
+	<section class="main__description">
+		<div class="main__description__item main__description__itemLeft">
+			<h1 class="main__description__item_count">01</h1>
+			<div class="main__description__item_content">
+				<img src="img/settings.png" class="main__description__item_picture" alt="">
+				<h3 class="main__description__item_name">Power Inside</h3>
+				<p class="main__description__item_body">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+				<a href="#" class="main__description__item_link">Read More <span class="main__description__item_link_arrow">&#x2192;</span></a>
+			</div>
+		</div>
+		<div class="main__description__item main__description__itemCentral">
+			<h1 class="main__description__item_count">02</h1>
+			<div class="main__description__item_content">
+				<img src="img/params.png" class="main__description__item_picture" alt="">
+				<h3 class="main__description__item_name">New Technologies</h3>
+				<p class="main__description__item_body">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+				<a href="#" class="main__description__item_link">Read More <span class="main__description__item_link_arrow">&#x2192;</span></a>
+			</div>
+		</div>
+		<div class="main__description__item main__description__itemRight">
+			<h1 class="main__description__item_count">03</h1>
+			<div class="main__description__item_content">
+				<img src="img/truck.png" class="main__description__item_picture" alt="">
+				<h3 class="main__description__item_name">Fast Support</h3>
+				<p class="main__description__item_body">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+				<a href="#" class="main__description__item_link">Read More <span class="main__description__item_link_arrow">&#x2192;</span></a>
+			</div>
+		</div>
+	</section>
+</main>
+
+<article class="services">
+	<div class="services__block">
+		<h2 class="services__block_title">Our Services</h2>
+		<figure class="services__block_section">
+			<a href="#" class="services__block_section_link">
+				<img src="img/image1.png" alt="" width="260px" height="260px" class="services__block_section_picture">
+			</a>
+			<figcaption class="services__block_section_description">Schedule Services</figcaption>
+		</figure>
+		<figure class="services__block_section">
+			<a href="#" class="services__block_section_link">
+				<img src="img/image2.png" alt="" width="260px" height="260px" class="services__block_section_picture">
+			</a>
+			<figcaption class="services__block_section_description">Preventive Maintence</figcaption>
+		</figure>
+		<figure class="services__block_section">
+			<a href="#" class="services__block_section_link">
+				<img src="img/image3.png" alt="" width="260px" height="260px" class="services__block_section_picture">
+			</a>
+			<figcaption class="services__block_section_description">Tire & Wheel Services</figcaption>
+		</figure>
+		<figure class="services__block_section">
+			<a href="#" class="services__block_section_link">
+				<img src="img/image4.png" alt="" width="260px" height="260px" class="services__block_section_picture">
+			</a>
+			<figcaption class="services__block_section_description">Repair Services</figcaption>
+		</figure>
+	</div>
+</article>
+
+<article class="news-banner">
+	<div class="news-banner__box">
+		<div class="news__block">
+			<h3 class="news__block_title">Latest News</h3>
+			<div class="news__block_data">
+				<p class="news__block_data_month">Jan</p>
+				<p class="news__block_data_number">23</p>
+			</div>
+			<img src="img/news1.png" alt="" class="news__block_picture">
+			<div class="news__block_article">
+				<a href="" class="news__block_article_title">Advanced Machinery Helps Improve Quality</a>
+				<p class="news__block_article_author">by <a href="#" class="news__block_article_author--link">cmsmasters</a> Comments (<a class="news__block_article_author--link" href="#">6</a>)</p>
+				<p class="news__block_article_text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+			</div>
+			<div class="news__block_data">
+				<p class="news__block_data_month">Jan</p>
+				<p class="news__block_data_number">21</p>
+			</div>
+			<img src="img/news2.png" alt="" class="news__block_picture">
+			<div class="news__block_article">
+				<a href="" class="news__block_article_title">Powerful Techniques for Advanced Service</a>
+				<p class="news__block_article_author">by <a href="#" class="news__block_article_author--link">cmsmasters</a> Comments (<a class="news__block_article_author--link" href="#">3</a>)</p>
+				<p class="news__block_article_text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+			</div>
+		</div>
+		<div class="banner__block">
+			<h3 class="banner__block_title">Banners Place</h3>
+			<div class="banner__block_accordion">
+				<div class="banner__block_accordion_menu">accordion panel 1<div class="banner__block_accordion_type"></div></div>
+				<div class="banner__block_accordion_text">
+					Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+				</div>
+				<div class="banner__block_accordion_menu">accordion panel 2<div class="banner__block_accordion_type"></div></div>
+				<div class="banner__block_accordion_text">
+					Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+				</div>
+				<div class="banner__block_accordion_menu">accordion panel 3<div class="banner__block_accordion_type"></div></div>
+				<div class="banner__block_accordion_text">
+					Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+				</div>
+				<div class="banner__block_accordion_menu">accordion panel 4<div class="banner__block_accordion_type"></div></div>
+				<div class="banner__block_accordion_text">
+					Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+
+<div class="sponsors">
+	<figure class="sponsors__logo">
+		<img src="img/sponsors.png" alt="">
+	</figure>
+</div>
+
+<footer class="footer">
+	<div class="footer__menu">
+		<section class="footer__menu__block footer__menu_social">
+			<h3 class="footer__menu_title">socials</h3>
+			<a class="footer__menu_link" href="#">Facebook</a>
+			<a class="footer__menu_link" href="#">Flickr</a>
+			<a class="footer__menu_link" href="#">Twitter</a>
+			<a class="footer__menu_link" href="#">Vimeo</a>
+		</section>
+		<section class="footer__menu__block footer__menu_links">
+			<h3 class="footer__menu_title">links</h3>
+			<a class="footer__menu_link" href="#">How to Write a Blog</a>
+			<a class="footer__menu_link" href="#">Create a Blog in 4 Steps</a>
+			<a class="footer__menu_link" href="#">15 Tips to Increase Traffic</a>
+			<a class="footer__menu_link" href="#">20 Blog Post Ideas</a>
+		</section>
+		<section class="footer__menu__block footer__menu_blogroll">
+			<h3 class="footer__menu_title">blogroll</h3>
+			<a class="footer__menu_link" href="#">Blogs Blog</a>
+			<a class="footer__menu_link" href="#">Roll Up Roll Up</a>
+			<a class="footer__menu_link" href="#">Blog Free</a>
+			<a class="footer__menu_link" href="#">Wordpress Blog</a>
+		</section>
+		<section class="footer__menu__block footer__menu_about">
+			<h3 class="footer__menu_title">about us</h3>
+			<a class="footer__menu_link" href="#">Agriculture</a>
+			<a class="footer__menu_link" href="#">Harvest</a>
+			<a class="footer__menu_link" href="#">Company news</a>
+			<a class="footer__menu_link" href="#">Investor relations</a>
+		</section>
+	</div>
+	<div class="footer__contacts">
+		<div class="contacts__info">
+			<div class="footer__contacts_location footer__contacts_block">BuildHomeLtd.  Street Name 123   23 45 Cityname</div>
+			<div class="footer__contacts_phone footer__contacts_block">+123 900 123 456</div>
+			<div class="footer__contacts_mail footer__contacts_block">info@buildhome.web</div>
+			<div class="footer__contacts_copy footer__contacts_block">&#169; 2014 Build Home</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
