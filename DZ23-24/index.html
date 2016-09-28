@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнее задание №23-24</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script data-main="js/app.js" src="js/require.js"></script>
+</head>
+<body>
+
+    <h2 class="title">ToDo-list:</h2>
+
+    <script type="text/template" id="wrapper-temlate">
+    <div class="wrapper">
+        <ul class="item-list"></ul>
+        <div class="conrolls">
+            <input type="text" class="item-value" placeholder="Введите значение">
+            <button class="item-add">Добавить</button>
+            <button class="item-confirm">Подтвердить изменения</button>
+        </div>
+    </div>  
+    </script>
+
+    <script type="text/template" id="list-temlate">
+    <%  for (var i = 0; i < data.length; i++) { %>        
+        <li data-index="<%= i %>" class="list-item"><%= data[i] %> 
+            <button  class="item-change">Изменить</button>
+            <button data-value="<%= data[i] %>" class="item-delete">Удалить</button>
+        </li>
+    <% }; %>
+    </script>
+	
+</body>
+</html>
